@@ -1,0 +1,111 @@
+sections:
+  # Hero with form and Spintax variations
+  - component: HeroWithForm
+    enabled: true
+    props:
+      title: "{Professional|Expert|Trusted} Roof Cleaning in {{suburb}} {{state}}"
+      subtitle: "{Get your roof cleaned by|Trust your roof to|Choose} Gold Coast's {leading|premier|top} roof cleaning {specialists|experts|professionals}"
+      backgroundImage: "/images/tiled roof with grime and mould getting professionally cleaned.jpg"
+      formTitle: "Get a FREE Quote"
+      formDescription: ""
+
+  # Services grid
+  - component: ServicesGrid
+    enabled: true
+    props:
+      heading: "Roof Cleaning Services in {{suburb}}"
+      subtitle: "{{businessName}} provides expert roof cleaning to {{suburb}} residents"
+      display: "all"
+      limit: 4
+      columns: 4
+      showViewAll: false
+
+  # Introduction with roof cleaning Spintax
+  - component: TwoColumnSection
+    enabled: true
+    props:
+      heading: "{Professional|Expert} Roof Cleaning in {{suburb}}"
+      text: |
+        {Looking for|Need|Searching for} {professional|expert|reliable} roof cleaning in {{suburb}}? Gold Coast Roof Cleaning Pros {provides|offers|delivers} {comprehensive|complete|thorough} roof cleaning services including moss and lichen removal, gutter cleaning, and solar panel maintenance to {properties|homes|residences} throughout {{suburb}}{{postcodeSpace}}.
+        
+        {Over time|Eventually|With age}, roofs in {{suburb}} {accumulate|collect|develop} {dirt, moss, lichen, and grime|organic growth and debris|moss, algae, and environmental buildup} that {can damage|may harm|could affect} your roof's {integrity|condition|lifespan}. Our {soft washing techniques|professional cleaning methods|specialized equipment} {safely remove|effectively eliminate|thoroughly clean} all {contaminants|buildup|growth} while {protecting|preserving|maintaining} your {tiles, metal roofing, or Colorbond|roof materials|roof surface}.
+      image: "/images/roof getting washed with gentle pressure cleaning by professional cleaner.jpg"
+      imageAlt: "Roof cleaning service in {{suburb}}"
+      imagePosition: "right"
+
+  # Service areas with nearby suburbs
+  - component: ServiceAreasWithLocations
+    enabled: true
+    props:
+      heading: "Service Areas Near {{suburb}}"
+      subtitle: ""
+
+  # Why choose us for roof cleaning
+  - component: IconGrid
+    enabled: true
+    props:
+      heading: "Why {{suburb}} Chooses Us for Roof Cleaning"
+      subtitle: null
+      columns: 2
+      items:
+        - icon: "🏠"
+          title: "All Roof Types"
+          description: "Expert cleaning for tile, metal, and Colorbond roofs. We understand the specific cleaning requirements of {{suburb}} properties."
+        - icon: "🌿"
+          title: "Moss & Lichen Removal"
+          description: "Complete removal of moss, lichen, and algae that can damage your {{suburb}} property's roof and shorten its lifespan."
+        - icon: "⚡"
+          title: "Fast Local Service"
+          description: "Quick response times for roof cleaning in {{suburb}}. We can typically schedule your service within 48 hours."
+        - icon: "💰"
+          title: "Competitive Pricing"
+          description: "Fair, transparent pricing for roof cleaning in {{suburb}}. Free quotes with no hidden fees or surprises."
+
+  # Roof cleaning process
+  - component: IconGrid
+    enabled: true
+    props:
+      heading: "Our Roof Cleaning Process in {{suburb}}"
+      subtitle: "{Simple|Efficient|Professional} and {thorough|comprehensive|complete}"
+      columns: 4
+      items:
+        - icon: "clipboard-check"
+          title: "Free Inspection"
+          description: "We assess your {{suburb}} property's roof condition and provide a detailed quote"
+        - icon: "calendar"
+          title: "Schedule Service"
+          description: "Book your roof cleaning at a convenient time"
+        - icon: "sparkles"
+          title: "Soft Washing"
+          description: "Safe, effective cleaning that won't damage your roof"
+        - icon: "check-circle"
+          title: "Complete Cleanup"
+          description: "We leave your {{suburb}} property spotless"
+
+  # FAQ with roof cleaning Spintax
+  - component: ServiceFAQ
+    enabled: true
+    props:
+      heading: "Roof Cleaning Questions from {{suburb}} Residents"
+      subtitle: null
+      faqs:
+        - question: "{Do you clean roofs in|Are your roof cleaning services available in|Do you service} {{suburb}}?"
+          answer: "{Yes! We provide comprehensive roof cleaning services throughout|Absolutely! We regularly clean roofs in|Yes, our roof cleaning team services} {{suburb}}{{postcodeSpace}} and {surrounding areas|nearby suburbs}. {Our team specializes in|We're experts at|We excel in} cleaning {all types of roofs|tile and metal roofs|residential roofs} in the {{suburb}} area."
+        - question: "{How often should|When should|How frequently do} {{suburb}} roofs need cleaning?"
+          answer: "{We recommend|Roofs in {{suburb}} typically need|Most properties benefit from} professional roof cleaning every {2-3 years|24-36 months|two to three years}. {Properties with overhanging trees|Homes near trees|Roofs with shade} may need {more frequent|annual|yearly} cleaning to {prevent moss and lichen growth|remove organic buildup|maintain appearance}."
+        - question: "Will {pressure washing|high pressure cleaning|power washing} damage my roof?"
+          answer: "{That's why we use soft washing|We avoid high pressure|Our soft washing method is safe} for {all roof types|tiles and metal roofs|your roof}. {High pressure can|Pressure washing may|Power washing could} {crack tiles and damage coatings|cause damage|harm your roof}. Our {low-pressure techniques|soft washing system|gentle methods} {clean effectively|remove all growth|restore your roof} without {any risk|damage|harm}."
+        - question: "What {suburbs near|areas around|locations close to} {{suburb}} do you service?"
+          answer: "{Besides|In addition to|Along with} {{suburb}}, we {clean roofs in|service|cover} {many nearby suburbs including|areas such as|locations like}: {{nearbySuburbs:6}}. {Contact us|Call today|Get in touch} to {confirm|check|verify} roof cleaning availability in your {specific location|area|suburb}."
+
+  # Call to action for roof cleaning
+  - component: CTABanner
+    enabled: true
+    props:
+      heading: "{Ready for Professional|Need Expert|Time for} Roof Cleaning in {{suburb}}?"
+      description: "{Restore your roof's appearance|Protect your investment|Extend your roof's lifespan} with professional roof cleaning. {Free quotes|No obligation quotes|Free assessments} available!"
+      buttonText: "Get Your Free Roof Cleaning Quote"
+      buttonHref: "#quote-form"
+      secondaryButtonText: "Call (07) 5555 0180"
+      secondaryButtonHref: "tel:0755550180"
+      variant: "gradient"

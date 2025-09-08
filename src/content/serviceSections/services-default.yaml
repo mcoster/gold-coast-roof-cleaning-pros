@@ -1,0 +1,62 @@
+sections:
+  # Hero with form
+  - component: HeroWithForm
+    enabled: true
+    props:
+      title: "{{serviceTitle}}"
+      subtitle: "{{serviceDescription}}"
+      backgroundImage: "{{serviceImage}}"
+      formTitle: "Get a FREE Quote"
+      formDescription: ""
+
+  # Service content (markdown from service file)
+  - component: ServiceContent
+    enabled: true
+    props:
+      title: null
+      injectContent: true
+
+  # Why Choose section - loads from service-specific YAML
+  - component: WhyUs
+    enabled: true
+    props:
+      serviceSlug: "{{serviceSlug}}"
+      # No inline data - will load from why-choose.yaml
+
+  # FAQ section - loads from service-specific YAML
+  - component: ServiceFAQ
+    enabled: true
+    props:
+      serviceSlug: "{{serviceSlug}}"
+      # No inline data - will load from faq.yaml
+
+  # Service areas
+  - component: ServiceAreas
+    enabled: true
+    props:
+      heading: "{{serviceTitle}} Service Areas"
+      subtitle: "Professional roof cleaning services throughout Gold Coast and surrounding suburbs"
+      limit: 12
+      showCta: false
+
+  # Call to action
+  - component: CTABanner
+    enabled: true
+    props:
+      heading: "Ready to Get Started with {{serviceTitle}}?"
+      description: "Get your free, no-obligation quote today. We're here to help restore and protect your roof!"
+      buttonText: "Get Your Free Quote"
+      buttonHref: "#quote-form"
+      secondaryButtonText: "Call {{phone}}"
+      secondaryButtonHref: "tel:{{formattedPhone}}"
+      variant: "gradient"
+
+  # Related services
+  - component: RelatedServices
+    enabled: true
+    props:
+      heading: null
+      subtitle: null
+      currentService: "{{serviceSlug}}"
+      limit: 3
+      showAll: null

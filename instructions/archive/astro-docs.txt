@@ -1,0 +1,1542 @@
+========================
+CODE SNIPPETS
+========================
+TITLE: Create New Astro Project (npm)
+DESCRIPTION: This command initiates the creation of a new Astro project using npm. It guides the user through setup options via a CLI wizard. Ensure Node.js and npm are installed before execution.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/getting-started.mdx#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npm create astro@latest
+```
+
+----------------------------------------
+
+TITLE: Install Dependencies and Run Project Locally
+DESCRIPTION: Instructions for installing project dependencies using pnpm and starting the local development server. Ensure you have pnpm installed before running these commands.
+
+SOURCE: https://github.com/withastro/docs/blob/main/CONTRIBUTING.md#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+pnpm install
+```
+
+LANGUAGE: shell
+CODE:
+```
+pnpm run dev
+```
+
+----------------------------------------
+
+TITLE: Astro Landing Page Components
+DESCRIPTION: Demonstrates the usage of various Starlight/Astro components for building landing pages and content sections. These components include CardGrid, Card, ListCard, and SplitCard, used to structure information and links.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/getting-started.mdx#_snippet_1
+
+LANGUAGE: astro
+CODE:
+```
+import { CardGrid } from '@astrojs/starlight/components'
+import Card from '~/components/Landing/Card.astro'
+import ListCard from '~/components/Landing/ListCard.astro'
+import SplitCard from '~/components/Landing/SplitCard.astro'
+import Discord from '~/components/Landing/Discord.astro'
+
+<CardGrid>
+  <Card title="What will you build with Astro?" icon="laptop">
+    Explore [Astro starter themes](https://astro.build/themes/) for blogs, portfolios, docs, landing pages, SaaS, marketing, ecommerce sites, and more!
+  </Card>
+
+  <Card title="Take a guided tour" icon="star">
+    Complete our introductory [Build a Blog Tutorial](/en/tutorial/0-introduction/) to learn the basics and create your first Astro site.
+  </Card>
+
+  <SplitCard title="Start a new project" icon="rocket">
+    ```sh
+    # create a new project with npm
+    npm create astro@latest
+    ```
+    
+    Our [installation guide](/en/install-and-setup/) has step-by-step instructions for installing Astro using our CLI wizard, creating a new project from an existing Astro GitHub repository, and for installing Astro manually.
+  </SplitCard>
+
+  <ListCard title="Learn" icon="open-book">
+    - [Astro’s main features](/en/concepts/why-astro/)
+    - [Islands architecture](/en/concepts/islands/)
+    - [Astro components](/en/basics/astro-components/)
+    - [The Astro template syntax](/en/reference/astro-syntax/)
+  </ListCard>
+
+  <ListCard title="Extend" icon="puzzle">
+    - [Add integrations like React and Partytown](/en/guides/integrations-guide/)
+    - [Create type safe content collections](/en/guides/content-collections/)
+    - [Enhance navigation with view transitions](/en/guides/view-transitions/)
+    - [Connect a headless CMS to your project](/en/guides/cms/)
+  </ListCard>
+</CardGrid>
+
+<Discord title="Have a question or want to get involved?" cta="Join our Discord"/>
+```
+
+----------------------------------------
+
+TITLE: Astro Project Setup with AI
+DESCRIPTION: Commands and best practices for using AI tools with Astro projects, such as starting with templates or adding integrations.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/build-with-ai.mdx#_snippet_14
+
+LANGUAGE: bash
+CODE:
+```
+npm create astro@latest -- --template <template-name>
+astro add <integration-name>
+```
+
+----------------------------------------
+
+TITLE: Start Astro Dev Server
+DESCRIPTION: Starts the local Astro development server to view your site in real-time. It watches for file changes in the src/ directory and updates the preview automatically. Requires a project directory with Astro installed.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/develop-and-build.mdx#_snippet_0
+
+LANGUAGE: npm
+CODE:
+```
+npm run dev
+```
+
+LANGUAGE: pnpm
+CODE:
+```
+pnpm run dev
+```
+
+LANGUAGE: yarn
+CODE:
+```
+yarn run dev
+```
+
+----------------------------------------
+
+TITLE: Using Example CMS and E-commerce Loaders
+DESCRIPTION: Demonstrates how to configure and use live collections with example CMS and e-commerce loaders in Astro. It shows the setup in `live.config.ts` and how to fetch content using `getLiveCollection` and `getLiveEntry`.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/reference/experimental-flags/live-content-collections.mdx#_snippet_3
+
+LANGUAGE: ts
+CODE:
+```
+import {
+  defineLiveCollection,
+} from 'astro:content';
+import { cmsLoader } from '@example/cms-astro-loader';
+import { productLoader } from '@example/store-astro-loader';
+
+const articles = defineLiveCollection({
+  loader: cmsLoader({
+    apiKey: process.env.CMS_API_KEY,
+    contentType: 'article',
+  }),
+});
+
+const products = defineLiveCollection({
+  loader: productLoader({
+    apiKey: process.env.STORE_API_KEY,
+  }),
+});
+
+export const collections = { articles, products };
+```
+
+LANGUAGE: astro
+CODE:
+```
+---
+export const prerender = false; // Not needed in 'server' mode
+
+import { getLiveCollection, getLiveEntry } from 'astro:content';
+
+// Use loader-specific filters
+const { entries: draftArticles } = await getLiveCollection('articles', {
+  status: 'draft',
+  author: 'john-doe',
+});
+
+// Get a specific product by ID
+const { entry: product } = await getLiveEntry('products', Astro.params.slug);
+---
+```
+
+----------------------------------------
+
+TITLE: Install @astrojs/markdoc Integration
+DESCRIPTION: Automate the setup of the @astrojs/markdoc integration using the `astro add` command. This command handles installing the necessary package and configuring it in your Astro project. Alternatively, manual installation steps are provided.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/markdoc.mdx#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npx astro add markdoc
+```
+
+LANGUAGE: sh
+CODE:
+```
+pnpm astro add markdoc
+```
+
+LANGUAGE: sh
+CODE:
+```
+yarn astro add markdoc
+```
+
+----------------------------------------
+
+TITLE: Install Prettier and Prettier Plugin for Astro
+DESCRIPTION: Installs the necessary Prettier packages for formatting Astro files using npm, pnpm, or yarn.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/editor-setup.mdx#_snippet_9
+
+LANGUAGE: shell
+CODE:
+```
+npm install --save-dev --save-exact prettier prettier-plugin-astro
+```
+
+LANGUAGE: shell
+CODE:
+```
+pnpm add --save-dev --save-exact prettier prettier-plugin-astro
+```
+
+LANGUAGE: shell
+CODE:
+```
+yarn add --dev --exact prettier prettier-plugin-astro
+```
+
+----------------------------------------
+
+TITLE: Install @astrojs/preact Integration
+DESCRIPTION: Automate the setup of the @astrojs/preact integration using the Astro CLI. This command installs the necessary packages and configures your project.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/preact.mdx#_snippet_0
+
+LANGUAGE: npm
+CODE:
+```
+npx astro add preact
+```
+
+LANGUAGE: pnpm
+CODE:
+```
+pnpm astro add preact
+```
+
+LANGUAGE: yarn
+CODE:
+```
+yarn astro add preact
+```
+
+----------------------------------------
+
+TITLE: Install @astrojs/cloudflare Adapter
+DESCRIPTION: Installs the @astrojs/cloudflare adapter using npm, pnpm, or yarn. This command automates the setup process for integrating Astro with Cloudflare.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/cloudflare.mdx#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npx astro add cloudflare
+```
+
+LANGUAGE: sh
+CODE:
+```
+pnpm astro add cloudflare
+```
+
+LANGUAGE: sh
+CODE:
+```
+yarn astro add cloudflare
+```
+
+----------------------------------------
+
+TITLE: Create Astro Project with Package Manager Tabs
+DESCRIPTION: Demonstrates creating a new Astro project using different package managers (npm, pnpm, yarn) via command-line interface commands. This snippet is part of a migration guide to help users start a new Astro project.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/migrate-to-astro/from-sveltekit.mdx#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+npm create astro@latest -- --template blog
+```
+
+LANGUAGE: shell
+CODE:
+```
+pnpm create astro@latest --template blog
+```
+
+LANGUAGE: shell
+CODE:
+```
+yarn create astro --template blog
+```
+
+----------------------------------------
+
+TITLE: Install @astrojs/db Integration
+DESCRIPTION: Automate the setup of the @astrojs/db integration using the `astro add` command with different package managers.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/db.mdx#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npx astro add db
+```
+
+LANGUAGE: sh
+CODE:
+```
+pnpm astro add db
+```
+
+LANGUAGE: sh
+CODE:
+```
+yarn astro add db
+```
+
+----------------------------------------
+
+TITLE: Example sitemap-index.xml
+DESCRIPTION: An example of the `sitemap-index.xml` file generated by the @astrojs/sitemap integration, which links to individual sitemap files.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/sitemap.mdx#_snippet_5
+
+LANGUAGE: xml
+CODE:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+  <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://example.com/sitemap-0.xml</loc>
+  </sitemap>
+</sitemapindex>
+```
+
+----------------------------------------
+
+TITLE: Example sitemap-0.xml
+DESCRIPTION: An example of a `sitemap-0.xml` file generated by the @astrojs/sitemap integration, listing the URLs of the website's pages.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/sitemap.mdx#_snippet_6
+
+LANGUAGE: xml
+CODE:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://example.com/</loc>
+  </url>
+  <url>
+    <loc>https://example.com/second-page/</loc>
+  </url>
+</urlset>
+```
+
+----------------------------------------
+
+TITLE: Manually Install @astrojs/preact Package
+DESCRIPTION: Manually install the @astrojs/preact package and its peer dependency, Preact, using your preferred package manager. This is an alternative to the automated setup.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/preact.mdx#_snippet_1
+
+LANGUAGE: npm
+CODE:
+```
+npm install @astrojs/preact
+npm install preact
+```
+
+LANGUAGE: pnpm
+CODE:
+```
+pnpm add @astrojs/preact
+pnpm add preact
+```
+
+LANGUAGE: yarn
+CODE:
+```
+yarn add @astrojs/preact
+yarn add preact
+```
+
+----------------------------------------
+
+TITLE: Install @astrojs/vue with pnpm
+DESCRIPTION: Installs the @astrojs/vue integration using pnpm. This command automates the setup process for adding Vue support to your Astro project.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/vue.mdx#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+pnpm astro add vue
+```
+
+----------------------------------------
+
+TITLE: Install @astrojs/vue with npm
+DESCRIPTION: Installs the @astrojs/vue integration using npm. This command automates the setup process for adding Vue support to your Astro project.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/vue.mdx#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npx astro add vue
+```
+
+----------------------------------------
+
+TITLE: Astro SSR Start Script (package.json)
+DESCRIPTION: Configures the 'start' script in package.json to run the server output generated by the Node adapter for an Astro SSR site.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/zerops.mdx#_snippet_3
+
+LANGUAGE: json
+CODE:
+```
+"scripts": {
+  "start": "node ./dist/server/entry.mjs"
+}
+```
+
+----------------------------------------
+
+TITLE: Install Netlify CLI
+DESCRIPTION: Installs the Netlify Command Line Interface globally, allowing you to manage Netlify sites and deployments from your terminal.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/netlify.mdx#_snippet_2
+
+LANGUAGE: bash
+CODE:
+```
+npm install --global netlify-cli
+```
+
+----------------------------------------
+
+TITLE: Initialize Firebase Hosting
+DESCRIPTION: Initializes Firebase Hosting for your project, creating necessary configuration files like `firebase.json` and `.firebaserc`. This command guides you through project setup and is available for npm, pnpm, and yarn.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/google-firebase.mdx#_snippet_3
+
+LANGUAGE: npm
+CODE:
+```
+npx firebase init hosting
+
+```
+
+LANGUAGE: pnpm
+CODE:
+```
+pnpm exec firebase init hosting
+
+```
+
+LANGUAGE: yarn
+CODE:
+```
+yarn firebase init hosting
+
+```
+
+----------------------------------------
+
+TITLE: Install Netlify CLI Globally
+DESCRIPTION: Installs the Netlify CLI tool globally using npm, pnpm, or yarn for command-line deployments.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/index.mdx#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+npm install --global netlify-cli
+```
+
+LANGUAGE: shell
+CODE:
+```
+pnpm add --global netlify-cli
+```
+
+LANGUAGE: shell
+CODE:
+```
+yarn global add netlify-cli
+```
+
+----------------------------------------
+
+TITLE: Run Astro Site Locally with Deno
+DESCRIPTION: Executes the `preview` script to start a local development server for the Astro site using Deno.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/deno.mdx#_snippet_3
+
+LANGUAGE: shell
+CODE:
+```
+npm run preview
+```
+
+LANGUAGE: shell
+CODE:
+```
+pnpm run preview
+```
+
+LANGUAGE: shell
+CODE:
+```
+yarn run preview
+```
+
+----------------------------------------
+
+TITLE: Install Project Dependencies with Deno
+DESCRIPTION: Installs all project dependencies using the specified package manager, required before building or running the site.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/deno.mdx#_snippet_4
+
+LANGUAGE: shell
+CODE:
+```
+npm install
+```
+
+LANGUAGE: shell
+CODE:
+```
+pnpm install
+```
+
+LANGUAGE: shell
+CODE:
+```
+yarn
+```
+
+----------------------------------------
+
+TITLE: Install @astrojs/vue with yarn
+DESCRIPTION: Installs the @astrojs/vue integration using yarn. This command automates the setup process for adding Vue support to your Astro project.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/vue.mdx#_snippet_2
+
+LANGUAGE: sh
+CODE:
+```
+yarn astro add vue
+```
+
+----------------------------------------
+
+TITLE: JetBrains IDEs (WebStorm) Astro Support
+DESCRIPTION: WebStorm version 2024.2 and later includes support for the Astro Language Server, providing syntax highlighting, code completion, and formatting. Users can install the official plugin via the JetBrains Marketplace or the IDE's Plugins tab and enable the language server in settings.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/editor-setup.mdx#_snippet_2
+
+LANGUAGE: text
+CODE:
+```
+Install the official Astro plugin through JetBrains Marketplace or search for "Astro" in the IDE's Plugins tab.
+Toggle the language server in Settings | Languages & Frameworks | TypeScript | Astro.
+```
+
+----------------------------------------
+
+TITLE: Azion CLI Local Development Output
+DESCRIPTION: Example output from the `azion dev` command, showing the build process and the local server address.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/azion.mdx#_snippet_1
+
+LANGUAGE: bash
+CODE:
+```
+Building your Edge Application. This process may take a few minutes
+Running build step command:
+...
+[Azion Bundler] [Server] › ✔  success   Function running on port http://localhost:3000
+```
+
+----------------------------------------
+
+TITLE: Astro Site Deployment Steps
+DESCRIPTION: Imports necessary Astro components and outlines the deployment steps using the `<Steps>` component for a clear, guided process. It includes links to external resources for login and configuration.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/stormkit.mdx#_snippet_0
+
+LANGUAGE: astro
+CODE:
+```
+import ReadMore from '~/components/ReadMore.astro';
+import { Steps } from '@astrojs/starlight/components';
+
+<Steps>
+1. [Log in to Stormkit](https://app.stormkit.io/auth).
+
+2. Using the user interface, import your Astro project from one of the three supported Git providers (GitHub, GitLab, or Bitbucket).
+
+3. Navigate to the project's production environment in Stormkit or create a new environment if needed.
+
+4. Verify the build command in your [Stormkit configuration](https://stormkit.io/docs/deployments/configuration). By default, Stormkit CI will run `npm run build` but you can specify a custom build command on this page.
+
+5. Click the "Deploy Now" button to deploy your site.
+</Steps>
+
+<ReadMore>Read more in the [Stormkit Documentation](https://stormkit.io/docs).</ReadMore>
+```
+
+----------------------------------------
+
+TITLE: Configure Zerops Deployment for Astro SSR
+DESCRIPTION: This configuration file defines how Zerops builds and runs your Astro SSR site. It specifies the Node.js version, build commands, files to deploy, exposed ports, environment variables, and the start command. Examples are provided for npm, pnpm, and yarn package managers.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/zerops.mdx#_snippet_4
+
+LANGUAGE: yaml
+CODE:
+```
+zerops:
+  - setup: app
+    build:
+      base: nodejs@20
+      buildCommands:
+        - npm i
+        - npm run build
+      deployFiles:
+        - dist
+        - package.json
+        - node_modules
+    run:
+      base: nodejs@20
+      ports:
+        - port: 3000
+          httpSupport: true
+      envVariables:
+        PORT: 3000
+        HOST: 0.0.0.0
+      start: npm start
+```
+
+LANGUAGE: yaml
+CODE:
+```
+zerops:
+  - setup: app
+    build:
+      base: nodejs@20
+      buildCommands:
+        - pnpm i
+        - pnpm run build
+      deployFiles:
+        - dist
+        - package.json
+        - node_modules
+    run:
+      base: nodejs@20
+      ports:
+        - port: 3000
+          httpSupport: true
+      envVariables:
+        PORT: 3000
+        HOST: 0.0.0.0
+      start: pnpm start
+```
+
+LANGUAGE: yaml
+CODE:
+```
+zerops:
+  - setup: app
+    build:
+      base: nodejs@20
+      buildCommands:
+        - yarn
+        - yarn build
+      deployFiles:
+        - dist
+        - package.json
+        - node_modules
+    run:
+      base: nodejs@20
+      ports:
+        - port: 3000
+          httpSupport: true
+      envVariables:
+        PORT: 3000
+        HOST: 0.0.0.0
+      start: yarn start
+```
+
+----------------------------------------
+
+TITLE: Create Astro Project with Blog Template
+DESCRIPTION: This section demonstrates how to initialize a new Astro project using the official blog starter template. It provides commands for different package managers (npm, pnpm, yarn) to facilitate project setup.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/migrate-to-astro/from-hugo.mdx#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+npm create astro@latest -- --template blog
+```
+
+LANGUAGE: shell
+CODE:
+```
+pnpm create astro@latest --template blog
+```
+
+LANGUAGE: shell
+CODE:
+```
+yarn create astro --template blog
+```
+
+----------------------------------------
+
+TITLE: Configure @astrojs/cloudflare Adapter in astro.config.mjs
+DESCRIPTION: Configures the @astrojs/cloudflare adapter in the `astro.config.mjs` file. This example shows the basic setup for the adapter.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/cloudflare.mdx#_snippet_2
+
+LANGUAGE: js
+CODE:
+```
+import { defineConfig } from 'astro/config';
+import cloudflare from '@astrojs/cloudflare';
+
+export default defineConfig({
+  adapter: cloudflare(),
+});
+```
+
+----------------------------------------
+
+TITLE: Serve Static Astro Site with Deno
+DESCRIPTION: Starts a static file server using Deno to serve the built Astro site from the 'dist' directory.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/deno.mdx#_snippet_6
+
+LANGUAGE: bash
+CODE:
+```
+deno run -A jsr:@std/http/file-server dist
+```
+
+----------------------------------------
+
+TITLE: Add React Integration using Astro CLI
+DESCRIPTION: Installs the @astrojs/react integration automatically using the Astro CLI. This command simplifies the setup process by handling package installation and configuration prompts.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/react.mdx#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npx astro add react
+```
+
+LANGUAGE: sh
+CODE:
+```
+pnpm astro add react
+```
+
+LANGUAGE: sh
+CODE:
+```
+yarn astro add react
+```
+
+----------------------------------------
+
+TITLE: Add Single Astro Integration
+DESCRIPTION: Automates the setup of an Astro integration using the `astro add` command. This command handles configuration updates and dependency installation for supported integrations.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/index.mdx#_snippet_0
+
+LANGUAGE: npm
+CODE:
+```
+npx astro add react
+```
+
+LANGUAGE: pnpm
+CODE:
+```
+pnpm astro add react
+```
+
+LANGUAGE: yarn
+CODE:
+```
+yarn astro add react
+```
+
+----------------------------------------
+
+TITLE: Manual Installation of @astrojs/cloudflare
+DESCRIPTION: Manually installs the @astrojs/cloudflare adapter package using npm, pnpm, or yarn. This is an alternative to the `astro add` command.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/cloudflare.mdx#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+npm install @astrojs/cloudflare
+```
+
+LANGUAGE: sh
+CODE:
+```
+pnpm add @astrojs/cloudflare
+```
+
+LANGUAGE: sh
+CODE:
+```
+yarn add @astrojs/cloudflare
+```
+
+----------------------------------------
+
+TITLE: Creating a New Astro Project with Blog Template using pnpm
+DESCRIPTION: This command initializes a new Astro project using the pnpm package manager. It leverages the latest Astro CLI to create a project based on the 'blog' starter template, facilitating the migration of blog content from Gridsome. This provides an alternative to npm for project setup.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/migrate-to-astro/from-gridsome.mdx#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+pnpm create astro@latest --template blog
+```
+
+----------------------------------------
+
+TITLE: Zed Editor Astro Extension
+DESCRIPTION: The Astro extension for Zed, a high-performance code editor, offers syntax highlighting, code completion, and formatting for Astro projects. It can be installed directly from the IDE's Extensions tab.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/editor-setup.mdx#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+Install the Astro extension from the Zed IDE's Extensions tab.
+```
+
+----------------------------------------
+
+TITLE: Add Vercel Adapter with Astro CLI
+DESCRIPTION: Installs the `@astrojs/vercel` adapter and configures your Astro project for Vercel deployment using the `astro add` command. This command automates the setup process for npm, pnpm, and yarn package managers.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/vercel.mdx#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npx astro add vercel
+pnpm astro add vercel
+yarn astro add vercel
+```
+
+----------------------------------------
+
+TITLE: Manually Install @astrojs/markdoc
+DESCRIPTION: Manually install the `@astrojs/markdoc` package using your preferred package manager. After installation, you will need to apply the integration to your `astro.config.*` file.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/markdoc.mdx#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+npm install @astrojs/markdoc
+```
+
+LANGUAGE: sh
+CODE:
+```
+pnpm add @astrojs/markdoc
+```
+
+LANGUAGE: sh
+CODE:
+```
+yarn add @astrojs/markdoc
+```
+
+----------------------------------------
+
+TITLE: Initialize Sitecore JSS Astro Project
+DESCRIPTION: This command initializes a new Astro project with Sitecore's JavaScript SDK (JSS) integration. It is a command-line tool that guides you through the setup process for connecting your Astro frontend to a Sitecore backend.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/cms/sitecore.mdx#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+npx @astro-sitecore-jss/create-astro-sitecore-jss@latest
+```
+
+----------------------------------------
+
+TITLE: Installing Vercel CLI and Deploying with npm
+DESCRIPTION: These commands first install the Vercel CLI globally using npm, making the `vercel` command available system-wide. The second command then initiates the deployment process for the current Astro project via the Vercel CLI, detecting Astro settings automatically.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/vercel.mdx#_snippet_3
+
+LANGUAGE: shell
+CODE:
+```
+npm install -g vercel
+vercel
+```
+
+----------------------------------------
+
+TITLE: Install @astrojs/sitemap using pnpm
+DESCRIPTION: Installs the @astrojs/sitemap package using pnpm. This is the first step in manually adding the integration.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/sitemap.mdx#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+pnpm add @astrojs/sitemap
+```
+
+----------------------------------------
+
+TITLE: Installing Vercel CLI and Deploying with pnpm
+DESCRIPTION: These commands first install the Vercel CLI globally using pnpm, making the `vercel` command available system-wide. The second command then initiates the deployment process for the current Astro project via the Vercel CLI, detecting Astro settings automatically.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/vercel.mdx#_snippet_4
+
+LANGUAGE: shell
+CODE:
+```
+pnpm add -g vercel
+vercel
+```
+
+----------------------------------------
+
+TITLE: Install PostgreSQL Client
+DESCRIPTION: Installs the 'pg' package, a PostgreSQL client for Node.js, to enable direct TCP connections to the database.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/backend/prisma-postgres.mdx#_snippet_6
+
+LANGUAGE: bash
+CODE:
+```
+npm install pg
+```
+
+----------------------------------------
+
+TITLE: Manual Installation of @astrojs/mdx
+DESCRIPTION: Manually installs the @astrojs/mdx package using npm, pnpm, or yarn. This is an alternative to the `astro add` command.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/mdx.mdx#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+npm install @astrojs/mdx
+```
+
+LANGUAGE: sh
+CODE:
+```
+pnpm add @astrojs/mdx
+```
+
+LANGUAGE: sh
+CODE:
+```
+yarn add @astrojs/mdx
+```
+
+----------------------------------------
+
+TITLE: Creating a New Astro Project with Blog Template (PNPM)
+DESCRIPTION: This command initializes a new Astro project using the pnpm package manager. It utilizes the `create astro` command to scaffold a project based on the official 'blog' starter template, offering an efficient way to set up a blog-focused Astro site. The `--template blog` argument specifies the desired starter.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/migrate-to-astro/from-sveltekit.mdx#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+pnpm create astro@latest --template blog
+```
+
+----------------------------------------
+
+TITLE: Install Deno Astro Adapter
+DESCRIPTION: Installs the `@deno/astro-adapter` package for enabling on-demand rendering with Deno. Supports npm, pnpm, and yarn package managers.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/deno.mdx#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+npm install @deno/astro-adapter
+```
+
+LANGUAGE: shell
+CODE:
+```
+pnpm install @deno/astro-adapter
+```
+
+LANGUAGE: shell
+CODE:
+```
+yarn add @deno/astro-adapter
+```
+
+----------------------------------------
+
+TITLE: Run Development Server
+DESCRIPTION: Start Astro's development server to launch the Keystatic Admin UI. Access the UI at `http://127.0.0.1:4321/keystatic` to manage your content.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/cms/keystatic.mdx#_snippet_5
+
+LANGUAGE: shell
+CODE:
+```
+npm run dev
+
+```
+
+----------------------------------------
+
+TITLE: Install Adapter with Astro CLI
+DESCRIPTION: Use the Astro CLI to automatically install and configure an adapter for your project. This command handles adding the adapter to your project dependencies and updating your configuration file.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/index.mdx#_snippet_3
+
+LANGUAGE: shell
+CODE:
+```
+npx astro add netlify
+```
+
+----------------------------------------
+
+TITLE: Installing Vercel CLI and Deploying with Yarn
+DESCRIPTION: These commands first install the Vercel CLI globally using Yarn, making the `vercel` command available system-wide. The second command then initiates the deployment process for the current Astro project via the Vercel CLI, detecting Astro settings automatically.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/vercel.mdx#_snippet_5
+
+LANGUAGE: shell
+CODE:
+```
+yarn global add vercel
+vercel
+```
+
+----------------------------------------
+
+TITLE: Creating a New Astro Project with Blog Template (Yarn)
+DESCRIPTION: This command initializes a new Astro project using the yarn package manager. It employs the `create astro` command to scaffold a project based on the official 'blog' starter template, providing a streamlined method to set up a blog-focused Astro site. The `--template blog` argument specifies the desired starter.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/migrate-to-astro/from-sveltekit.mdx#_snippet_2
+
+LANGUAGE: shell
+CODE:
+```
+yarn create astro --template blog
+```
+
+----------------------------------------
+
+TITLE: sst.config.ts Configuration
+DESCRIPTION: Example configuration file for SST, demonstrating how to define AWS resources like a bucket and link them to an Astro application. This setup allows for defining infrastructure and connecting it to your frontend.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/sst.mdx#_snippet_0
+
+LANGUAGE: typescript
+CODE:
+```
+const bucket = new sst.aws.Bucket("MyBucket", {
+  access: "public",
+});
+new sst.aws.Astro("MyWeb", {
+  link: [bucket],
+});
+```
+
+----------------------------------------
+
+TITLE: Install graphql-request with Package Manager
+DESCRIPTION: Installs the graphql-request package, a minimal GraphQL client essential for fetching data from the Hashnode Public API into your Astro project. This snippet shows installation commands for npm, pnpm, and yarn.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/cms/hashnode.mdx#_snippet_0
+
+LANGUAGE: npm
+CODE:
+```
+npm install graphql-request
+```
+
+LANGUAGE: pnpm
+CODE:
+```
+pnpm add graphql-request
+```
+
+LANGUAGE: yarn
+CODE:
+```
+yarn add graphql-request
+```
+
+----------------------------------------
+
+TITLE: Add Paddle.js and Setup
+DESCRIPTION: Includes the Paddle.js library and sets up Paddle with a client-side token for processing payments. The Paddle.Setup function initializes the library with your unique token.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/ecommerce.mdx#_snippet_2
+
+LANGUAGE: javascript
+CODE:
+```
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+<script type="text/javascript">
+  Paddle.Setup({
+    token: '7d279f61a3499fed520f7cd8c08' // replace with a client-side token
+  });
+</script>
+```
+
+----------------------------------------
+
+TITLE: Creating a New Astro Blog Project with pnpm
+DESCRIPTION: This command initializes a new Astro project using the official blog starter template. It uses pnpm as the package manager. The `--template blog` argument specifies the desired starter.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/migrate-to-astro/from-jekyll.mdx#_snippet_1
+
+LANGUAGE: shell
+CODE:
+```
+pnpm create astro@latest --template blog
+```
+
+----------------------------------------
+
+TITLE: Starting Astro Development Server - yarn
+DESCRIPTION: This command starts the local development server for an Astro project using yarn. It provides a live preview of the site, updating automatically with code changes during development.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/develop-and-build.mdx#_snippet_2
+
+LANGUAGE: shell
+CODE:
+```
+yarn run dev
+```
+
+----------------------------------------
+
+TITLE: Fleek CLI Deployment Commands (Bash)
+DESCRIPTION: This snippet outlines the necessary Fleek CLI commands to deploy an Astro site. It includes installation, authentication, building the project, initializing the site configuration, and finally deploying the site to Fleek's decentralized network. Ensure Node.js is installed and your project is pushed to a Git repository before proceeding.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/fleek.mdx#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+# Install the Fleek CLI (requires Node.js >= 18.18.2)
+npm install -g @fleek-platform/cli
+```
+
+LANGUAGE: bash
+CODE:
+```
+# Log in to your Fleek account
+fleek login
+```
+
+LANGUAGE: bash
+CODE:
+```
+# Build your Astro project (generates static files in dist/)
+npm run build
+```
+
+LANGUAGE: bash
+CODE:
+```
+# Initialize your project for Fleek
+fleek sites init
+```
+
+LANGUAGE: bash
+CODE:
+```
+# Deploy your site to Fleek
+fleek sites deploy
+```
+
+----------------------------------------
+
+TITLE: Create Astro Project with Blog Template
+DESCRIPTION: Instructions for creating a new Astro project using the official blog starter template via npm, pnpm, or yarn.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/migrate-to-astro/from-eleventy.mdx#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+npm create astro@latest -- --template blog
+```
+
+LANGUAGE: shell
+CODE:
+```
+pnpm create astro@latest --template blog
+```
+
+LANGUAGE: shell
+CODE:
+```
+yarn create astro --template blog
+```
+
+----------------------------------------
+
+TITLE: Install Surge CLI
+DESCRIPTION: Installs the Surge Command Line Interface (CLI) globally using npm. This is a prerequisite for deploying sites to Surge.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/surge.mdx#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+npm install -g surge
+```
+
+----------------------------------------
+
+TITLE: Create New Astro Project using CLI
+DESCRIPTION: Demonstrates how to create a new Astro project using the official CLI. It includes commands for launching the interactive setup wizard or creating a project from a specific template.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/migrate-to-astro/from-nuxtjs.mdx#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+# launch the Astro CLI Wizard 
+npm create astro@latest
+
+# create a new project with an official example
+npm create astro@latest -- --template <example-name>
+```
+
+LANGUAGE: shell
+CODE:
+```
+# launch the Astro CLI Wizard 
+pnpm create astro@latest
+
+# create a new project with an official example
+pnpm create astro@latest --template <example-name>
+```
+
+LANGUAGE: shell
+CODE:
+```
+# launch the Astro CLI Wizard 
+yarn create astro@latest
+
+# create a new project with an official example
+yarn create astro@latest --template <example-name>
+```
+
+----------------------------------------
+
+TITLE: Installing Svelte and TypeScript Peer Dependencies (pnpm)
+DESCRIPTION: This command installs `svelte` and `typescript` using pnpm, which are required peer dependencies if not automatically installed by the package manager.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/svelte.mdx#_snippet_7
+
+LANGUAGE: sh
+CODE:
+```
+pnpm add svelte typescript
+```
+
+----------------------------------------
+
+TITLE: Manually Install @astrojs/solid-js
+DESCRIPTION: Installs the @astrojs/solid-js package manually. This is an alternative to the `astro add` command.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/solid-js.mdx#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+npm install @astrojs/solid-js
+```
+
+LANGUAGE: sh
+CODE:
+```
+pnpm add @astrojs/solid-js
+```
+
+LANGUAGE: sh
+CODE:
+```
+yarn add @astrojs/solid-js
+```
+
+----------------------------------------
+
+TITLE: Install @astrojs/sitemap using npm
+DESCRIPTION: Installs the @astrojs/sitemap package using npm. This is the first step in manually adding the integration.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/sitemap.mdx#_snippet_0
+
+LANGUAGE: sh
+CODE:
+```
+npm install @astrojs/sitemap
+```
+
+----------------------------------------
+
+TITLE: Enabling Local Development with Azion CLI (Bash)
+DESCRIPTION: This command starts a local development server, allowing you to preview and test your application before deployment. It initiates a build process and then provides a local URL (e.g., http://localhost:3000) to access the running application.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/azion.mdx#_snippet_4
+
+LANGUAGE: bash
+CODE:
+```
+azion dev
+```
+
+----------------------------------------
+
+TITLE: Basic JSON Endpoint
+DESCRIPTION: An example of a static endpoint that generates a JSON file. It exports a `GET` function which returns a `Response` object containing a JSON string.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/endpoints.mdx#_snippet_0
+
+LANGUAGE: typescript
+CODE:
+```
+// Outputs: /builtwith.json
+export function GET({ params, request }) {
+  return new Response(
+    JSON.stringify({
+      name: "Astro",
+      url: "https://astro.build/",
+    }),
+  );
+}
+```
+
+----------------------------------------
+
+TITLE: Astro Component Example
+DESCRIPTION: Demonstrates a basic Astro component with a script, HTML structure, and usage of props, directives, and other components. It shows how to import other Astro and UI framework components, use props, and apply directives like `server:defer` and `client:visible`.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/basics/astro-components.mdx#_snippet_2
+
+LANGUAGE: astro
+CODE:
+```
+---
+// Your component script here!
+import Banner from '../components/Banner.astro';
+import Avatar from '../components/Avatar.astro';
+import ReactPokemonComponent from '../components/ReactPokemonComponent.jsx';
+const myFavoritePokemon = [/* ... */];
+const { title } = Astro.props;
+---
+<!-- HTML comments supported! -->
+{/* JS comment syntax is also valid! */}
+
+<Banner />
+<h1>Hello, world!</h1>
+
+<!-- Use props and other variables from the component script: -->
+<p>{title}</p>
+
+<!-- Delay component rendering and provide fallback loading content: -->
+<Avatar server:defer>
+  <svg slot="fallback" class="generic-avatar" transition:name="avatar">...</svg>
+</Avatar>
+
+<!-- Include other UI framework components with a `client:` directive to hydrate: -->
+<ReactPokemonComponent client:visible />
+
+<!-- Mix HTML with JavaScript expressions, similar to JSX: -->
+<ul>
+  {myFavoritePokemon.map((data) => <li>{data.name}</li>)}
+</ul>
+
+<!-- Use a template directive to build class names from multiple strings or even objects! -->
+<p class:list={["add", "dynamic", { classNames: true }]} />
+
+```
+
+----------------------------------------
+
+TITLE: Install Tina CMS CLI
+DESCRIPTION: Installs the TinaCMS CLI using package managers like npm, pnpm, or yarn. Follow prompts for framework and asset storage during installation.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/cms/tina-cms.mdx#_snippet_0
+
+LANGUAGE: npm
+CODE:
+```
+npx @tinacms/cli@latest init
+```
+
+LANGUAGE: pnpm
+CODE:
+```
+pnpm dlx @tinacms/cli@latest init
+```
+
+LANGUAGE: yarn
+CODE:
+```
+yarn dlx @tinacms/cli@latest init
+```
+
+----------------------------------------
+
+TITLE: Install Flotiq TypeScript SDK
+DESCRIPTION: Installs the Flotiq TypeScript SDK, which provides a client for interacting with the Flotiq API. Supports installation via npm, pnpm, and yarn.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/cms/flotiq.mdx#_snippet_1
+
+LANGUAGE: sh
+CODE:
+```
+npm install flotiq-api-ts
+```
+
+LANGUAGE: sh
+CODE:
+```
+pnpm add flotiq-api-ts
+```
+
+LANGUAGE: sh
+CODE:
+```
+yarn add flotiq-api-ts
+```
+
+----------------------------------------
+
+TITLE: Install @astrojs/sitemap using yarn
+DESCRIPTION: Installs the @astrojs/sitemap package using yarn. This is the first step in manually adding the integration.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/integrations-guide/sitemap.mdx#_snippet_2
+
+LANGUAGE: sh
+CODE:
+```
+yarn add @astrojs/sitemap
+```
+
+----------------------------------------
+
+TITLE: Create Astro Project with Starlight Template
+DESCRIPTION: Demonstrates how to create a new Astro project using the official Starlight documentation theme starter template via different package managers (npm, pnpm, yarn). This command initializes a new Astro site pre-configured for documentation.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/migrate-to-astro/from-vuepress.mdx#_snippet_0
+
+LANGUAGE: shell
+CODE:
+```
+npm create astro@latest -- --template starlight
+```
+
+LANGUAGE: shell
+CODE:
+```
+pnpm create astro@latest --template starlight
+```
+
+LANGUAGE: shell
+CODE:
+```
+yarn create astro --template starlight
+```
+
+----------------------------------------
+
+TITLE: Install Zeabur Astro Adapter
+DESCRIPTION: Installs the `@zeabur/astro-adapter` package to your project's dependencies using npm. This is required for SSR deployments.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/guides/deploy/zeabur.mdx#_snippet_0
+
+LANGUAGE: bash
+CODE:
+```
+npm install @zeabur/astro-adapter
+```
+
+----------------------------------------
+
+TITLE: Format Files with Prettier
+DESCRIPTION: Runs Prettier to format all files in the current directory using npm, pnpm, or yarn.
+
+SOURCE: https://github.com/withastro/docs/blob/main/src/content/docs/en/editor-setup.mdx#_snippet_12
+
+LANGUAGE: shell
+CODE:
+```
+npx prettier . --write
+```
+
+LANGUAGE: shell
+CODE:
+```
+pnpm exec prettier . --write
+```
+
+LANGUAGE: shell
+CODE:
+```
+yarn exec prettier . --write
+```

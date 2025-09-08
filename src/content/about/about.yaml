@@ -1,0 +1,111 @@
+sections:
+  # Hero section
+  - component: HeroWithForm
+    enabled: true
+    props:
+      title: "About Gold Coast Roof Cleaning Pros"
+      subtitle: "Your Trusted Roof Cleaning Specialists Since 2015"
+      backgroundImage: "/images/red tiled roof getting washed by a professional cleaning contractor.jpg"
+      formTitle: "Get a FREE Quote"
+      formDescription: ""
+
+  # Company story
+  - component: TwoColumnSection
+    enabled: true
+    props:
+      heading: "Gold Coast's Leading Roof Cleaning Experts"
+      text: |
+        Gold Coast Roof Cleaning Pros was founded with a simple mission: to provide reliable, high-quality roof cleaning services to our local community. What started as a small operation has grown into Gold Coast's most trusted name in professional roof cleaning services.
+        
+        Over the years, we've built our reputation on **honesty, integrity, and exceptional results**. Our team of experienced professionals takes pride in every job, treating each customer's property with the same care we'd give our own. We specialize in cleaning all roof types including tiles, metal, and Colorbond, using safe soft washing techniques that protect your roof while removing moss, lichen, and years of built-up grime.
+        
+        We believe in doing things right the first time, using professional-grade equipment and proven techniques. Our commitment to customer satisfaction has earned us hundreds of five-star reviews and loyal customers who recommend us to their friends and family throughout Greater Gold Coast.
+      image: "/images/tile-roof-cleaning/Tile roof washing.jpg"
+      imageAlt: "Our professional roof cleaning team"
+      imagePosition: "left"
+
+  # Core values
+  - component: IconGrid
+    enabled: true
+    props:
+      heading: "Our Core Values"
+      subheading: "The principles that guide our roof cleaning services"
+      items:
+        - icon: "⭐"
+          title: "Quality First"
+          description: "We never compromise on the quality of our work. Every roof is cleaned to the highest standard."
+        
+        - icon: "❤️"
+          title: "Customer Focus"
+          description: "Your satisfaction is our top priority. We're not happy until you're completely satisfied with your clean roof."
+        
+        - icon: "🌿"
+          title: "Eco-Friendly"
+          description: "We use environmentally safe cleaning solutions that won't harm your garden, pets, or family."
+        
+        - icon: "🛡️"
+          title: "Fully Insured"
+          description: "Complete insurance coverage gives you peace of mind during every roof cleaning service."
+        
+        - icon: "⏰"
+          title: "Reliable Service"
+          description: "We show up on time, every time, and complete your roof cleaning as promised."
+        
+        - icon: "📈"
+          title: "Industry Leaders"
+          description: "We stay current with the latest roof cleaning techniques and invest in ongoing training."
+
+  # Why choose us
+  - component: WhyUs
+    enabled: true
+    props:
+      heading: "Why Choose Gold Coast Roof Cleaning Pros?"
+      reasons:
+        - title: "Roof Cleaning Specialists"
+          description: "With years of experience cleaning Gold Coast roofs, we understand the unique challenges of our local climate and roof types."
+        
+        - title: "Soft Washing Experts"
+          description: "We use professional-grade soft washing systems designed specifically for safe, effective roof cleaning without damage."
+        
+        - title: "All Roof Types"
+          description: "Expert cleaning for tile, metal, Colorbond, and all other roof types. We know the right approach for each material."
+        
+        - title: "Moss & Lichen Removal"
+          description: "Complete removal of moss, lichen, and algae that can damage your roof and shorten its lifespan."
+        
+        - title: "Warranty Protection"
+          description: "Our cleaning methods are approved by major roof manufacturers and won't void your warranty."
+        
+        - title: "Complete Service"
+          description: "From roof washing to gutter cleaning and solar panel maintenance, we provide comprehensive roof care."
+
+  # Service commitment
+  - component: TwoColumnSection
+    enabled: true
+    props:
+      heading: "Our Commitment to Your Roof"
+      text: |
+        At Gold Coast Roof Cleaning Pros, we're committed to more than just cleaning roofs – we're dedicated to protecting your investment and enhancing your property's value. Our comprehensive approach includes:
+        
+        **Professional Assessment:** Every job begins with a thorough inspection to identify the best cleaning approach for your specific roof type and condition.
+        
+        **Safe Techniques:** We use soft washing methods that clean effectively without damaging tiles, metal surfaces, or protective coatings.
+        
+        **Complete Service:** From initial quote to final cleanup, we handle every aspect of your roof cleaning professionally and efficiently.
+        
+        **Ongoing Support:** We provide maintenance recommendations and are always available to answer questions about roof care.
+      image: "/images/tile-roof-cleaning/Why tile roofs need professional cleaning.jpg"
+      imageAlt: "Professional roof cleaning process"
+      imagePosition: "right"
+
+  # Call to action
+  - component: CTABanner
+    enabled: true
+    props:
+      heading: "Ready to Restore Your Roof's Appearance?"
+      description: "Join hundreds of satisfied customers who trust Gold Coast Roof Cleaning Pros with their roof cleaning needs."
+      buttonText: "Get Your Free Quote"
+      buttonHref: "/contact"
+      secondaryButtonText: "View Our Services"
+      secondaryButtonHref: "/services"
+      variant: "gradient"

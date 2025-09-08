@@ -1,0 +1,43 @@
+---
+import { getEntry } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import Header from '@mcoster/astro-local-package/components/Header.astro';
+import Footer from '@mcoster/astro-local-package/components/Footer.astro';
+import FloatingCTA from '@mcoster/astro-local-package/components/FloatingCTA.astro';
+import { renderPageSections, TemplateContext } from '@/lib/page-renderer';
+import { siteConfig } from '@/config/site';
+
+// Load about page configuration
+const aboutData = await getEntry('about', 'about');
+const activeSections = aboutData.data.sections
+  .filter(section => section.enabled !== false);
+
+// Create context for template processing
+const context = new TemplateContext({
+  phone: siteConfig.phone,
+  formattedPhone: siteConfig.formattedPhone,
+  businessName: siteConfig.businessName,
+  email: siteConfig.email,
+  mainLocation: siteConfig.mainLocation,
+});
+
+// Render sections
+const renderedSections = renderPageSections(activeSections, context);
+
+const pageTitle = `About Us | Expert Roof Cleaners Adelaide Since 2015`;
+const pageDescription = `Adelaide's trusted roof cleaning specialists since 2015. Professional soft washing, fully insured, 100% satisfaction guarantee. Learn about our expert team & values.`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <Header />
+  
+  <main>
+    <!-- Dynamic About Page Sections -->
+    {renderedSections.map(({ Component, props }) => (
+      <Component {...props} />
+    ))}
+  </main>
+  
+  <Footer />
+  <FloatingCTA />
+</Layout>

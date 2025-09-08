@@ -1,0 +1,8 @@
+# Netlify Redirects Configuration
+# https://docs.netlify.com/routing/redirects/
+
+# Redirect main location (Adelaide) to homepage
+/locations/adelaide-sa-5000/ / 301
+/locations/adelaide-sa-5000 / 301
+
+# Add more redirects below as needed

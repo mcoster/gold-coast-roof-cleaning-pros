@@ -1,0 +1,58 @@
+---
+import { getEntry } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import Header from '@mcoster/astro-local-package/components/Header.astro';
+import Footer from '@mcoster/astro-local-package/components/Footer.astro';
+import FloatingCTA from '@mcoster/astro-local-package/components/FloatingCTA.astro';
+import { renderPageSections, TemplateContext } from '@/lib/page-renderer';
+import { siteConfig } from '@/config/site';
+
+// Load homepage configuration
+const homepageData = await getEntry('homepage', 'homepage');
+const activeSections = homepageData.data.sections
+  .filter(section => section.enabled !== false);
+
+// Create context for template processing
+const context = new TemplateContext({
+  phone: siteConfig.phone,
+  formattedPhone: siteConfig.formattedPhone,
+  businessName: siteConfig.businessName,
+  email: siteConfig.email,
+  mainLocation: siteConfig.mainLocation,
+});
+
+// Render sections
+const renderedSections = renderPageSections(activeSections, context);
+
+// SEO optimized metadata
+const seoTitle = `Roof Cleaning Adelaide | Professional Soft Washing Services`;
+const seoDescription = `Expert roof cleaning in Adelaide. Professional tile, metal & Colorbond roof washing, moss removal, gutter cleaning & solar panel cleaning. Free quotes ☎ ${siteConfig.phone}`;
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+>
+  <Header />
+  
+  <main>
+    <!-- Dynamic Homepage Sections -->
+    {renderedSections.map(({ Component, props }) => (
+      <Component {...props} />
+    ))}
+  </main>
+  
+  <!-- Floating CTA Button -->
+  <FloatingCTA 
+    showOnScroll={true}
+    position="bottom-right"
+  />
+  
+  <Footer />
+</Layout>
+
+<style>
+  .text-primary {
+    color: var(--color-primary);
+  }
+</style>

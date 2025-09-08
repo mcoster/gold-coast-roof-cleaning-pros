@@ -1,0 +1,106 @@
+sections:
+  # Hero section with quote form
+  - component: HeroWithForm
+    enabled: true
+    props:
+      title: "Professional Roof Cleaning Services in Gold Coast"
+      subtitle: "Expert roof washing, solar panel cleaning, moss removal, and gutter cleaning. Restore your roof's appearance and extend its lifespan with our professional soft washing services."
+      backgroundImage: "/images/roof-cleaning-hero.jpg"
+      formTitle: "Get a FREE Quote"
+      formDescription: ""
+
+  # About introduction
+  - component: TwoColumnSection
+    enabled: true
+    props:
+      heading: "Gold Coast's Trusted Roof Cleaning Experts"
+      text: |
+        At Gold Coast Roof Cleaning Pros, we understand that your roof does more than protect your home – it's one of your property's most valuable assets and a major factor in its overall street appeal. Over time, roofs across Gold Coast are exposed to harsh weather, dust, dirt, moss, mould, and lichen. Left untreated, these can cause serious damage, shorten your roof's lifespan, and leave your home looking tired and neglected.
+        
+        We are proud to be Gold Coast's trusted experts in professional roof washing, solar panel & gutter cleaning. Using the latest equipment and a combination of soft washing and roof treatment techniques, our team cleans roofs of all types – from tiled and metal to Colorbond – to their original condition. By carefully removing built-up grime, organic growth, and stubborn stains, we help protect your investment while dramatically improving your property's appearance.
+      image: "/images/roof-cleaning-service.jpg"
+      imageAlt: "Professional roof cleaning service in action"
+      imagePosition: "right"
+      link:
+        text: "Learn More About Us"
+        href: "/about"
+
+  # Services showcase
+  - component: ServicesGrid
+    enabled: true
+    props:
+      heading: "Our Roof Cleaning Services"
+      subtitle: "Complete roof care solutions for Gold Coast properties"
+      display: "all"
+      limit: 6
+      layout: "auto"
+      justifyContent: "center"
+      maxCardWidth: 350
+      showIcons: true
+      showViewAll: false
+
+  # Roof cleaning process
+  - component: IconGrid
+    enabled: true
+    props:
+      heading: "Our Roof Cleaning Process"
+      subtitle: "Simple, efficient, and thorough"
+      columns: 4
+      items:
+        - icon: "clipboard-check"
+          title: "Assessment & Quote"
+          description: "We start by checking out your roof, gutters and property access. Free inspection and detailed quote provided."
+        - icon: "calendar"
+          title: "Schedule Your Service"
+          description: "Upon acceptance of our quote, we'll schedule a time that is convenient for you."
+        - icon: "sparkles"
+          title: "Professional Cleaning"
+          description: "We use soft washing and controlled pressure cleaning techniques to thoroughly clean your roof, gutters & solar panels."
+        - icon: "check-circle"
+          title: "Final Cleanup"
+          description: "Once your roof clean-up is done, we make sure no mess is left behind."
+
+  # Why choose us
+  - component: IconGrid
+    enabled: true
+    props:
+      heading: "Why Choose Gold Coast Roof Cleaning Pros?"
+      subtitle: "With years of experience and hundreds of satisfied customers"
+      columns: 4
+      items:
+        - icon: "shield-check"
+          title: "Fully Insured"
+          description: "Complete insurance coverage for your peace of mind"
+        - icon: "award"
+          title: "Quality Guarantee"
+          description: "100% satisfaction guarantee on all services"
+        - icon: "users"
+          title: "Expert Team"
+          description: "Trained professionals with years of experience"
+        - icon: "clock"
+          title: "Fast Service"
+          description: "Quick response times and efficient service"
+
+  # Service areas
+  - component: ServiceAreas
+    enabled: true
+    props:
+      heading: "Servicing Gold Coast & Surrounding Suburbs"
+      subtitle: "Professional roof cleaning services within 33km of Southport"
+      showAllAreas: true
+      showCta: true
+      ctaText: "We service all of Greater Gold Coast and surrounding suburbs"
+      ctaButtonText: "Check Your Area"
+      ctaButtonLink: "/locations"
+
+  # Call to action
+  - component: CTABanner
+    enabled: true
+    props:
+      heading: "Ready to Restore Your Roof's Appearance?"
+      description: "Get your free, no-obligation quote today. We're here to help!"
+      buttonText: "Get Your Free Quote"
+      buttonHref: "#quote-form"
+      secondaryButtonText: "Call (07) 5555 0180"
+      secondaryButtonHref: "tel:0755550180"
+      variant: "gradient"

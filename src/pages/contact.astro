@@ -1,0 +1,43 @@
+---
+import { getEntry } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import Header from '@mcoster/astro-local-package/components/Header.astro';
+import Footer from '@mcoster/astro-local-package/components/Footer.astro';
+import FloatingCTA from '@mcoster/astro-local-package/components/FloatingCTA.astro';
+import { renderPageSections, TemplateContext } from '@/lib/page-renderer';
+import { siteConfig } from '@/config/site';
+
+// Load contact page configuration
+const contactData = await getEntry('contact', 'contact');
+const activeSections = contactData.data.sections
+  .filter(section => section.enabled !== false);
+
+// Create context for template processing
+const context = new TemplateContext({
+  phone: siteConfig.formattedPhone,
+  formattedPhone: siteConfig.phone,
+  businessName: siteConfig.businessName,
+  email: siteConfig.email,
+  mainLocation: siteConfig.mainLocation,
+});
+
+// Render sections
+const renderedSections = renderPageSections(activeSections, context);
+
+const pageTitle = 'Contact Us | Free Roof Cleaning Quote Adelaide';
+const pageDescription = `Contact Adelaide's expert roof cleaners for a free quote. Call ${siteConfig.phone} or complete our form. 24-hour response, professional service, competitive prices.`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <Header />
+  
+  <main>
+    <!-- Dynamic Contact Page Sections -->
+    {renderedSections.map(({ Component, props }) => (
+      <Component {...props} />
+    ))}
+  </main>
+  
+  <Footer />
+  <FloatingCTA />
+</Layout>

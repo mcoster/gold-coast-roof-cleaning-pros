@@ -1,0 +1,157 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@mcoster/astro-local-package/components/Header.astro';
+import Footer from '@mcoster/astro-local-package/components/Footer.astro';
+import HeroWithForm from '@mcoster/astro-local-package/components/HeroWithForm.astro';
+import ServicesGrid from '@mcoster/astro-local-package/components/ServicesGrid.astro';
+import CTABanner from '@mcoster/astro-local-package/components/CTABanner.astro';
+import SEO from '@mcoster/astro-local-package/components/SEO.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+// Get all services from content collection
+const services = await getCollection('services');
+const sortedServices = services.sort((a, b) => a.data.order - b.data.order);
+
+// Get homepage configuration to use the same hero image
+const homepageData = await getEntry('homepage', 'homepage');
+const homepageHeroSection = homepageData.data.sections.find(
+  section => section.component === 'HeroWithForm' && section.enabled !== false
+);
+const heroBackgroundImage = homepageHeroSection?.props?.backgroundImage || '/images/hero-bg.jpg';
+---
+
+<Layout 
+  title="Roof Cleaning Services Adelaide | Tile & Metal"
+  description="Professional roof cleaning services in Adelaide. Tile roof washing, metal & Colorbond cleaning, solar panel maintenance, gutter cleaning. Free quotes, fully insured."
+  noindex={false}
+>
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <HeroWithForm
+      title="Our Professional Services"
+      subtitle="Comprehensive solutions tailored to your specific needs"
+      backgroundImage={heroBackgroundImage}
+      formTitle="Get a FREE Quote"
+      formDescription=""
+    />
+    
+    <!-- Services Introduction -->
+    <section class="py-12 md:py-16 lg:py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Complete Service Solutions</h2>
+          <p class="text-lg text-gray-600">
+            We offer a full range of professional services to meet all your needs. 
+            From residential to commercial, regular maintenance to emergency response, 
+            we have the expertise and equipment to deliver exceptional results every time.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- All Services Grid -->
+    <ServicesGrid
+      heading="Explore Our Services"
+      subtitle="Click on any service to learn more about what we offer"
+      display="all"
+      showIcons={true}
+      layout="auto"
+      justifyContent="center"
+      minCardWidth={280}
+      maxCardWidth={380}
+    />
+    
+    <!-- Why Choose Our Services -->
+    <section class="py-12 md:py-16 lg:py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Why Choose Our Services?</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl">✓</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Licensed & Insured</h3>
+              <p class="text-gray-600">Fully licensed and insured for your complete peace of mind</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl">⭐</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Quality Guaranteed</h3>
+              <p class="text-gray-600">100% satisfaction guarantee on all our services</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl">💰</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Competitive Pricing</h3>
+              <p class="text-gray-600">Fair, transparent pricing with no hidden fees</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl">🏆</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Expert Team</h3>
+              <p class="text-gray-600">Experienced professionals dedicated to excellence</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Service Process -->
+    <section class="py-12 md:py-16 lg:py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Service Process</h2>
+          <div class="space-y-8">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Initial Consultation</h3>
+                <p class="text-gray-600">Contact us to discuss your needs and receive a free, no-obligation quote</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Schedule Service</h3>
+                <p class="text-gray-600">Choose a convenient time that works with your schedule</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Professional Service</h3>
+                <p class="text-gray-600">Our expert team arrives on time and completes the work to the highest standards</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Quality Assurance</h3>
+                <p class="text-gray-600">We ensure you're completely satisfied before considering the job complete</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <CTABanner
+      heading="Ready to Get Started?"
+      description="Contact us today for your free quote and experience the difference of working with true professionals."
+      buttonText="Get Your Free Quote"
+      buttonHref="#quote-form"
+      secondaryButtonText="Call Us Now"
+      secondaryButtonHref="tel:0872280262"
+      variant="gradient"
+    />
+  </main>
+  
+  <Footer />
+</Layout>

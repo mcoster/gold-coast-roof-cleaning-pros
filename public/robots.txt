@@ -1,0 +1,31 @@
+# Robots.txt for Adelaide Roof Cleaning Pros
+# https://www.adelaideroofcleaning.com.au
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.adelaideroofcleaning.com.au/sitemap-index.xml
+
+# Crawl delay (optional - uncomment if needed)
+# Crawl-delay: 1
+
+# Disallow specific paths (examples)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /tmp/
+
+# Common crawler directives
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block bad bots (optional - uncomment if needed)
+# User-agent: AhrefsBot
+# Disallow: /
+
+# User-agent: SemrushBot
+# Disallow: /

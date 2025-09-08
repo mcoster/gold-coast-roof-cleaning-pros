@@ -1,0 +1,68 @@
+# build output
+dist/
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# environment variables
+.env
+.env.local
+.env.production
+.env.*.local
+
+# macOS-specific files
+.DS_Store
+
+# editor directories and files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# temporary files
+*.tmp
+.cache/
+
+# Playwright MCP screenshots and data
+.playwright-mcp/
+
+# Claude AI working directory
+.claude/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS generated files
+Thumbs.db
+desktop.ini
+
+# Package manager lock files (optional - uncomment if needed)
+# pnpm-lock.yaml
+# yarn.lock
+
+# Business-specific images
+# Keep the structure but ignore actual business data:
+/business-images/pending/*
+/business-images/approved/*
+/business-images/stock/*
+!/business-images/pending/.gitkeep
+!/business-images/approved/.gitkeep
+!/business-images/stock/.gitkeep
+# Ignore generated files but keep README
+/business-images/*.json

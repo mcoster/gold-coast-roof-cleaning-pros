@@ -1,0 +1,87 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@mcoster/astro-local-package/components/Header.astro';
+import Footer from '@mcoster/astro-local-package/components/Footer.astro';
+import { siteConfig } from '@/config/site';
+---
+
+<Layout 
+  title="Thank You"
+  description="Thank you for contacting us. We'll be in touch soon!"
+>
+  <Header />
+  
+  <main>
+    <section class="py-24 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="mb-8">
+          <svg 
+            class="w-20 h-20 mx-auto text-green-500"
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="2" 
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Thank You!
+        </h1>
+        
+        <p class="text-xl text-gray-600 mb-8">
+          Your quote request has been received. We'll get back to you within 24 hours.
+        </p>
+        
+        <div class="bg-gray-50 rounded-lg p-6 mb-8">
+          <h2 class="text-lg font-semibold text-gray-900 mb-2">
+            What happens next?
+          </h2>
+          <ol class="text-left text-gray-600 space-y-2 max-w-md mx-auto">
+            <li>1. We'll review your request</li>
+            <li>2. A team member will contact you to discuss your needs</li>
+            <li>3. We'll provide a detailed quote for your project</li>
+          </ol>
+        </div>
+        
+        <div class="space-y-4">
+          <p class="text-gray-600">
+            Need immediate assistance? Call us now:
+          </p>
+          <a
+            href={`tel:${siteConfig.formattedPhone}`}
+            class="inline-flex items-center justify-center btn-cta-primary"
+          >
+            Call {siteConfig.phone}
+          </a>
+          
+          <div class="pt-4">
+            <a 
+              href="/"
+              class="text-primary hover:underline font-medium"
+            >
+              ← Return to Homepage
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<style>
+  .text-primary {
+    color: var(--color-primary);
+  }
+  
+  .hover\:underline:hover {
+    text-decoration: underline;
+  }
+</style>

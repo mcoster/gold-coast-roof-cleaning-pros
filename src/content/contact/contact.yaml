@@ -1,0 +1,99 @@
+sections:
+  # Hero section
+  - component: Hero
+    enabled: true
+    props:
+      title: "Get Your Free Roof Cleaning Quote"
+      subtitle: "Contact Gold Coast Roof Cleaning Pros today for professional roof cleaning, gutter cleaning, and solar panel maintenance services."
+      backgroundImage: "/images/grey metal roof getting washed by roof cleaner.jpg"
+      variant: "gradient"
+
+  # Spacer
+  - component: Spacer
+    enabled: true
+    props:
+      size: "md"
+
+  # Contact form
+  - component: QuoteForm
+    enabled: true
+    props:
+      formTitle: "Request Your Free Quote"
+      formDescription: "Fill out the form below for a free, no-obligation quote on our roof cleaning services."
+      submitText: "Get Free Quote"
+      formId: "contact-form"
+
+  # Spacer
+  - component: Spacer
+    enabled: true
+    props:
+      size: "md"
+
+  # Contact information
+  - component: ContactInfo
+    enabled: true
+    props:
+      heading: "Contact Gold Coast Roof Cleaning Pros"
+      phone: "{{formattedPhone}}"
+      email: "{{email}}"
+      address: "{{mainLocation}}"
+      showIcons: true
+
+  # Spacer
+  - component: Spacer
+    enabled: true
+    props:
+      size: "md"
+
+  # Business hours - automatically pulls from .env
+  - component: BusinessHours
+    enabled: true
+    props:
+      title: "Business Hours"
+      showStatus: true
+
+  # Spacer
+  - component: Spacer
+    enabled: true
+    props:
+      size: "md"
+
+  # Emergency service notice
+  - component: CTABanner
+    enabled: true
+    props:
+      heading: "Need Urgent Roof Cleaning?"
+      description: "For urgent roof cleaning needs or storm damage, please call us directly."
+      buttonText: "Call Now: {{formattedPhone}}"
+      buttonHref: "tel:{{phone}}"
+      variant: "solid"
+
+  # Spacer
+  - component: Spacer
+    enabled: true
+    props:
+      size: "lg"
+
+  # Service areas
+  - component: ServiceAreas
+    enabled: true
+    props:
+      heading: "Roof Cleaning Service Areas"
+      subtitle: "We provide professional roof cleaning services throughout Gold Coast and surrounding suburbs within 33km."
+      showAllAreas: true
+      showCta: true
+      ctaText: "We service all of Greater Gold Coast and surrounding suburbs"
+      ctaButtonText: "Check Your Area"
+      ctaButtonLink: "/locations"
+
+  # Final call to action
+  - component: CTABanner
+    enabled: true
+    props:
+      heading: "Ready to Restore Your Roof?"
+      description: "Get your free quote today and see why Gold Coast homeowners trust us with their roof cleaning needs."
+      buttonText: "Call (07) 5555 0180"
+      buttonHref: "tel:0755550180"
+      secondaryButtonText: "View Our Services"
+      secondaryButtonHref: "/services"
+      variant: "gradient"

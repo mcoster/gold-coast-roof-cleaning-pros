@@ -1,0 +1,134 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import Header from '@mcoster/astro-local-package/components/Header.astro';
+import Footer from '@mcoster/astro-local-package/components/Footer.astro';
+import FloatingCTA from '@mcoster/astro-local-package/components/FloatingCTA.astro';
+import { renderPageSections, ServiceContext } from '@/lib/page-renderer';
+import { siteConfig } from '@/config/site';
+
+// Generate static paths for all services
+export async function getStaticPaths() {
+  const services = await getCollection('services');
+  
+  return services.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+const { Content } = await service.render();
+
+// Load service sections configuration
+const serviceSectionsData = await getEntry('serviceSections', 'services-default');
+const activeSections = serviceSectionsData.data.sections
+  .filter(section => section.enabled !== false);
+
+// Create service context for template processing
+const context = new ServiceContext({
+  title: service.data.title,
+  description: service.data.description,
+  slug: service.slug,
+  image: service.data.image || '',
+  excerpt: service.data.excerpt || service.data.description,
+  phone: siteConfig.phone,
+  formattedPhone: siteConfig.formattedPhone,
+  businessName: siteConfig.businessName,
+  email: siteConfig.email,
+});
+
+// Render sections with context
+const renderedSections = renderPageSections(activeSections, context, {
+  content: Content // Pass markdown content for injection
+});
+
+// Generate Service schema for SEO
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": service.data.title,
+  "name": service.data.title,
+  "description": service.data.description || service.data.metaDescription,
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": siteConfig.businessName,
+    "telephone": siteConfig.phone,
+    "email": siteConfig.email,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": siteConfig.address.street,
+      "addressLocality": siteConfig.address.city,
+      "addressRegion": siteConfig.address.state,
+      "postalCode": siteConfig.address.postcode,
+      "addressCountry": siteConfig.address.country
+    }
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": siteConfig.mainLocation
+  },
+  "url": new URL(`/services/${service.slug}`, siteConfig.siteUrl).href,
+  "image": service.data.image ? new URL(service.data.image, siteConfig.siteUrl).href : undefined,
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "Contact for quote",
+      "priceCurrency": "AUD"
+    }
+  }
+};
+
+// FAQ Schema if FAQ section exists
+const faqSection = activeSections.find(s => s.component === 'ServiceFAQ');
+let faqSchema;
+if (faqSection && faqSection.props?.faqs) {
+  const processedFaqs = context.process(faqSection.props.faqs);
+  faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": processedFaqs.map((faq: any) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+}
+
+// SEO metadata
+const seoTitle = service.data.seo?.title || `${service.data.title} | ${siteConfig.businessName}`;
+const seoDescription = service.data.seo?.description || service.data.description;
+---
+
+<Layout 
+  title={seoTitle}
+  description={seoDescription}
+>
+  <!-- Service Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  
+  <!-- FAQ Schema (if applicable) -->
+  {faqSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  )}
+  
+  <Header />
+  
+  <main>
+    {renderedSections.map(({ Component, props, children }) => {
+      if (children) {
+        // Special handling for ServiceContent with markdown injection
+        return <Component {...props}><Content /></Component>;
+      }
+      return <Component {...props} />;
+    })}
+  </main>
+  
+  <FloatingCTA />
+  <Footer />
+</Layout>

@@ -1,0 +1,45 @@
+{
+  "name": "gold-coast-roof-cleaning-pros",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "images:analyze": "tsx scripts/analyze-images.ts",
+    "images:manifest": "tsx scripts/generate-manifest.ts",
+    "images:match": "tsx scripts/match-images.ts",
+    "images:fetch-stock": "tsx scripts/fetch-stock.ts",
+    "images:report": "npm run images:manifest",
+    "images:process": "npm run images:manifest && npm run images:analyze && npm run images:match",
+    "images:process-all": "npm run images:manifest && npm run images:analyze && npm run images:match && npm run images:fetch-stock"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.5.1",
+    "@mcoster/astro-local-package": "github:mcoster/astro-local-package#main",
+    "@tailwindcss/vite": "^4.1.12",
+    "astro": "^5.13.5",
+    "cnc-spintax": "^1.0.1",
+    "marked": "^16.2.1",
+    "pg": "^8.16.3",
+    "rehype-raw": "^7.0.0",
+    "remark": "^15.0.1",
+    "tailwindcss": "^4.1.12"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/mdast": "^4.0.4",
+    "@types/pg": "^8.15.5",
+    "chalk": "^5.3.0",
+    "dotenv": "^17.2.2",
+    "glob": "^10.3.10",
+    "js-yaml": "^4.1.0",
+    "ora": "^7.0.1",
+    "remark-parse": "^11.0.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.9.2",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.0.0"
+  }
+}

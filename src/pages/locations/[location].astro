@@ -1,0 +1,208 @@
+---
+import { getEntry } from 'astro:content';
+import { buildLocationPages, generateLocationSlug } from '@/lib/location-builder';
+import { LocationContext } from '@/lib/page-renderer';
+import { renderPageSections } from '@/lib/page-renderer';
+import type { LocationData } from '@/lib/spintax';
+import Layout from '@/layouts/Layout.astro';
+import Header from '@mcoster/astro-local-package/components/Header.astro';
+import Footer from '@mcoster/astro-local-package/components/Footer.astro';
+import FloatingCTA from '@mcoster/astro-local-package/components/FloatingCTA.astro';
+import { siteConfig } from '@/config/site';
+
+// Generate static paths for all suburbs within service radius
+export async function getStaticPaths() {
+  const locationPages = await buildLocationPages();
+  
+  return locationPages.map((page) => ({
+    params: { 
+      location: page.slug 
+    },
+    props: { 
+      locationPage: page 
+    },
+  }));
+}
+
+const { locationPage } = Astro.props;
+const { suburb, nearbySuburbs } = locationPage;
+
+// Load location sections configuration
+const locationSectionsData = await getEntry('locationSections', 'locations');
+const activeSections = locationSectionsData.data.sections
+  .filter(section => section.enabled !== false);
+
+// Prepare location data for context
+const locationData: LocationData = {
+  suburb,
+  nearbySuburbs,
+  businessName: siteConfig.businessName,
+  serviceRadius: parseInt(import.meta.env.SERVICE_RADIUS_KM || '50'),
+  slug: locationPage.slug,
+  phone: siteConfig.phone,
+  formattedPhone: siteConfig.formattedPhone,
+  email: siteConfig.email,
+  mainServiceCategory: import.meta.env.PUBLIC_MAIN_SERVICE_CATEGORY || 'Professional',
+};
+
+// Create location context with Spintax support
+const context = new LocationContext(locationData);
+
+// Render sections with context
+const renderedSections = renderPageSections(activeSections, context);
+
+// Generate unique SEO content
+const seoTitle = context.processString("Roof Cleaning {{suburb}} {{state}} | Expert Service");
+const seoDescription = context.processString("{Professional|Expert|Trusted} roof cleaning in {{suburb}} {{state}}. Tile, metal & Colorbond roof washing, gutter cleaning, solar panel cleaning. Free quotes, fully insured. Call {{phone}} for {fast|same-day|24hr} service.");
+
+// Generate LocalBusiness schema for this location
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": `${siteConfig.businessName} - ${suburb.name}`,
+  "description": seoDescription,
+  "url": new URL(locationPage.url, siteConfig.siteUrl).href,
+  "telephone": siteConfig.phone,
+  "email": siteConfig.email,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": suburb.name,
+    "addressRegion": suburb.state,
+    "postalCode": suburb.postcode,
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": suburb.latitude,
+    "longitude": suburb.longitude
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": suburb.latitude,
+      "longitude": suburb.longitude
+    },
+    "geoRadius": "10000" // 10km local service area
+  },
+  "serviceArea": {
+    "@type": "Place",
+    "name": `${suburb.name} and surrounding suburbs`
+  },
+  "openingHoursSpecification": [
+    { day: 'Monday', hours: siteConfig.hours.monday },
+    { day: 'Tuesday', hours: siteConfig.hours.tuesday },
+    { day: 'Wednesday', hours: siteConfig.hours.wednesday },
+    { day: 'Thursday', hours: siteConfig.hours.thursday },
+    { day: 'Friday', hours: siteConfig.hours.friday },
+    { day: 'Saturday', hours: siteConfig.hours.saturday },
+    { day: 'Sunday', hours: siteConfig.hours.sunday },
+  ].filter(({ hours }) => hours !== 'Closed').map(({ day, hours }) => {
+    const [opens, closes] = hours.split(' - ').map(t => t.trim());
+    return {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": day,
+      "opens": opens,
+      "closes": closes
+    };
+  })
+};
+
+// FAQ Schema (if FAQ section exists)
+const faqSection = activeSections.find(s => s.component === 'ServiceFAQ');
+let faqSchema;
+if (faqSection && faqSection.props?.faqs) {
+  const processedFaqs = context.process(faqSection.props.faqs);
+  faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": processedFaqs.map((faq: any) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+}
+
+// Breadcrumb Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": siteConfig.siteUrl
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Service Areas",
+      "item": new URL("/locations", siteConfig.siteUrl).href
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": `${suburb.name} ${suburb.state}`,
+      "item": new URL(locationPage.url, siteConfig.siteUrl).href
+    }
+  ]
+};
+
+// Process custom content for service areas section
+const serviceAreasSection = renderedSections.find(s => s.Component.name === 'ServiceAreasWithLocations');
+if (serviceAreasSection) {
+  // Get up to 9 nearby suburbs
+  const nearbySuburbsToShow = nearbySuburbs.slice(0, 9);
+  
+  // Create a simple grid of nearby suburbs
+  const nearbyLinksGrid = nearbySuburbsToShow.map((nearby: any) => 
+    `<a href="/locations/${generateLocationSlug(nearby)}/">${nearby.name}</a>`
+  ).join('');
+  
+  // Replace the custom content with simplified version
+  serviceAreasSection.props.customContent = `
+    <p class="text-lg text-gray-700 text-center">
+      We proudly service ${suburb.name} and surrounding areas, including:
+    </p>
+    <div class="location-grid">
+      ${nearbyLinksGrid}
+    </div>
+  `;
+}
+---
+
+<Layout 
+  title={seoTitle}
+  description={seoDescription}
+>
+  <!-- Schema Markup -->
+  <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  {faqSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  )}
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  
+  <Header />
+  
+  <main>
+    {renderedSections.map(({ Component, props }) => {
+      // Special handling for components that need HTML injection
+      if (props.customContent) {
+        return (
+          <Component {...props}>
+            <Fragment set:html={props.customContent} />
+          </Component>
+        );
+      }
+      return <Component {...props} />;
+    })}
+  </main>
+  
+  <FloatingCTA />
+  <Footer />
+</Layout>

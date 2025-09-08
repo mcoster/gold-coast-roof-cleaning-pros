@@ -1,0 +1,62 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@mcoster/astro-local-package/components/Header.astro';
+import Footer from '@mcoster/astro-local-package/components/Footer.astro';
+---
+
+<Layout 
+  title="Page Not Found"
+  description="The page you're looking for doesn't exist."
+  noindex={true}
+>
+  <Header />
+  
+  <main class="min-h-screen flex items-center justify-center py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-2xl mx-auto text-center">
+        <div class="mb-8">
+          <h1 class="text-6xl md:text-8xl font-bold text-gray-300 mb-4">404</h1>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Page Not Found</h2>
+          <p class="text-lg text-gray-600 mb-8">
+            Sorry, we couldn't find the page you're looking for. 
+            It might have been moved, deleted, or the URL might be incorrect.
+          </p>
+        </div>
+        
+        <div class="space-y-4">
+          <p class="text-gray-600">Here are some helpful links instead:</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/" class="btn-cta-primary">
+              Go to Homepage
+            </a>
+            <a href="/services" class="inline-flex items-center justify-center px-6 py-3 border-2 border-gray-300 rounded-md text-gray-700 hover:bg-gray-50 transition duration-200">
+              View Our Services
+            </a>
+            <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border-2 border-gray-300 rounded-md text-gray-700 hover:bg-gray-50 transition duration-200">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        
+        <div class="mt-12 p-6 bg-gray-50 rounded-lg">
+          <h3 class="text-lg font-semibold mb-2">Need Help?</h3>
+          <p class="text-gray-600 mb-4">
+            If you believe this is an error or need assistance, please don't hesitate to contact us.
+          </p>
+          <p class="text-gray-600">
+            Call us at <a href="tel:0872280262" class="text-blue-600 hover:underline font-semibold">(08) 7228 0262</a> or 
+            email <a href="mailto:info@adelaidepressure.com.au" class="text-blue-600 hover:underline font-semibold">info@adelaidepressure.com.au</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    min-height: calc(100vh - 200px); /* Adjust based on header/footer height */
+  }
+</style>

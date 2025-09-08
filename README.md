@@ -1,0 +1,70 @@
+# Gold Coast Roof Cleaning Pros
+
+Professional roof cleaning services website for Gold Coast and surrounding areas.
+
+## 🌐 Live Site
+[www.goldcoastroofcleaning.com.au](https://www.goldcoastroofcleaning.com.au)
+
+## 🚀 Technology Stack
+- **Framework:** Astro (Static Site Generation)
+- **Styling:** Tailwind CSS v4
+- **Language:** TypeScript
+- **Hosting:** Netlify
+
+## 📱 Services
+- Tile Roof Cleaning
+- Metal Roof Cleaning (including Colorbond)
+- Solar Panel Cleaning
+- Gutter Cleaning & Clearing
+- Moss & Lichen Removal
+- Soft Washing Services
+
+## 📍 Service Area
+Gold Coast and surrounding suburbs within 50km radius of Southport, QLD
+
+## 🛠️ Development
+
+### Prerequisites
+- Node.js 18+
+- npm
+
+### Local Development
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+NODE_OPTIONS="--max-old-space-size=8192" npm run dev
+```
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
+
+## 📝 Content Management
+- Service pages: `/src/content/services/`
+- Business configuration: `/config/business.yaml`
+- Images: `/public/images/`
+
+## 🔧 Environment Variables
+Required environment variables for production:
+- `GOOGLE_MAPS_API_KEY` - For interactive maps
+- Form notification endpoints (configured in Netlify)
+
+## 📞 Contact
+- **Phone:** (07) 5555 0180
+- **Email:** info@goldcoastroofcleaning.com.au
+- **Address:** 123 Marine Parade, Southport QLD 4215
+
+## 🔗 Social Media
+- [Facebook](https://www.facebook.com/GoldCoastRoofCleaningPros)
+
+---
+
+© 2025 Gold Coast Roof Cleaning Pros. All rights reserved.

@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Scan local source files */
+@source "./src/**/*.{astro,html,js,jsx,ts,tsx,md,mdx}";
+
+/* Scan package components */
+@source "./node_modules/@mcoster/astro-local-package/**/*.{astro,js,ts,jsx,tsx}";
