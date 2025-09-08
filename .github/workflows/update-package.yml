@@ -1,24 +1,27 @@
-name: Update NPM Package
+name: Check for Package Updates
 
 on:
-  repository_dispatch:
-    types: [package-update]
+  schedule:
+    # Run daily at 2 AM
+    - cron: '0 2 * * *'
   workflow_dispatch:
     inputs:
-      package:
-        description: 'Package to update (optional)'
+      auto_merge:
+        description: 'Auto-merge PR if tests pass'
         required: false
-        default: '@mcoster/astro-local-package'
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
 
 jobs:
-  update:
+  check-update:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -26,40 +29,44 @@ jobs:
           node-version: '20'
           registry-url: 'https://npm.pkg.github.com'
       
-      - name: Configure Git
+      - name: Check for updates
+        id: check
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
+          # Get current version
+          CURRENT=$(npm list @mcoster/astro-local-package --depth=0 2>/dev/null | grep @mcoster/astro-local-package | sed 's/.*@//' || echo "0.0.0")
+          echo "Current version: $CURRENT"
+          
+          # Check for latest version
+          npm outdated @mcoster/astro-local-package 2>/dev/null || true
+          
+          # Get latest version available
+          LATEST=$(npm view @mcoster/astro-local-package version 2>/dev/null || echo "$CURRENT")
+          echo "Latest version: $LATEST"
+          
+          # Compare versions
+          if [ "$CURRENT" != "$LATEST" ]; then
+            echo "Update available: $CURRENT -> $LATEST"
+            echo "has_update=true" >> $GITHUB_OUTPUT
+            echo "current_version=$CURRENT" >> $GITHUB_OUTPUT
+            echo "latest_version=$LATEST" >> $GITHUB_OUTPUT
+          else
+            echo "Package is up to date"
+            echo "has_update=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Update package
+        if: steps.check.outputs.has_update == 'true'
         run: |
-          # Determine which package to update
-          PACKAGE="${{ github.event.client_payload.package || github.event.inputs.package || '@mcoster/astro-local-package' }}"
-          VERSION="${{ github.event.client_payload.version || '' }}"
-          
-          echo "Updating package: $PACKAGE"
-          if [ -n "$VERSION" ]; then
-            echo "Target version: $VERSION"
-          fi
-          
-          # Update the package
-          npm update $PACKAGE
-          
-          # Check if there are changes
-          if git diff --quiet package-lock.json; then
-            echo "No changes detected in package-lock.json"
-            exit 0
-          fi
-          
-          # Get the new version
-          NEW_VERSION=$(npm list $PACKAGE --depth=0 | grep $PACKAGE | sed 's/.*@//')
-          echo "Updated to version: $NEW_VERSION"
+          npm update @mcoster/astro-local-package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Test build
+        if: steps.check.outputs.has_update == 'true'
         run: |
-          # Install dependencies
+          # Install all dependencies
           npm ci
           
           # Run build to ensure it works
@@ -67,24 +74,60 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Commit and push changes
+      - name: Create Pull Request
+        if: steps.check.outputs.has_update == 'true'
+        id: create-pr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: |
+            chore: update @mcoster/astro-local-package to ${{ steps.check.outputs.latest_version }}
+            
+            Updates @mcoster/astro-local-package from ${{ steps.check.outputs.current_version }} to ${{ steps.check.outputs.latest_version }}
+            
+            Co-Authored-By: GitHub Actions <actions@github.com>
+          branch: update-astro-package-${{ steps.check.outputs.latest_version }}
+          delete-branch: true
+          title: 'chore: update @mcoster/astro-local-package to ${{ steps.check.outputs.latest_version }}'
+          body: |
+            ## Package Update Available
+            
+            Updates `@mcoster/astro-local-package` from `${{ steps.check.outputs.current_version }}` to `${{ steps.check.outputs.latest_version }}`
+            
+            ### Automated Checks
+            - ✅ Package updated successfully
+            - ✅ Build tested and passing
+            - ✅ Ready to merge
+            
+            ### Auto-merge
+            This PR will be automatically merged if all checks pass and auto-merge is enabled.
+            
+            To manually merge, review the changes and click "Merge pull request".
+            
+            ---
+            *Generated automatically by [Package Update Workflow](https://github.com/${{ github.repository }}/actions/workflows/update-package.yml)*
+          labels: |
+            dependencies
+            automated
+      
+      - name: Enable auto-merge
+        if: steps.check.outputs.has_update == 'true' && steps.create-pr.outputs.pull-request-number && (github.event.inputs.auto_merge == 'true' || github.event_name == 'schedule')
         run: |
-          # Only commit if build succeeded
-          if [ -f dist/index.html ]; then
-            PACKAGE="${{ github.event.client_payload.package || github.event.inputs.package || '@mcoster/astro-local-package' }}"
-            VERSION="${{ github.event.client_payload.version || 'latest' }}"
-            
-            git add package-lock.json
-            git commit -m "chore: update $PACKAGE to $VERSION
-
-Automated package update triggered by upstream changes.
-
-Co-Authored-By: GitHub Actions <actions@github.com>"
-            
-            git push
-            
-            echo "✅ Successfully updated and pushed changes"
+          gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} --auto --merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Summary
+        if: always()
+        run: |
+          if [ "${{ steps.check.outputs.has_update }}" == "true" ]; then
+            echo "✅ Update found and PR created: #${{ steps.create-pr.outputs.pull-request-number }}"
+            echo "Version: ${{ steps.check.outputs.current_version }} → ${{ steps.check.outputs.latest_version }}"
+            if [ "${{ github.event.inputs.auto_merge }}" == "true" ] || [ "${{ github.event_name }}" == "schedule" ]; then
+              echo "🔄 Auto-merge enabled - PR will merge automatically when checks pass"
+            else
+              echo "⚠️ Auto-merge disabled - Manual review required"
+            fi
           else
-            echo "❌ Build failed, not committing changes"
-            exit 1
+            echo "✅ Package is already up to date"
           fi
