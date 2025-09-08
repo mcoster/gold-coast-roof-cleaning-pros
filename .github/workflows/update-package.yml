@@ -1,0 +1,90 @@
+name: Update NPM Package
+
+on:
+  repository_dispatch:
+    types: [package-update]
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package to update (optional)'
+        required: false
+        default: '@mcoster/astro-local-package'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://npm.pkg.github.com'
+      
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+      
+      - name: Update package
+        run: |
+          # Determine which package to update
+          PACKAGE="${{ github.event.client_payload.package || github.event.inputs.package || '@mcoster/astro-local-package' }}"
+          VERSION="${{ github.event.client_payload.version || '' }}"
+          
+          echo "Updating package: $PACKAGE"
+          if [ -n "$VERSION" ]; then
+            echo "Target version: $VERSION"
+          fi
+          
+          # Update the package
+          npm update $PACKAGE
+          
+          # Check if there are changes
+          if git diff --quiet package-lock.json; then
+            echo "No changes detected in package-lock.json"
+            exit 0
+          fi
+          
+          # Get the new version
+          NEW_VERSION=$(npm list $PACKAGE --depth=0 | grep $PACKAGE | sed 's/.*@//')
+          echo "Updated to version: $NEW_VERSION"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Test build
+        run: |
+          # Install dependencies
+          npm ci
+          
+          # Run build to ensure it works
+          npm run build
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Commit and push changes
+        run: |
+          # Only commit if build succeeded
+          if [ -f dist/index.html ]; then
+            PACKAGE="${{ github.event.client_payload.package || github.event.inputs.package || '@mcoster/astro-local-package' }}"
+            VERSION="${{ github.event.client_payload.version || 'latest' }}"
+            
+            git add package-lock.json
+            git commit -m "chore: update $PACKAGE to $VERSION
+
+Automated package update triggered by upstream changes.
+
+Co-Authored-By: GitHub Actions <actions@github.com>"
+            
+            git push
+            
+            echo "✅ Successfully updated and pushed changes"
+          else
+            echo "❌ Build failed, not committing changes"
+            exit 1
+          fi
