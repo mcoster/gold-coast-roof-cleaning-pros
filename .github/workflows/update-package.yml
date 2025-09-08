@@ -32,23 +32,23 @@ jobs:
       - name: Check for updates
         id: check
         run: |
-          # Get current version
-          CURRENT=$(npm list @mcoster/astro-local-package --depth=0 2>/dev/null | grep @mcoster/astro-local-package | sed 's/.*@//' || echo "0.0.0")
+          # Get current version from package.json
+          CURRENT=$(node -p "require('./package.json').dependencies['@mcoster/astro-local-package']" | sed 's/[\^~]//')
           echo "Current version: $CURRENT"
-          
-          # Check for latest version
-          npm outdated @mcoster/astro-local-package 2>/dev/null || true
           
           # Get latest version available
           LATEST=$(npm view @mcoster/astro-local-package version 2>/dev/null || echo "$CURRENT")
           echo "Latest version: $LATEST"
           
-          # Compare versions
-          if [ "$CURRENT" != "$LATEST" ]; then
-            echo "Update available: $CURRENT -> $LATEST"
+          # Compare versions - handle version prefixes
+          CURRENT_CLEAN=$(echo "$CURRENT" | sed 's/[\^~]//')
+          LATEST_CLEAN=$(echo "$LATEST" | sed 's/[\^~]//')
+          
+          if [ "$CURRENT_CLEAN" != "$LATEST_CLEAN" ]; then
+            echo "Update available: $CURRENT_CLEAN -> $LATEST_CLEAN"
             echo "has_update=true" >> $GITHUB_OUTPUT
-            echo "current_version=$CURRENT" >> $GITHUB_OUTPUT
-            echo "latest_version=$LATEST" >> $GITHUB_OUTPUT
+            echo "current_version=$CURRENT_CLEAN" >> $GITHUB_OUTPUT
+            echo "latest_version=$LATEST_CLEAN" >> $GITHUB_OUTPUT
           else
             echo "Package is up to date"
             echo "has_update=false" >> $GITHUB_OUTPUT
