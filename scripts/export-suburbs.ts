@@ -40,9 +40,9 @@ async function exportSuburbs() {
   });
 
   try {
-    // Get center location (Adelaide business address)
-    const centerLat = -34.8517; // Kilburn, SA
-    const centerLng = 138.5829;
+    // Get center location (Gold Coast business address)
+    const centerLat = -28.003; // Bundall, QLD
+    const centerLng = 153.410;
     const radiusKm = 50; // Export suburbs within 50km
 
     console.log(`📍 Center: ${centerLat}, ${centerLng}`);
@@ -76,7 +76,7 @@ async function exportSuburbs() {
       FROM suburbs s
       CROSS JOIN center c
       LEFT JOIN suburb_postcodes sp ON s.id = sp.suburb_id AND sp.is_primary = true
-      WHERE s.state = 'SA'
+      WHERE s.state = 'QLD'
         AND ST_DWithin(s.location, c.point, $3 * 1000)
       ORDER BY distance_km ASC
     `;

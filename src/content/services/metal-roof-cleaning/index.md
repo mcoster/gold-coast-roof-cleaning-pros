@@ -1,18 +1,18 @@
 ---
 title: "Metal & Colorbond Roof Cleaning"
-description: "Specialized metal and Colorbond roof cleaning in Gold Coast. Safe cleaning methods that won't damage protective coatings while removing rust stains, moss, and environmental buildup."
+description: "Specialized metal and Colorbond roof cleaning on the Gold Coast. Safe cleaning methods that won't damage protective coatings while removing rust stains, moss, and environmental buildup."
 excerpt: "Professional metal and Colorbond roof cleaning to restore appearance and prevent corrosion"
 image: "/images/grey metal roof recently cleaned by roof cleaning experts.jpg"
 order: 2
 featured: true
 seo:
   title: "Metal & Colorbond Roof Cleaning Gold Coast | Safe Professional Service"
-  description: "Expert metal & Colorbond roof cleaning in Gold Coast. Gentle techniques preserve coatings while removing rust, moss & dirt. Free quotes. Call (07) 5555 0180"
+  description: "Expert metal & Colorbond roof cleaning on the Gold Coast. Gentle techniques preserve coatings while removing rust, moss & dirt. Free quotes. Call (07) 5230 7381"
 ---
 
-## Expert Metal & Colorbond Roof Cleaning in Gold Coast
+## Expert Metal & Colorbond Roof Cleaning on the Gold Coast
 
-Metal and Colorbond roofs are popular throughout Gold Coast for their durability and longevity. However, without proper maintenance, they can develop rust stains, moss growth, and environmental buildup that compromises both their appearance and protective coatings.
+Metal and Colorbond roofs are popular throughout the Gold Coast for their durability and longevity. However, without proper maintenance, they can develop rust stains, moss growth, and environmental buildup that compromises both their appearance and protective coatings.
 
 [two-column image="/images/metal-roof-cleaning/Importance of professional metal roof cleaning.jpg" position="right"]
 ### The Importance of Professional Metal Roof Cleaning
@@ -31,7 +31,7 @@ Our specialized approach ensures your metal roof gets the care it deserves.
 
 [two-column image="/images/metal-roof-cleaning/Metal roof environmental buildup.jpg" position="left"]
 ### Environmental Buildup
-Gold Coast's climate creates unique challenges for metal roofs:
+The Gold Coast's climate creates unique challenges for metal roofs:
 - Red dust and dirt accumulation
 - Bird droppings and organic matter
 - Tree sap and pollen deposits

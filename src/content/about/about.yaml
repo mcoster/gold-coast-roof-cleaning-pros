@@ -4,7 +4,7 @@ sections:
     enabled: true
     props:
       title: "About Gold Coast Roof Cleaning Pros"
-      subtitle: "Your Trusted Roof Cleaning Specialists Since 2015"
+      subtitle: "Your Trusted Roof Cleaning Specialists"
       backgroundImage: "/images/red tiled roof getting washed by a professional cleaning contractor.jpg"
       formTitle: "Get a FREE Quote"
       formDescription: ""
@@ -13,7 +13,7 @@ sections:
   - component: TwoColumnSection
     enabled: true
     props:
-      heading: "Gold Coast's Leading Roof Cleaning Experts"
+      heading: "The Gold Coast's Leading Roof Cleaning Experts"
       text: |
         Gold Coast Roof Cleaning Pros was founded with a simple mission: to provide reliable, high-quality roof cleaning services to our local community. What started as a small operation has grown into Gold Coast's most trusted name in professional roof cleaning services.
         

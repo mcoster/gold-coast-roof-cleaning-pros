@@ -1,16 +1,16 @@
 ---
 title: "Gutter Cleaning & Maintenance"
-description: "Professional gutter cleaning in Gold Coast to prevent water damage and maintain proper drainage. Complete service including downpipe clearing, gutter guard installation, and minor repairs."
+description: "Professional gutter cleaning on the Gold Coast to prevent water damage and maintain proper drainage. Complete service including downpipe clearing, gutter guard installation, and minor repairs."
 excerpt: "Prevent water damage with professional gutter cleaning and maintenance services"
 image: "/images/gutters getting cleared and cleaned by professional roof cleaner.jpg"
 order: 4
 featured: true
 seo:
   title: "Gutter Cleaning Gold Coast | Prevent Water Damage & Overflow"
-  description: "Professional gutter cleaning in Gold Coast. Clear blockages, prevent water damage, and maintain drainage. Fully insured service. Call (07) 5555 0180"
+  description: "Professional gutter cleaning on the Gold Coast. Clear blockages, prevent water damage, and maintain drainage. Fully insured service. Call (07) 5230 7381"
 ---
 
-## Professional Gutter Cleaning Services in Gold Coast
+## Professional Gutter Cleaning Services on the Gold Coast
 
 Blocked gutters are one of the leading causes of preventable property damage in Gold Coast homes. Our professional gutter cleaning service ensures your gutters and downpipes function properly, protecting your home from water damage, foundation problems, and pest infestations.
 
@@ -28,7 +28,7 @@ Regular gutter maintenance is crucial for:
 Professional cleaning is the smart way to protect your investment.
 [/two-column]
 
-## Common Gutter Problems in Gold Coast
+## Common Gutter Problems on the Gold Coast
 
 [two-column image="/images/gutter-cleaning/Gutter debris accumulation.jpg" position="left"]
 ### Debris Accumulation

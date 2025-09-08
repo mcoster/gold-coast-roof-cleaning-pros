@@ -14,7 +14,7 @@ const shortcodeValues = getTemplateVariables();
 // https://astro.build/config
 export default defineConfig({
   // Site URL is required for sitemap generation
-  site: 'https://www.adelaideroofcleaning.com.au',
+  site: 'https://www.goldcoastroofcleaningpros.com.au',
   integrations: [sitemap()],
   markdown: {
     remarkPlugins: [

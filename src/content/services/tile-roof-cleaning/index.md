@@ -1,18 +1,18 @@
 ---
 title: "Tile Roof Cleaning"
-description: "Professional tile roof cleaning in Gold Coast using soft washing techniques to safely remove moss, lichen, and years of built-up grime without damaging your tiles."
+description: "Professional tile roof cleaning on the Gold Coast using soft washing techniques to safely remove moss, lichen, and years of built-up grime without damaging your tiles."
 excerpt: "Expert tile roof cleaning with soft washing to protect and restore your roof"
 image: "/images/red tiled roof getting washed by a professional cleaning contractor.jpg"
 order: 1
 featured: true
 seo:
   title: "Tile Roof Cleaning Gold Coast | Professional Soft Washing Services"
-  description: "Expert tile roof cleaning in Gold Coast. Safe soft washing removes moss, lichen & dirt without damage. Free quotes. Fully insured. Call (07) 5555 0180"
+  description: "Expert tile roof cleaning on the Gold Coast. Safe soft washing removes moss, lichen & dirt without damage. Free quotes. Fully insured. Call (07) 5230 7381"
 ---
 
-## Professional Tile Roof Cleaning in Gold Coast
+## Professional Tile Roof Cleaning on the Gold Coast
 
-Your tile roof is a significant investment that protects your home and adds to its curb appeal. Over time, Gold Coast's weather conditions cause moss, lichen, algae, and dirt to accumulate on tile roofs, not only making them look unsightly but potentially causing damage that can lead to costly repairs.
+Your tile roof is a significant investment that protects your home and adds to its curb appeal. Over time, the Gold Coast's weather conditions cause moss, lichen, algae, and dirt to accumulate on tile roofs, not only making them look unsightly but potentially causing damage that can lead to costly repairs.
 
 [two-column image="/images/tile-roof-cleaning/Why tile roofs need professional cleaning.jpg" position="right"]
 ### Why Tile Roofs Need Professional Cleaning

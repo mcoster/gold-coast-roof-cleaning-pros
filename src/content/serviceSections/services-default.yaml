@@ -35,7 +35,7 @@ sections:
     enabled: true
     props:
       heading: "{{serviceTitle}} Service Areas"
-      subtitle: "Professional roof cleaning services throughout Gold Coast and surrounding suburbs"
+      subtitle: "Professional roof cleaning services throughout the Gold Coast and surrounding suburbs"
       limit: 12
       showCta: false
 

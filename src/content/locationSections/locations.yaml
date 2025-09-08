@@ -106,6 +106,6 @@ sections:
       description: "{Restore your roof's appearance|Protect your investment|Extend your roof's lifespan} with professional roof cleaning. {Free quotes|No obligation quotes|Free assessments} available!"
       buttonText: "Get Your Free Roof Cleaning Quote"
       buttonHref: "#quote-form"
-      secondaryButtonText: "Call (07) 5555 0180"
-      secondaryButtonHref: "tel:0755550180"
+      secondaryButtonText: "Call (07) 5230 7381"
+      secondaryButtonHref: "tel:0752307381"
       variant: "gradient"

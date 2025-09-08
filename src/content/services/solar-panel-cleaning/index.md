@@ -1,18 +1,18 @@
 ---
 title: "Solar Panel Cleaning"
-description: "Professional solar panel cleaning in Gold Coast to maximize efficiency and energy output. Specialized equipment and techniques ensure safe, thorough cleaning that can increase power generation by up to 30%."
+description: "Professional solar panel cleaning on the Gold Coast to maximize efficiency and energy output. Specialized equipment and techniques ensure safe, thorough cleaning that can increase power generation by up to 30%."
 excerpt: "Maximize solar efficiency with professional panel cleaning - improve output by up to 30%"
 image: "/images/solar panels getting cleaned by professional roof cleaning experts.jpg"
 order: 3
 featured: true
 seo:
   title: "Solar Panel Cleaning Gold Coast | Increase Efficiency & Save Money"
-  description: "Professional solar panel cleaning in Gold Coast. Boost energy output by up to 30%. Safe, efficient service with specialized equipment. Call (07) 5555 0180"
+  description: "Professional solar panel cleaning on the Gold Coast. Boost energy output by up to 30%. Safe, efficient service with specialized equipment. Call (07) 5230 7381"
 ---
 
-## Professional Solar Panel Cleaning in Gold Coast
+## Professional Solar Panel Cleaning on the Gold Coast
 
-Your solar panels are a significant investment in sustainable energy and cost savings. However, Gold Coast's dusty environment, bird droppings, and environmental pollutants can reduce their efficiency by up to 30%. Regular professional cleaning ensures maximum energy production and return on your investment.
+Your solar panels are a significant investment in sustainable energy and cost savings. However, the Gold Coast's dusty environment, bird droppings, and environmental pollutants can reduce their efficiency by up to 30%. Regular professional cleaning ensures maximum energy production and return on your investment.
 
 [two-column image="/images/solar-panel-cleaning/dirty-solar-panels.jpg" position="right"]
 ### Why Solar Panels Need Professional Cleaning
@@ -31,7 +31,7 @@ Professional cleaning is essential for maintaining optimal performance.
 
 [two-column image="/images/solar-panel-cleaning/panel-contaminants.jpg" position="left"]
 ### Environmental Contaminants
-Gold Coast's environment presents unique challenges:
+The Gold Coast's environment presents unique challenges:
 - Dust and dirt accumulation
 - Pollen and tree sap
 - Bird droppings (particularly problematic)

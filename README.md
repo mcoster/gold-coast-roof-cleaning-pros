@@ -58,9 +58,9 @@ Required environment variables for production:
 - Form notification endpoints (configured in Netlify)
 
 ## 📞 Contact
-- **Phone:** (07) 5555 0180
-- **Email:** info@goldcoastroofcleaning.com.au
-- **Address:** 123 Marine Parade, Southport QLD 4215
+- **Phone:** (07) 5230 7381
+- **Email:** info@goldcoastroofcleaningpros.com.au
+- **Address:** Unit 3, 116/118 Bundall Rd, Bundall QLD 4217
 
 ## 🔗 Social Media
 - [Facebook](https://www.facebook.com/GoldCoastRoofCleaningPros)

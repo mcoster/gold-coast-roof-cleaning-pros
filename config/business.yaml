@@ -9,20 +9,20 @@ business:
   name: Gold Coast Roof Cleaning Pros
   logo: /images/Gold-Coast-Roof-Cleaning-Pros-logo.png
   tagline: Professional Roof Cleaning Services on the Gold Coast
-  phone: (07) 5555 0180
-  email: info@goldcoastroofcleaning.com.au
-  owner_name: Clifford Corbett
-  broad_region: Gold Coast Region
+  phone: (07) 5230 7381
+  email: info@goldcoastroofcleaningpros.com.au
+  owner_name: Robert Collett
+  broad_region: South-East Queensland
   form_location: Southport
 
 # =====================================================
 # BUSINESS ADDRESS
 # =====================================================
 address:
-  street: 123 Marine Parade
-  city: Southport
+  street: "Unit 3, 116/118 Bundall Rd"
+  city: Bundall
   state: QLD
-  postcode: "4215"
+  postcode: "4217"
   country: Australia
 
 # =====================================================
@@ -31,7 +31,7 @@ address:
 service:
   main_category: Roof Cleaning
   main_location: Gold Coast
-  radius_km: 33
+  radius_km: 22
   max_location_pages: 500
   # Optional: Override center location (defaults to business address)
   # center_lat: -34.8517
@@ -51,11 +51,11 @@ colors:
 # BUSINESS HOURS
 # =====================================================
 hours:
-  monday: 7:00 AM - 6:00 PM
-  tuesday: 7:00 AM - 6:00 PM
-  wednesday: 7:00 AM - 6:00 PM
-  thursday: 7:00 AM - 6:00 PM
-  friday: 7:00 AM - 6:00 PM
+  monday: 7:00 AM - 5:00 PM
+  tuesday: 7:00 AM - 5:00 PM
+  wednesday: 7:00 AM - 5:00 PM
+  thursday: 7:00 AM - 5:00 PM
+  friday: 7:00 AM - 5:00 PM
   saturday: 8:00 AM - 4:00 PM
   sunday: Closed
 
@@ -72,7 +72,7 @@ social:
 # WEBSITE & SEO
 # =====================================================
 website:
-  url: https://www.goldcoastroofcleaning.com.au
+  url: https://www.goldcoastroofcleaningpros.com.au
   google_maps_url: ""
   google_reviews_url: ""
 
@@ -81,7 +81,7 @@ website:
 # =====================================================
 google_maps:
   # Full iframe embed code from Google Maps (enclose in quotes)
-  embed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.012!2d153.398!3d-27.998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDU5JzUyLjgiUyAxNTPCsDIzJzUyLjgiRQ!5e0!3m2!1sen!2sau!4v1234567890!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+  embed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3522.68542798616!2d153.41067387635434!3d-28.00351913966338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91053e453469c5%3A0x2ef9ddeb66e232e!2s3%20116%2F118%20Bundall%20Rd%2C%20Bundall%20QLD%204217!5e0!3m2!1sen!2sau!4v1757336464086!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
   
 # =====================================================
 # FOOTER CONFIGURATION

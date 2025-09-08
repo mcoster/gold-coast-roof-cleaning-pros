@@ -3,7 +3,7 @@ sections:
   - component: HeroWithForm
     enabled: true
     props:
-      title: "Professional Roof Cleaning Services in Gold Coast"
+      title: "Professional Roof Cleaning Services on the Gold Coast"
       subtitle: "Expert roof washing, solar panel cleaning, moss removal, and gutter cleaning. Restore your roof's appearance and extend its lifespan with our professional soft washing services."
       backgroundImage: "/images/roof-cleaning-hero.jpg"
       formTitle: "Get a FREE Quote"
@@ -15,10 +15,10 @@ sections:
     props:
       heading: "Gold Coast's Trusted Roof Cleaning Experts"
       text: |
-        At Gold Coast Roof Cleaning Pros, we understand that your roof does more than protect your home – it's one of your property's most valuable assets and a major factor in its overall street appeal. Over time, roofs across Gold Coast are exposed to harsh weather, dust, dirt, moss, mould, and lichen. Left untreated, these can cause serious damage, shorten your roof's lifespan, and leave your home looking tired and neglected.
+        At Gold Coast Roof Cleaning Pros, we understand that your roof does more than protect your home – it's one of your property's most valuable assets and a major factor in its overall street appeal. Over time, roofs across the Gold Coast are exposed to harsh weather, dust, dirt, moss, mould, and lichen. Left untreated, these can cause serious damage, shorten your roof's lifespan, and leave your home looking tired and neglected.
         
-        We are proud to be Gold Coast's trusted experts in professional roof washing, solar panel & gutter cleaning. Using the latest equipment and a combination of soft washing and roof treatment techniques, our team cleans roofs of all types – from tiled and metal to Colorbond – to their original condition. By carefully removing built-up grime, organic growth, and stubborn stains, we help protect your investment while dramatically improving your property's appearance.
-      image: "/images/roof-cleaning-service.jpg"
+        We are proud to be the Gold Coast's trusted experts in professional roof washing, solar panel & gutter cleaning. Using the latest equipment and a combination of soft washing and roof treatment techniques, our team cleans roofs of all types – from tiled and metal to Colorbond – to their original condition. By carefully removing built-up grime, organic growth, and stubborn stains, we help protect your investment while dramatically improving your property's appearance.
+      image: "/images/metal-roof-cleaning/Colorbond metal roof specialised equipment and techniques.jpg"
       imageAlt: "Professional roof cleaning service in action"
       imagePosition: "right"
       link:
@@ -101,6 +101,6 @@ sections:
       description: "Get your free, no-obligation quote today. We're here to help!"
       buttonText: "Get Your Free Quote"
       buttonHref: "#quote-form"
-      secondaryButtonText: "Call (07) 5555 0180"
-      secondaryButtonHref: "tel:0755550180"
+      secondaryButtonText: "Call (07) 5230 7381"
+      secondaryButtonHref: "tel:0752307381"
       variant: "gradient"

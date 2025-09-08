@@ -79,7 +79,7 @@ sections:
     enabled: true
     props:
       heading: "Roof Cleaning Service Areas"
-      subtitle: "We provide professional roof cleaning services throughout Gold Coast and surrounding suburbs within 33km."
+      subtitle: "We provide professional roof cleaning services throughout the Gold Coast and surrounding suburbs within 33km."
       showAllAreas: true
       showCta: true
       ctaText: "We service all of Greater Gold Coast and surrounding suburbs"
@@ -92,8 +92,8 @@ sections:
     props:
       heading: "Ready to Restore Your Roof?"
       description: "Get your free quote today and see why Gold Coast homeowners trust us with their roof cleaning needs."
-      buttonText: "Call (07) 5555 0180"
-      buttonHref: "tel:0755550180"
+      buttonText: "Call (07) 5230 7381"
+      buttonHref: "tel:0752307381"
       secondaryButtonText: "View Our Services"
       secondaryButtonHref: "/services"
       variant: "gradient"

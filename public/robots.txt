@@ -1,12 +1,12 @@
-# Robots.txt for Adelaide Roof Cleaning Pros
-# https://www.adelaideroofcleaning.com.au
+# Robots.txt for Gold Coast Roof Cleaning Pros
+# https://www.goldcoastroofcleaningpros.com.au
 
 # Allow all crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.adelaideroofcleaning.com.au/sitemap-index.xml
+Sitemap: https://www.goldcoastroofcleaningpros.com.au/sitemap-index.xml
 
 # Crawl delay (optional - uncomment if needed)
 # Crawl-delay: 1
