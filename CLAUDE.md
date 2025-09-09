@@ -22,6 +22,13 @@ npx astro add <integration>  # Add new integrations (e.g., react, vue, svelte)
 npm install                   # Install dependencies
 ```
 
+### Suburb Data Commands
+```bash
+npm run suburbs:validate     # Check if suburbs.json matches config (runs on build)
+npm run suburbs:generate     # Force regenerate suburbs from database
+npm run suburbs:clean        # Remove suburbs.json for testing
+```
+
 ### Image Processing Commands
 ```bash
 npm run images:manifest  # Scan content for required images

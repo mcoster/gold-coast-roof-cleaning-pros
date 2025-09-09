@@ -1,11 +1,14 @@
 {
-  "generated": "2025-09-09T01:47:21.778Z",
+  "generated": "2025-09-09T02:32:43.538Z",
   "center": {
-    "lat": -28.003,
-    "lng": 153.41
+    "lat": -28.0023,
+    "lng": 153.4174
   },
   "radiusKm": 22,
-  "count": 107,
+  "count": 110,
+  "state": "QLD",
+  "configHash": "{\"lat\":-28.0023,\"lng\":153.4174,\"radius\":22}",
+  "source": "database",
   "suburbs": [
     {
       "id": 9088,
@@ -14,30 +17,8 @@
       "state": "QLD",
       "latitude": -28.0028308,
       "longitude": 153.4150992,
-      "distanceKm": 0.5,
-      "direction": "E",
-      "population": null
-    },
-    {
-      "id": 8890,
-      "name": "Bundall",
-      "postcode": "4217",
-      "state": "QLD",
-      "latitude": -28.0112822,
-      "longitude": 153.4080912,
-      "distanceKm": 0.94,
-      "direction": "S",
-      "population": 4895
-    },
-    {
-      "id": 9052,
-      "name": "Sorrento",
-      "postcode": "4217",
-      "state": "QLD",
-      "latitude": -28.0141091,
-      "longitude": 153.4074045,
-      "distanceKm": 1.26,
-      "direction": "S",
+      "distanceKm": 0.23,
+      "direction": "W",
       "population": null
     },
     {
@@ -47,8 +28,8 @@
       "state": "QLD",
       "latitude": -27.9989899,
       "longitude": 153.42398,
-      "distanceKm": 1.45,
-      "direction": "E",
+      "distanceKm": 0.74,
+      "direction": "NE",
       "population": null
     },
     {
@@ -58,31 +39,20 @@
       "state": "QLD",
       "latitude": -27.993189,
       "longitude": 153.4243536,
-      "distanceKm": 1.78,
+      "distanceKm": 1.22,
       "direction": "NE",
       "population": null
     },
     {
-      "id": 9051,
-      "name": "Rialto",
-      "postcode": "4218",
+      "id": 8890,
+      "name": "Bundall",
+      "postcode": "4217",
       "state": "QLD",
-      "latitude": -28.0202313,
-      "longitude": 153.4095696,
-      "distanceKm": 1.91,
-      "direction": "S",
-      "population": null
-    },
-    {
-      "id": 9048,
-      "name": "Rio Vista",
-      "postcode": "4218",
-      "state": "QLD",
-      "latitude": -28.0196978,
-      "longitude": 153.4167007,
-      "distanceKm": 1.96,
-      "direction": "S",
-      "population": null
+      "latitude": -28.0112822,
+      "longitude": 153.4080912,
+      "distanceKm": 1.35,
+      "direction": "SW",
+      "population": 4895
     },
     {
       "id": 9090,
@@ -91,8 +61,19 @@
       "state": "QLD",
       "latitude": -28.0101443,
       "longitude": 153.4306385,
-      "distanceKm": 2.18,
-      "direction": "E",
+      "distanceKm": 1.57,
+      "direction": "SE",
+      "population": null
+    },
+    {
+      "id": 9052,
+      "name": "Sorrento",
+      "postcode": "4217",
+      "state": "QLD",
+      "latitude": -28.0141091,
+      "longitude": 153.4074045,
+      "distanceKm": 1.64,
+      "direction": "SW",
       "population": null
     },
     {
@@ -102,19 +83,30 @@
       "state": "QLD",
       "latitude": -27.9866923,
       "longitude": 153.4226155,
-      "distanceKm": 2.19,
-      "direction": "NE",
+      "distanceKm": 1.8,
+      "direction": "N",
       "population": null
     },
     {
-      "id": 9087,
-      "name": "Keebra Park",
-      "postcode": "4215",
+      "id": 9048,
+      "name": "Rio Vista",
+      "postcode": "4218",
       "state": "QLD",
-      "latitude": -27.9841191,
-      "longitude": 153.398917,
-      "distanceKm": 2.36,
-      "direction": "NW",
+      "latitude": -28.0196978,
+      "longitude": 153.4167007,
+      "distanceKm": 1.93,
+      "direction": "S",
+      "population": null
+    },
+    {
+      "id": 9051,
+      "name": "Rialto",
+      "postcode": "4218",
+      "state": "QLD",
+      "latitude": -28.0202313,
+      "longitude": 153.4095696,
+      "distanceKm": 2.13,
+      "direction": "SW",
       "population": null
     },
     {
@@ -124,30 +116,8 @@
       "state": "QLD",
       "latitude": -28.0206684,
       "longitude": 153.4248162,
-      "distanceKm": 2.44,
-      "direction": "SE",
-      "population": null
-    },
-    {
-      "id": 8937,
-      "name": "Benowa",
-      "postcode": "4217",
-      "state": "QLD",
-      "latitude": -28.0041744,
-      "longitude": 153.3834595,
-      "distanceKm": 2.61,
-      "direction": "W",
-      "population": 9889
-    },
-    {
-      "id": 9086,
-      "name": "Benowa Waters",
-      "postcode": "4218",
-      "state": "QLD",
-      "latitude": -28.0209061,
-      "longitude": 153.3913645,
-      "distanceKm": 2.7,
-      "direction": "SW",
+      "distanceKm": 2.16,
+      "direction": "S",
       "population": null
     },
     {
@@ -157,7 +127,7 @@
       "state": "QLD",
       "latitude": -27.985726,
       "longitude": 153.4298038,
-      "distanceKm": 2.73,
+      "distanceKm": 2.21,
       "direction": "NE",
       "population": null
     },
@@ -168,7 +138,84 @@
       "state": "QLD",
       "latitude": -28.0235886,
       "longitude": 153.4293335,
-      "distanceKm": 2.97,
+      "distanceKm": 2.64,
+      "direction": "SE",
+      "population": null
+    },
+    {
+      "id": 9087,
+      "name": "Keebra Park",
+      "postcode": "4215",
+      "state": "QLD",
+      "latitude": -27.9841191,
+      "longitude": 153.398917,
+      "distanceKm": 2.71,
+      "direction": "NW",
+      "population": null
+    },
+    {
+      "id": 8934,
+      "name": "Main Beach",
+      "postcode": "4217",
+      "state": "QLD",
+      "latitude": -27.9787768,
+      "longitude": 153.4271228,
+      "distanceKm": 2.78,
+      "direction": "N",
+      "population": 3998
+    },
+    {
+      "id": 9050,
+      "name": "Miami Keys",
+      "postcode": "4218",
+      "state": "QLD",
+      "latitude": -28.0307149,
+      "longitude": 153.4208136,
+      "distanceKm": 3.17,
+      "direction": "S",
+      "population": null
+    },
+    {
+      "id": 9047,
+      "name": "Broadbeach Waters",
+      "postcode": "4218",
+      "state": "QLD",
+      "latitude": -28.0316652,
+      "longitude": 153.4122307,
+      "distanceKm": 3.29,
+      "direction": "S",
+      "population": 8164
+    },
+    {
+      "id": 9086,
+      "name": "Benowa Waters",
+      "postcode": "4218",
+      "state": "QLD",
+      "latitude": -28.0209061,
+      "longitude": 153.3913645,
+      "distanceKm": 3.29,
+      "direction": "SW",
+      "population": null
+    },
+    {
+      "id": 8937,
+      "name": "Benowa",
+      "postcode": "4217",
+      "state": "QLD",
+      "latitude": -28.0041744,
+      "longitude": 153.3834595,
+      "distanceKm": 3.34,
+      "direction": "W",
+      "population": 9889
+    },
+    {
+      "id": 9085,
+      "name": "Kurrawa",
+      "postcode": "4218",
+      "state": "QLD",
+      "latitude": -28.0292755,
+      "longitude": 153.4352993,
+      "distanceKm": 3.47,
       "direction": "SE",
       "population": null
     },
@@ -179,41 +226,30 @@
       "state": "QLD",
       "latitude": -28.0290425,
       "longitude": 153.3978264,
-      "distanceKm": 3.12,
+      "distanceKm": 3.53,
       "direction": "SW",
       "population": null
     },
     {
-      "id": 8934,
-      "name": "Main Beach",
-      "postcode": "4217",
+      "id": 10984,
+      "name": "Chinatown",
+      "postcode": "4215",
       "state": "QLD",
-      "latitude": -27.9787768,
-      "longitude": 153.4271228,
-      "distanceKm": 3.17,
-      "direction": "NE",
-      "population": 3998
+      "latitude": -27.9686607,
+      "longitude": 153.4133322,
+      "distanceKm": 3.75,
+      "direction": "N",
+      "population": null
     },
     {
-      "id": 9047,
-      "name": "Broadbeach Waters",
-      "postcode": "4218",
+      "id": 8933,
+      "name": "Southport",
+      "postcode": "4215",
       "state": "QLD",
-      "latitude": -28.0316652,
-      "longitude": 153.4122307,
-      "distanceKm": 3.18,
-      "direction": "S",
-      "population": 8164
-    },
-    {
-      "id": 9050,
-      "name": "Miami Keys",
-      "postcode": "4218",
-      "state": "QLD",
-      "latitude": -28.0307149,
-      "longitude": 153.4208136,
-      "distanceKm": 3.25,
-      "direction": "S",
+      "latitude": -27.9687807,
+      "longitude": 153.4066696,
+      "distanceKm": 3.86,
+      "direction": "N",
       "population": null
     },
     {
@@ -223,7 +259,7 @@
       "state": "QLD",
       "latitude": -28.031022,
       "longitude": 153.3936508,
-      "distanceKm": 3.5,
+      "distanceKm": 3.95,
       "direction": "SW",
       "population": null
     },
@@ -234,86 +270,9 @@
       "state": "QLD",
       "latitude": -27.9909266,
       "longitude": 153.3770522,
-      "distanceKm": 3.51,
+      "distanceKm": 4.16,
       "direction": "W",
       "population": 12415
-    },
-    {
-      "id": 8933,
-      "name": "Southport",
-      "postcode": "4215",
-      "state": "QLD",
-      "latitude": -27.9687807,
-      "longitude": 153.4066696,
-      "distanceKm": 3.81,
-      "direction": "N",
-      "population": null
-    },
-    {
-      "id": 10984,
-      "name": "Chinatown",
-      "postcode": "4215",
-      "state": "QLD",
-      "latitude": -27.9686607,
-      "longitude": 153.4133322,
-      "distanceKm": 3.82,
-      "direction": "N",
-      "population": null
-    },
-    {
-      "id": 9085,
-      "name": "Kurrawa",
-      "postcode": "4218",
-      "state": "QLD",
-      "latitude": -28.0292755,
-      "longitude": 153.4352993,
-      "distanceKm": 3.83,
-      "direction": "SE",
-      "population": null
-    },
-    {
-      "id": 7718,
-      "name": "Carrara",
-      "postcode": "4211",
-      "state": "QLD",
-      "latitude": -28.02077,
-      "longitude": 153.3683962,
-      "distanceKm": 4.54,
-      "direction": "SW",
-      "population": 13147
-    },
-    {
-      "id": 10901,
-      "name": "Lake Intrepid",
-      "postcode": "4218",
-      "state": "QLD",
-      "latitude": -28.0432025,
-      "longitude": 153.4198934,
-      "distanceKm": 4.56,
-      "direction": "S",
-      "population": null
-    },
-    {
-      "id": 8935,
-      "name": "Molendinar",
-      "postcode": "4214",
-      "state": "QLD",
-      "latitude": -27.9745778,
-      "longitude": 153.3754344,
-      "distanceKm": 4.63,
-      "direction": "NW",
-      "population": 6450
-    },
-    {
-      "id": 8941,
-      "name": "Clear Island Waters",
-      "postcode": "4226",
-      "state": "QLD",
-      "latitude": -28.0437627,
-      "longitude": 153.3985228,
-      "distanceKm": 4.66,
-      "direction": "S",
-      "population": 4395
     },
     {
       "id": 9070,
@@ -322,9 +281,31 @@
       "state": "QLD",
       "latitude": -27.9638337,
       "longitude": 153.4275416,
-      "distanceKm": 4.67,
-      "direction": "NE",
+      "distanceKm": 4.38,
+      "direction": "N",
       "population": null
+    },
+    {
+      "id": 10901,
+      "name": "Lake Intrepid",
+      "postcode": "4218",
+      "state": "QLD",
+      "latitude": -28.0432025,
+      "longitude": 153.4198934,
+      "distanceKm": 4.54,
+      "direction": "S",
+      "population": null
+    },
+    {
+      "id": 8941,
+      "name": "Clear Island Waters",
+      "postcode": "4226",
+      "state": "QLD",
+      "latitude": -28.0437627,
+      "longitude": 153.3985228,
+      "distanceKm": 4.96,
+      "direction": "SW",
+      "population": 4395
     },
     {
       "id": 9082,
@@ -333,29 +314,7 @@
       "state": "QLD",
       "latitude": -27.9602163,
       "longitude": 153.4002452,
-      "distanceKm": 4.84,
-      "direction": "N",
-      "population": null
-    },
-    {
-      "id": 9084,
-      "name": "Parklands",
-      "postcode": "4560",
-      "state": "QLD",
-      "latitude": -27.9628697,
-      "longitude": 153.3854823,
-      "distanceKm": 5.06,
-      "direction": "NW",
-      "population": null
-    },
-    {
-      "id": 9083,
-      "name": "Chirn Park",
-      "postcode": "4215",
-      "state": "QLD",
-      "latitude": -27.9561413,
-      "longitude": 153.401082,
-      "distanceKm": 5.27,
+      "distanceKm": 4.96,
       "direction": "N",
       "population": null
     },
@@ -366,8 +325,52 @@
       "state": "QLD",
       "latitude": -28.0447106,
       "longitude": 153.4373204,
-      "distanceKm": 5.35,
+      "distanceKm": 5.09,
       "direction": "SE",
+      "population": null
+    },
+    {
+      "id": 8935,
+      "name": "Molendinar",
+      "postcode": "4214",
+      "state": "QLD",
+      "latitude": -27.9745778,
+      "longitude": 153.3754344,
+      "distanceKm": 5.15,
+      "direction": "NW",
+      "population": 6450
+    },
+    {
+      "id": 7718,
+      "name": "Carrara",
+      "postcode": "4211",
+      "state": "QLD",
+      "latitude": -28.02077,
+      "longitude": 153.3683962,
+      "distanceKm": 5.24,
+      "direction": "W",
+      "population": 13147
+    },
+    {
+      "id": 9083,
+      "name": "Chirn Park",
+      "postcode": "4215",
+      "state": "QLD",
+      "latitude": -27.9561413,
+      "longitude": 153.401082,
+      "distanceKm": 5.36,
+      "direction": "N",
+      "population": null
+    },
+    {
+      "id": 9084,
+      "name": "Parklands",
+      "postcode": "4560",
+      "state": "QLD",
+      "latitude": -27.9628697,
+      "longitude": 153.3854823,
+      "distanceKm": 5.38,
+      "direction": "NW",
       "population": null
     },
     {
@@ -388,20 +391,20 @@
       "state": "QLD",
       "latitude": -28.0589399,
       "longitude": 153.4008224,
-      "distanceKm": 6.26,
+      "distanceKm": 6.49,
       "direction": "S",
       "population": null
     },
     {
-      "id": 8940,
-      "name": "Merrimac",
-      "postcode": "4226",
+      "id": 9072,
+      "name": "Nobby Beach",
+      "postcode": "4218",
       "state": "QLD",
-      "latitude": -28.0524361,
-      "longitude": 153.3743615,
-      "distanceKm": 6.5,
-      "direction": "SW",
-      "population": 7210
+      "latitude": -28.0591422,
+      "longitude": 153.4392132,
+      "distanceKm": 6.65,
+      "direction": "S",
+      "population": null
     },
     {
       "id": 10892,
@@ -410,7 +413,7 @@
       "state": "QLD",
       "latitude": -28.0635668,
       "longitude": 153.4131216,
-      "distanceKm": 6.72,
+      "distanceKm": 6.8,
       "direction": "S",
       "population": null
     },
@@ -421,31 +424,20 @@
       "state": "QLD",
       "latitude": -27.9427642,
       "longitude": 153.3987125,
-      "distanceKm": 6.77,
+      "distanceKm": 6.85,
       "direction": "N",
       "population": 18643
     },
     {
-      "id": 9072,
-      "name": "Nobby Beach",
-      "postcode": "4218",
+      "id": 8940,
+      "name": "Merrimac",
+      "postcode": "4226",
       "state": "QLD",
-      "latitude": -28.0591422,
-      "longitude": 153.4392132,
-      "distanceKm": 6.85,
-      "direction": "SE",
-      "population": null
-    },
-    {
-      "id": 7717,
-      "name": "Nerang",
-      "postcode": "4211",
-      "state": "QLD",
-      "latitude": -27.9896566,
-      "longitude": 153.3365942,
-      "distanceKm": 7.37,
-      "direction": "W",
-      "population": null
+      "latitude": -28.0524361,
+      "longitude": 153.3743615,
+      "distanceKm": 6.98,
+      "direction": "SW",
+      "population": 7210
     },
     {
       "id": 7755,
@@ -454,19 +446,19 @@
       "state": "QLD",
       "latitude": -28.0680039,
       "longitude": 153.4377915,
-      "distanceKm": 7.7,
-      "direction": "SE",
+      "distanceKm": 7.55,
+      "direction": "S",
       "population": 7445
     },
     {
-      "id": 8939,
-      "name": "Worongary",
-      "postcode": "4213",
+      "id": 7717,
+      "name": "Nerang",
+      "postcode": "4211",
       "state": "QLD",
-      "latitude": -28.0360735,
-      "longitude": 153.339128,
-      "distanceKm": 7.87,
-      "direction": "SW",
+      "latitude": -27.9896566,
+      "longitude": 153.3365942,
+      "distanceKm": 8.07,
+      "direction": "W",
       "population": null
     },
     {
@@ -476,7 +468,7 @@
       "state": "QLD",
       "latitude": -28.0763253,
       "longitude": 153.401978,
-      "distanceKm": 8.16,
+      "distanceKm": 8.34,
       "direction": "S",
       "population": null
     },
@@ -487,53 +479,20 @@
       "state": "QLD",
       "latitude": -28.0751722,
       "longitude": 153.3913156,
-      "distanceKm": 8.21,
+      "distanceKm": 8.47,
       "direction": "S",
       "population": null
     },
     {
-      "id": 8938,
-      "name": "Highland Park",
-      "postcode": "4211",
+      "id": 9054,
+      "name": "North Burleigh",
+      "postcode": "4220",
       "state": "QLD",
-      "latitude": -28.011487,
-      "longitude": 153.3249552,
-      "distanceKm": 8.42,
-      "direction": "W",
-      "population": 8433
-    },
-    {
-      "id": 8931,
-      "name": "Gaven",
-      "postcode": "4211",
-      "state": "QLD",
-      "latitude": -27.9601034,
-      "longitude": 153.3387257,
-      "distanceKm": 8.47,
-      "direction": "NW",
-      "population": null
-    },
-    {
-      "id": 7773,
-      "name": "Varsity Lakes",
-      "postcode": "4227",
-      "state": "QLD",
-      "latitude": -28.0792975,
-      "longitude": 153.4143928,
-      "distanceKm": 8.47,
+      "latitude": -28.0744364,
+      "longitude": 153.4466021,
+      "distanceKm": 8.49,
       "direction": "S",
-      "population": 16639
-    },
-    {
-      "id": 8416,
-      "name": "Biggera Waters",
-      "postcode": "4216",
-      "state": "QLD",
-      "latitude": -27.9271595,
-      "longitude": 153.3983923,
-      "distanceKm": 8.48,
-      "direction": "N",
-      "population": 9973
+      "population": null
     },
     {
       "id": 9079,
@@ -542,7 +501,51 @@
       "state": "QLD",
       "latitude": -27.9259723,
       "longitude": 153.4061487,
+      "distanceKm": 8.53,
+      "direction": "N",
+      "population": null
+    },
+    {
+      "id": 8416,
+      "name": "Biggera Waters",
+      "postcode": "4216",
+      "state": "QLD",
+      "latitude": -27.9271595,
+      "longitude": 153.3983923,
+      "distanceKm": 8.53,
+      "direction": "N",
+      "population": 9973
+    },
+    {
+      "id": 7773,
+      "name": "Varsity Lakes",
+      "postcode": "4227",
+      "state": "QLD",
+      "latitude": -28.0792975,
+      "longitude": 153.4143928,
       "distanceKm": 8.54,
+      "direction": "S",
+      "population": 16639
+    },
+    {
+      "id": 8939,
+      "name": "Worongary",
+      "postcode": "4213",
+      "state": "QLD",
+      "latitude": -28.0360735,
+      "longitude": 153.339128,
+      "distanceKm": 8.56,
+      "direction": "SW",
+      "population": null
+    },
+    {
+      "id": 9080,
+      "name": "Anglers Paradise",
+      "postcode": "4216",
+      "state": "QLD",
+      "latitude": -27.9249959,
+      "longitude": 153.4031553,
+      "distanceKm": 8.68,
       "direction": "N",
       "population": null
     },
@@ -553,30 +556,19 @@
       "state": "QLD",
       "latitude": -27.9360655,
       "longitude": 153.3653514,
-      "distanceKm": 8.62,
+      "distanceKm": 8.95,
       "direction": "NW",
       "population": 11171
     },
     {
-      "id": 9080,
-      "name": "Anglers Paradise",
-      "postcode": "4216",
+      "id": 8931,
+      "name": "Gaven",
+      "postcode": "4211",
       "state": "QLD",
-      "latitude": -27.9249959,
-      "longitude": 153.4031553,
-      "distanceKm": 8.67,
-      "direction": "N",
-      "population": null
-    },
-    {
-      "id": 9054,
-      "name": "North Burleigh",
-      "postcode": "4220",
-      "state": "QLD",
-      "latitude": -28.0744364,
-      "longitude": 153.4466021,
-      "distanceKm": 8.7,
-      "direction": "SE",
+      "latitude": -27.9601034,
+      "longitude": 153.3387257,
+      "distanceKm": 9.04,
+      "direction": "NW",
       "population": null
     },
     {
@@ -586,9 +578,20 @@
       "state": "QLD",
       "latitude": -28.0812004,
       "longitude": 153.3932102,
-      "distanceKm": 8.82,
+      "distanceKm": 9.06,
       "direction": "S",
       "population": null
+    },
+    {
+      "id": 8938,
+      "name": "Highland Park",
+      "postcode": "4211",
+      "state": "QLD",
+      "latitude": -28.011487,
+      "longitude": 153.3249552,
+      "distanceKm": 9.15,
+      "direction": "W",
+      "population": 8433
     },
     {
       "id": 10890,
@@ -597,19 +600,8 @@
       "state": "QLD",
       "latitude": -28.088625,
       "longitude": 153.3949352,
-      "distanceKm": 9.6,
+      "distanceKm": 9.82,
       "direction": "S",
-      "population": null
-    },
-    {
-      "id": 8103,
-      "name": "Mudgeeraba",
-      "postcode": "4213",
-      "state": "QLD",
-      "latitude": -28.0804969,
-      "longitude": 153.3576679,
-      "distanceKm": 10.01,
-      "direction": "SW",
       "population": null
     },
     {
@@ -630,29 +622,18 @@
       "state": "QLD",
       "latitude": -28.0931614,
       "longitude": 153.4358054,
-      "distanceKm": 10.31,
+      "distanceKm": 10.23,
       "direction": "S",
       "population": 14413
     },
     {
-      "id": 9063,
-      "name": "Gilston",
-      "postcode": "4211",
-      "state": "QLD",
-      "latitude": -28.0296857,
-      "longitude": 153.3077372,
-      "distanceKm": 10.48,
-      "direction": "W",
-      "population": null
-    },
-    {
-      "id": 9091,
-      "name": "Tallai",
+      "id": 8103,
+      "name": "Mudgeeraba",
       "postcode": "4213",
       "state": "QLD",
-      "latitude": -28.0730154,
-      "longitude": 153.3330328,
-      "distanceKm": 10.84,
+      "latitude": -28.0804969,
+      "longitude": 153.3576679,
+      "distanceKm": 10.47,
       "direction": "SW",
       "population": null
     },
@@ -663,8 +644,19 @@
       "state": "QLD",
       "latitude": -28.0976798,
       "longitude": 153.4526204,
-      "distanceKm": 11.3,
-      "direction": "SE",
+      "distanceKm": 11.12,
+      "direction": "S",
+      "population": null
+    },
+    {
+      "id": 9063,
+      "name": "Gilston",
+      "postcode": "4211",
+      "state": "QLD",
+      "latitude": -28.0296857,
+      "longitude": 153.3077372,
+      "distanceKm": 11.2,
+      "direction": "W",
       "population": null
     },
     {
@@ -674,19 +666,19 @@
       "state": "QLD",
       "latitude": -28.1021343,
       "longitude": 153.4395799,
-      "distanceKm": 11.36,
+      "distanceKm": 11.28,
       "direction": "S",
       "population": 9176
     },
     {
-      "id": 9064,
-      "name": "Latimer's Crossing",
-      "postcode": "4211",
+      "id": 9091,
+      "name": "Tallai",
+      "postcode": "4213",
       "state": "QLD",
-      "latitude": -28.0264003,
-      "longitude": 153.2974711,
-      "distanceKm": 11.37,
-      "direction": "W",
+      "latitude": -28.0730154,
+      "longitude": 153.3330328,
+      "distanceKm": 11.41,
+      "direction": "SW",
       "population": null
     },
     {
@@ -696,20 +688,9 @@
       "state": "QLD",
       "latitude": -27.9058415,
       "longitude": 153.3722586,
-      "distanceKm": 11.39,
-      "direction": "N",
+      "distanceKm": 11.58,
+      "direction": "NW",
       "population": 10298
-    },
-    {
-      "id": 9092,
-      "name": "The Panorama",
-      "postcode": "4213",
-      "state": "QLD",
-      "latitude": -28.0620068,
-      "longitude": 153.3116198,
-      "distanceKm": 11.68,
-      "direction": "SW",
-      "population": null
     },
     {
       "id": 8417,
@@ -718,19 +699,19 @@
       "state": "QLD",
       "latitude": -27.895707,
       "longitude": 153.3991084,
-      "distanceKm": 11.94,
+      "distanceKm": 11.95,
       "direction": "N",
       "population": null
     },
     {
-      "id": 9078,
-      "name": "Pacific Pines",
+      "id": 9064,
+      "name": "Latimer's Crossing",
       "postcode": "4211",
       "state": "QLD",
-      "latitude": -27.9382489,
-      "longitude": 153.3092643,
-      "distanceKm": 12.24,
-      "direction": "NW",
+      "latitude": -28.0264003,
+      "longitude": 153.2974711,
+      "distanceKm": 12.09,
+      "direction": "W",
       "population": null
     },
     {
@@ -740,8 +721,19 @@
       "state": "QLD",
       "latitude": -28.1107626,
       "longitude": 153.4392919,
-      "distanceKm": 12.28,
+      "distanceKm": 12.21,
       "direction": "S",
+      "population": null
+    },
+    {
+      "id": 9092,
+      "name": "The Panorama",
+      "postcode": "4213",
+      "state": "QLD",
+      "latitude": -28.0620068,
+      "longitude": 153.3116198,
+      "distanceKm": 12.33,
+      "direction": "SW",
       "population": null
     },
     {
@@ -751,41 +743,19 @@
       "state": "QLD",
       "latitude": -28.1145731,
       "longitude": 153.3933386,
-      "distanceKm": 12.47,
+      "distanceKm": 12.67,
       "direction": "S",
       "population": null
     },
     {
-      "id": 8102,
-      "name": "Advancetown",
+      "id": 9078,
+      "name": "Pacific Pines",
       "postcode": "4211",
       "state": "QLD",
-      "latitude": -28.0255182,
-      "longitude": 153.2828917,
-      "distanceKm": 12.75,
-      "direction": "W",
-      "population": null
-    },
-    {
-      "id": 9077,
-      "name": "Studio Village",
-      "postcode": "4210",
-      "state": "QLD",
-      "latitude": -27.9214914,
-      "longitude": 153.3165133,
-      "distanceKm": 12.89,
+      "latitude": -27.9382489,
+      "longitude": 153.3092643,
+      "distanceKm": 12.79,
       "direction": "NW",
-      "population": null
-    },
-    {
-      "id": 8114,
-      "name": "Paradise Point",
-      "postcode": "4216",
-      "state": "QLD",
-      "latitude": -27.8862745,
-      "longitude": 153.3957227,
-      "distanceKm": 13.01,
-      "direction": "N",
       "population": null
     },
     {
@@ -795,6 +765,17 @@
       "state": "QLD",
       "latitude": -27.8856326,
       "longitude": 153.4020286,
+      "distanceKm": 13.02,
+      "direction": "N",
+      "population": null
+    },
+    {
+      "id": 8114,
+      "name": "Paradise Point",
+      "postcode": "4216",
+      "state": "QLD",
+      "latitude": -27.8862745,
+      "longitude": 153.3957227,
       "distanceKm": 13.03,
       "direction": "N",
       "population": null
@@ -806,8 +787,30 @@
       "state": "QLD",
       "latitude": -28.1205111,
       "longitude": 153.4032864,
-      "distanceKm": 13.04,
+      "distanceKm": 13.17,
       "direction": "S",
+      "population": null
+    },
+    {
+      "id": 9077,
+      "name": "Studio Village",
+      "postcode": "4210",
+      "state": "QLD",
+      "latitude": -27.9214914,
+      "longitude": 153.3165133,
+      "distanceKm": 13.37,
+      "direction": "NW",
+      "population": null
+    },
+    {
+      "id": 8102,
+      "name": "Advancetown",
+      "postcode": "4211",
+      "state": "QLD",
+      "latitude": -28.0255182,
+      "longitude": 153.2828917,
+      "distanceKm": 13.48,
+      "direction": "W",
       "population": null
     },
     {
@@ -817,7 +820,7 @@
       "state": "QLD",
       "latitude": -27.9053051,
       "longitude": 153.3324585,
-      "distanceKm": 13.25,
+      "distanceKm": 13.62,
       "direction": "NW",
       "population": 18949
     },
@@ -828,19 +831,8 @@
       "state": "QLD",
       "latitude": -27.8794234,
       "longitude": 153.4027104,
-      "distanceKm": 13.71,
+      "distanceKm": 13.69,
       "direction": "N",
-      "population": null
-    },
-    {
-      "id": 9073,
-      "name": "Mount Nathan",
-      "postcode": "4211",
-      "state": "QLD",
-      "latitude": -27.9944964,
-      "longitude": 153.2698271,
-      "distanceKm": 13.82,
-      "direction": "W",
       "population": null
     },
     {
@@ -850,7 +842,7 @@
       "state": "QLD",
       "latitude": -28.1194259,
       "longitude": 153.4702686,
-      "distanceKm": 14.2,
+      "distanceKm": 13.98,
       "direction": "SE",
       "population": 16349
     },
@@ -861,9 +853,20 @@
       "state": "QLD",
       "latitude": -28.126998,
       "longitude": 153.4591428,
-      "distanceKm": 14.57,
+      "distanceKm": 14.42,
       "direction": "S",
       "population": 12539
+    },
+    {
+      "id": 9073,
+      "name": "Mount Nathan",
+      "postcode": "4211",
+      "state": "QLD",
+      "latitude": -27.9944964,
+      "longitude": 153.2698271,
+      "distanceKm": 14.54,
+      "direction": "W",
+      "population": null
     },
     {
       "id": 9045,
@@ -872,8 +875,8 @@
       "state": "QLD",
       "latitude": -28.1277689,
       "longitude": 153.3604583,
-      "distanceKm": 14.66,
-      "direction": "S",
+      "distanceKm": 14.99,
+      "direction": "SW",
       "population": null
     },
     {
@@ -883,19 +886,8 @@
       "state": "QLD",
       "latitude": -27.8736511,
       "longitude": 153.3646749,
-      "distanceKm": 15.01,
+      "distanceKm": 15.17,
       "direction": "N",
-      "population": null
-    },
-    {
-      "id": 9071,
-      "name": "Maudsland",
-      "postcode": "4210",
-      "state": "QLD",
-      "latitude": -27.9280622,
-      "longitude": 153.2823303,
-      "distanceKm": 15.06,
-      "direction": "NW",
       "population": null
     },
     {
@@ -910,13 +902,13 @@
       "population": null
     },
     {
-      "id": 7715,
-      "name": "Oxenford",
+      "id": 9071,
+      "name": "Maudsland",
       "postcode": "4210",
       "state": "QLD",
-      "latitude": -27.9015337,
-      "longitude": 153.2997577,
-      "distanceKm": 15.62,
+      "latitude": -27.9280622,
+      "longitude": 153.2823303,
+      "distanceKm": 15.63,
       "direction": "NW",
       "population": null
     },
@@ -927,29 +919,18 @@
       "state": "QLD",
       "latitude": -27.8717682,
       "longitude": 153.3513146,
-      "distanceKm": 15.65,
+      "distanceKm": 15.86,
       "direction": "NW",
       "population": null
     },
     {
-      "id": 9066,
-      "name": "Hope Island",
-      "postcode": "4212",
+      "id": 7715,
+      "name": "Oxenford",
+      "postcode": "4210",
       "state": "QLD",
-      "latitude": -27.8651137,
-      "longitude": 153.357731,
-      "distanceKm": 16.12,
-      "direction": "N",
-      "population": 14665
-    },
-    {
-      "id": 9065,
-      "name": "River Links",
-      "postcode": "4209",
-      "state": "QLD",
-      "latitude": -27.8796779,
-      "longitude": 153.3230769,
-      "distanceKm": 16.12,
+      "latitude": -27.9015337,
+      "longitude": 153.2997577,
+      "distanceKm": 16.08,
       "direction": "NW",
       "population": null
     },
@@ -960,7 +941,40 @@
       "state": "QLD",
       "latitude": -28.1369655,
       "longitude": 153.4799277,
-      "distanceKm": 16.36,
+      "distanceKm": 16.14,
+      "direction": "SE",
+      "population": null
+    },
+    {
+      "id": 9066,
+      "name": "Hope Island",
+      "postcode": "4212",
+      "state": "QLD",
+      "latitude": -27.8651137,
+      "longitude": 153.357731,
+      "distanceKm": 16.3,
+      "direction": "NW",
+      "population": 14665
+    },
+    {
+      "id": 9065,
+      "name": "River Links",
+      "postcode": "4209",
+      "state": "QLD",
+      "latitude": -27.8796779,
+      "longitude": 153.3230769,
+      "distanceKm": 16.46,
+      "direction": "NW",
+      "population": null
+    },
+    {
+      "id": 7776,
+      "name": "Tugun",
+      "postcode": "4224",
+      "state": "QLD",
+      "latitude": -28.1412253,
+      "longitude": 153.4929279,
+      "distanceKm": 17.09,
       "direction": "SE",
       "population": null
     },
@@ -971,18 +985,7 @@
       "state": "QLD",
       "latitude": -27.9905506,
       "longitude": 153.2436231,
-      "distanceKm": 16.42,
-      "direction": "W",
-      "population": null
-    },
-    {
-      "id": 8101,
-      "name": "Lower Beechmont",
-      "postcode": "4211",
-      "state": "QLD",
-      "latitude": -28.0454694,
-      "longitude": 153.247934,
-      "distanceKm": 16.62,
+      "distanceKm": 17.14,
       "direction": "W",
       "population": null
     },
@@ -993,8 +996,19 @@
       "state": "QLD",
       "latitude": -27.8569521,
       "longitude": 153.3531097,
-      "distanceKm": 17.13,
-      "direction": "N",
+      "distanceKm": 17.31,
+      "direction": "NW",
+      "population": null
+    },
+    {
+      "id": 8101,
+      "name": "Lower Beechmont",
+      "postcode": "4211",
+      "state": "QLD",
+      "latitude": -28.0454694,
+      "longitude": 153.247934,
+      "distanceKm": 17.34,
+      "direction": "W",
       "population": null
     },
     {
@@ -1004,30 +1018,8 @@
       "state": "QLD",
       "latitude": -27.853262,
       "longitude": 153.3621761,
-      "distanceKm": 17.25,
+      "distanceKm": 17.39,
       "direction": "N",
-      "population": null
-    },
-    {
-      "id": 7776,
-      "name": "Tugun",
-      "postcode": "4224",
-      "state": "QLD",
-      "latitude": -28.1412253,
-      "longitude": 153.4929279,
-      "distanceKm": 17.35,
-      "direction": "SE",
-      "population": null
-    },
-    {
-      "id": 9075,
-      "name": "Neranwood",
-      "postcode": "4213",
-      "state": "QLD",
-      "latitude": -28.1228803,
-      "longitude": 153.293474,
-      "distanceKm": 17.54,
-      "direction": "SW",
       "population": null
     },
     {
@@ -1037,20 +1029,9 @@
       "state": "QLD",
       "latitude": -28.1553122,
       "longitude": 153.4612699,
-      "distanceKm": 17.62,
+      "distanceKm": 17.5,
       "direction": "S",
       "population": 9797
-    },
-    {
-      "id": 10486,
-      "name": "South Stradbroke",
-      "postcode": "4216",
-      "state": "QLD",
-      "latitude": -27.8411121,
-      "longitude": 153.4186096,
-      "distanceKm": 17.96,
-      "direction": "N",
-      "population": null
     },
     {
       "id": 9095,
@@ -1059,8 +1040,30 @@
       "state": "QLD",
       "latitude": -28.1515955,
       "longitude": 153.4844777,
-      "distanceKm": 18.02,
+      "distanceKm": 17.81,
       "direction": "SE",
+      "population": null
+    },
+    {
+      "id": 10486,
+      "name": "South Stradbroke",
+      "postcode": "4216",
+      "state": "QLD",
+      "latitude": -27.8411121,
+      "longitude": 153.4186096,
+      "distanceKm": 17.86,
+      "direction": "N",
+      "population": null
+    },
+    {
+      "id": 9075,
+      "name": "Neranwood",
+      "postcode": "4213",
+      "state": "QLD",
+      "latitude": -28.1228803,
+      "longitude": 153.293474,
+      "distanceKm": 18.08,
+      "direction": "SW",
       "population": null
     },
     {
@@ -1070,7 +1073,7 @@
       "state": "QLD",
       "latitude": -28.1671718,
       "longitude": 153.380294,
-      "distanceKm": 18.43,
+      "distanceKm": 18.63,
       "direction": "S",
       "population": null
     },
@@ -1081,19 +1084,19 @@
       "state": "QLD",
       "latitude": -27.8564881,
       "longitude": 153.3203988,
-      "distanceKm": 18.48,
+      "distanceKm": 18.77,
       "direction": "NW",
       "population": 20225
     },
     {
-      "id": 10878,
-      "name": "Paradise Valley",
-      "postcode": "4213",
+      "id": 9044,
+      "name": "Bilinga",
+      "postcode": "4225",
       "state": "QLD",
-      "latitude": -28.1552247,
-      "longitude": 153.3128721,
-      "distanceKm": 19.38,
-      "direction": "SW",
+      "latitude": -28.1585408,
+      "longitude": 153.505324,
+      "distanceKm": 19.35,
+      "direction": "SE",
       "population": null
     },
     {
@@ -1103,19 +1106,19 @@
       "state": "QLD",
       "latitude": -28.179401,
       "longitude": 153.422605,
-      "distanceKm": 19.59,
+      "distanceKm": 19.63,
       "direction": "S",
       "population": null
     },
     {
-      "id": 9044,
-      "name": "Bilinga",
-      "postcode": "4225",
+      "id": 10878,
+      "name": "Paradise Valley",
+      "postcode": "4213",
       "state": "QLD",
-      "latitude": -28.1585408,
-      "longitude": 153.505324,
-      "distanceKm": 19.62,
-      "direction": "SE",
+      "latitude": -28.1552247,
+      "longitude": 153.3128721,
+      "distanceKm": 19.82,
+      "direction": "SW",
       "population": null
     },
     {
@@ -1125,7 +1128,29 @@
       "state": "QLD",
       "latitude": -28.176418,
       "longitude": 153.3680026,
-      "distanceKm": 19.66,
+      "distanceKm": 19.9,
+      "direction": "S",
+      "population": null
+    },
+    {
+      "id": 7779,
+      "name": "Couran Cove",
+      "postcode": "4670",
+      "state": "QLD",
+      "latitude": -27.8212172,
+      "longitude": 153.4144809,
+      "distanceKm": 20.07,
+      "direction": "N",
+      "population": null
+    },
+    {
+      "id": 5067,
+      "name": "Cobaki Lakes",
+      "postcode": "2486",
+      "state": "NSW",
+      "latitude": -28.1753011,
+      "longitude": 153.4798097,
+      "distanceKm": 20.13,
       "direction": "S",
       "population": null
     },
@@ -1136,19 +1161,8 @@
       "state": "QLD",
       "latitude": -27.8529809,
       "longitude": 153.2982761,
-      "distanceKm": 19.93,
+      "distanceKm": 20.28,
       "direction": "NW",
-      "population": null
-    },
-    {
-      "id": 7779,
-      "name": "Couran Cove",
-      "postcode": "4670",
-      "state": "QLD",
-      "latitude": -27.8212172,
-      "longitude": 153.4144809,
-      "distanceKm": 20.15,
-      "direction": "N",
       "population": null
     },
     {
@@ -1158,19 +1172,8 @@
       "state": "QLD",
       "latitude": -28.1661538,
       "longitude": 153.5235997,
-      "distanceKm": 21.25,
+      "distanceKm": 20.94,
       "direction": "SE",
-      "population": null
-    },
-    {
-      "id": 7783,
-      "name": "Mount Tamborine",
-      "postcode": "4272",
-      "state": "QLD",
-      "latitude": -27.9684035,
-      "longitude": 153.1967792,
-      "distanceKm": 21.32,
-      "direction": "W",
       "population": null
     },
     {
@@ -1180,7 +1183,40 @@
       "state": "QLD",
       "latitude": -28.1676805,
       "longitude": 153.5295271,
-      "distanceKm": 21.7,
+      "distanceKm": 21.39,
+      "direction": "SE",
+      "population": null
+    },
+    {
+      "id": 5243,
+      "name": "Piggabeen",
+      "postcode": "2486",
+      "state": "NSW",
+      "latitude": -28.1989329,
+      "longitude": 153.4352389,
+      "distanceKm": 21.86,
+      "direction": "S",
+      "population": null
+    },
+    {
+      "id": 7483,
+      "name": "Coolangatta",
+      "postcode": "4225",
+      "state": "QLD",
+      "latitude": -28.1682934,
+      "longitude": 153.538753,
+      "distanceKm": 21.92,
+      "direction": "SE",
+      "population": 6491
+    },
+    {
+      "id": 9059,
+      "name": "Greenmount",
+      "postcode": "4225",
+      "state": "QLD",
+      "latitude": -28.1655064,
+      "longitude": 153.5443188,
+      "distanceKm": 21.97,
       "direction": "SE",
       "population": null
     }

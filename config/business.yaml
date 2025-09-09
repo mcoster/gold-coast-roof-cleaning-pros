@@ -34,8 +34,8 @@ service:
   radius_km: 22
   max_location_pages: 500
   # Optional: Override center location (defaults to business address)
-  # center_lat: -34.8517
-  # center_lng: 138.5829
+  center_lat: -28.0023
+  center_lng: 153.4174
 
 # =====================================================
 # BRAND COLORS

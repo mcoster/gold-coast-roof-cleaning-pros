@@ -28,8 +28,26 @@ interface Suburb {
   population?: number;
 }
 
+/**
+ * Calculate a simple hash of relevant config values
+ */
+function calculateConfigHash(config: any): string {
+  const relevant = {
+    lat: config.service?.center_lat || config.address?.coordinates?.lat,
+    lng: config.service?.center_lng || config.address?.coordinates?.lng,
+    radius: config.service?.radius_km || config.seo?.location_based?.radius_km || config.locationPages?.serviceRadiusKm,
+  };
+  return JSON.stringify(relevant);
+}
+
 async function exportSuburbs() {
+  // Check for --force flag
+  const forceRegenerate = process.argv.includes('--force');
+  
   console.log('🏘️  Exporting suburbs from PostGIS database...\n');
+  if (forceRegenerate) {
+    console.log('   🔄 Force regeneration mode\n');
+  }
 
   // Load business config
   const configPath = path.join(process.cwd(), 'config', 'business.yaml');
@@ -47,9 +65,9 @@ async function exportSuburbs() {
 
   try {
     // Get center location from config
-    const centerLat = config.address?.coordinates?.lat || -28.003;
-    const centerLng = config.address?.coordinates?.lng || 153.410;
-    const radiusKm = config.seo?.location_based?.radius_km || 22;
+    const centerLat = config.service?.center_lat || config.address?.coordinates?.lat || -34.8517;
+    const centerLng = config.service?.center_lng || config.address?.coordinates?.lng || 138.5829;
+    const radiusKm = config.service?.radius_km || config.locationPages?.serviceRadiusKm || 33;
 
     console.log(`📍 Center: ${centerLat}, ${centerLng}`);
     console.log(`📏 Radius: ${radiusKm}km\n`);
@@ -82,8 +100,7 @@ async function exportSuburbs() {
       FROM suburbs s
       CROSS JOIN center c
       LEFT JOIN suburb_postcodes sp ON s.id = sp.suburb_id AND sp.is_primary = true
-      WHERE s.state = 'QLD'
-        AND ST_DWithin(s.location, c.point, $3 * 1000)
+      WHERE ST_DWithin(s.location, c.point, $3 * 1000)
       ORDER BY distance_km ASC
     `;
 
@@ -114,6 +131,9 @@ async function exportSuburbs() {
       center: { lat: centerLat, lng: centerLng },
       radiusKm,
       count: suburbs.length,
+      state: config.address?.state || 'SA',
+      configHash: calculateConfigHash(config),
+      source: 'database',
       suburbs,
     };
 

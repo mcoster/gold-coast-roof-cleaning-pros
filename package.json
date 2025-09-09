@@ -4,9 +4,13 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "tsx scripts/validate-suburbs.ts",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "suburbs:validate": "tsx scripts/validate-suburbs.ts",
+    "suburbs:generate": "tsx scripts/export-suburbs.ts --force",
+    "suburbs:clean": "rm -f src/data/suburbs.json",
     "images:analyze": "tsx scripts/analyze-images.ts",
     "images:manifest": "tsx scripts/generate-manifest.ts",
     "images:match": "tsx scripts/match-images.ts",
