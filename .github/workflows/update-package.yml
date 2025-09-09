@@ -29,11 +29,6 @@ jobs:
           node-version: '20'
           registry-url: 'https://npm.pkg.github.com'
       
-      - name: Configure npm authentication
-        run: |
-          echo "@mcoster:registry=https://npm.pkg.github.com" >> ~/.npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
-      
       - name: Check for updates
         id: check
         run: |
@@ -42,7 +37,7 @@ jobs:
           echo "Current version: $CURRENT"
           
           # Get latest version available from GitHub Package registry
-          LATEST=$(npm view @mcoster/astro-local-package version --registry=https://npm.pkg.github.com)
+          LATEST=$(npm view @mcoster/astro-local-package version)
           if [ $? -ne 0 ]; then
             echo "Error: Failed to fetch latest package version"
             exit 1
