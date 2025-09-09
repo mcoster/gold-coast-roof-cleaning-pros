@@ -28,6 +28,27 @@ Gold Coast and surrounding suburbs within 50km radius of Southport, QLD
 - Node.js 18+
 - npm
 
+### Package Version Lock
+**IMPORTANT:** This site is locked to a stable version of `@mcoster/astro-local-package`:
+- **Version:** v1.0.18
+- **Commit:** `ffc68c03a98bc982928300d4e6d088ebea3f9a50`
+- **Locked on:** September 9, 2025
+
+This ensures the site remains stable even if breaking changes are made to the package.
+
+#### To Update the Package (if needed):
+```bash
+# Update to latest main branch (use with caution)
+npm install github:mcoster/astro-local-package#main
+
+# Or lock to a specific commit (recommended)
+npm install github:mcoster/astro-local-package#[commit-hash]
+
+# After updating, always test thoroughly
+npm run build
+npm run preview
+```
+
 ### Local Development
 ```bash
 # Install dependencies
