@@ -174,7 +174,7 @@ export const siteConfig = {
   } as SocialLinks,
   
   // SEO & Metadata
-  siteUrl: getConfigValue('website.url', 'PUBLIC_SITE_URL', 'https://adelaide-roof-cleaning-pros.netlify.app'),
+  siteUrl: getConfigValue('website.url', 'PUBLIC_SITE_URL', 'https://gold-coast-roof-cleaning-pros.netlify.app'),
   googleMapsUrl: getConfigValue('website.google_maps_url', 'PUBLIC_GOOGLE_MAPS_URL', undefined),
   googleReviewsUrl: getConfigValue('website.google_reviews_url', 'PUBLIC_GOOGLE_REVIEWS_URL', undefined),
   
