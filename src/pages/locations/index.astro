@@ -60,7 +60,7 @@ const serviceAreaSchema = {
       "latitude": siteConfig.address.coordinates?.lat || -34.9285,
       "longitude": siteConfig.address.coordinates?.lng || 138.6007
     },
-    "geoRadius": `${import.meta.env.SERVICE_RADIUS_KM || 50}000`
+    "geoRadius": `${siteConfig.seo?.location_based?.radius_km || 22}000`
   }
 };
 ---

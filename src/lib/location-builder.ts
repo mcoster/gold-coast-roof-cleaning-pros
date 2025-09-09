@@ -112,7 +112,7 @@ export async function buildLocationPages(): Promise<LocationPageData[]> {
     const center = await getCenterLocation();
     
     // Get service radius from env
-    const radiusKm = parseInt(import.meta.env.SERVICE_RADIUS_KM || '50');
+    const radiusKm = siteConfig.seo?.location_based?.radius_km || 22;
     
     // Get max locations limit from env (default to 100 to prevent memory issues)
     const maxLocations = parseInt(import.meta.env.MAX_LOCATION_PAGES || '100');

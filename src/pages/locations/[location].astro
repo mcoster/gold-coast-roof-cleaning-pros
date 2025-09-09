@@ -37,7 +37,7 @@ const locationData: LocationData = {
   suburb,
   nearbySuburbs,
   businessName: siteConfig.businessName,
-  serviceRadius: parseInt(import.meta.env.SERVICE_RADIUS_KM || '50'),
+  serviceRadius: siteConfig.seo?.location_based?.radius_km || 22,
   slug: locationPage.slug,
   phone: siteConfig.phone,
   formattedPhone: siteConfig.formattedPhone,

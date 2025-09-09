@@ -11,6 +11,7 @@ import { Pool } from 'pg';
 import fs from 'fs/promises';
 import path from 'path';
 import * as dotenv from 'dotenv';
+import * as yaml from 'js-yaml';
 
 // Load environment variables
 dotenv.config();
@@ -30,6 +31,11 @@ interface Suburb {
 async function exportSuburbs() {
   console.log('🏘️  Exporting suburbs from PostGIS database...\n');
 
+  // Load business config
+  const configPath = path.join(process.cwd(), 'config', 'business.yaml');
+  const configContent = await fs.readFile(configPath, 'utf8');
+  const config = yaml.load(configContent) as any;
+
   // Database connection
   const pool = new Pool({
     host: process.env.POSTGIS_HOST || 'localhost',
@@ -40,10 +46,10 @@ async function exportSuburbs() {
   });
 
   try {
-    // Get center location (Gold Coast business address)
-    const centerLat = -28.003; // Bundall, QLD
-    const centerLng = 153.410;
-    const radiusKm = 50; // Export suburbs within 50km
+    // Get center location from config
+    const centerLat = config.address?.coordinates?.lat || -28.003;
+    const centerLng = config.address?.coordinates?.lng || 153.410;
+    const radiusKm = config.seo?.location_based?.radius_km || 22;
 
     console.log(`📍 Center: ${centerLat}, ${centerLng}`);
     console.log(`📏 Radius: ${radiusKm}km\n`);
