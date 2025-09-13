@@ -101,6 +101,6 @@ sections:
       description: "Get your free, no-obligation quote today. We're here to help!"
       buttonText: "Get Your Free Quote"
       buttonHref: "#quote-form"
-      secondaryButtonText: "Call (07) 5555 0180"
-      secondaryButtonHref: "tel:0755550180"
+      secondaryButtonText: "Call (07) 5230 7381"
+      secondaryButtonHref: "tel:0752307381"
       variant: "gradient"
