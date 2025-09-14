@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@mcoster/astro-local-package/components/Header.astro';
 import Footer from '@mcoster/astro-local-package/components/Footer.astro';
+import { siteConfig } from '@/config/site';
 ---
 
 <Layout 
@@ -44,8 +45,8 @@ import Footer from '@mcoster/astro-local-package/components/Footer.astro';
             If you believe this is an error or need assistance, please don't hesitate to contact us.
           </p>
           <p class="text-gray-600">
-            Call us at <a href="tel:0872280262" class="text-blue-600 hover:underline font-semibold">(08) 7228 0262</a> or 
-            email <a href="mailto:info@adelaidepressure.com.au" class="text-blue-600 hover:underline font-semibold">info@adelaidepressure.com.au</a>
+            Call us at <a href={`tel:${siteConfig.formattedPhone}`} class="text-blue-600 hover:underline font-semibold">{siteConfig.phone}</a> or
+            email <a href={`mailto:${siteConfig.email}`} class="text-blue-600 hover:underline font-semibold">{siteConfig.email}</a>
           </p>
         </div>
       </div>
