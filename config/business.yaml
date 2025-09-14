@@ -87,7 +87,7 @@ google_maps:
 # FOOTER CONFIGURATION
 # =====================================================
 footer:
-  # Leave empty for auto-selection of featured suburbs
+  # Manual selection of featured suburbs
   featured_suburbs: [
     "Surfers Paradise",
     "Broadbeach",
@@ -105,3 +105,15 @@ footer:
     "Ashmore",
     "Labrador"
   ]
+
+  # Selection mode for handling multiple suburb matches
+  # Options: 'best_match' (default) or 'all_variations'
+  suburb_selection_mode: best_match
+
+  # Auto-supplement with smart selection if fewer than 11 suburbs
+  # Set to false to show only explicitly listed suburbs
+  auto_supplement: false
+
+  # Maximum number of suburbs to display (optional)
+  # Leave unset to show all featured suburbs
+  # suburb_limit: 15
