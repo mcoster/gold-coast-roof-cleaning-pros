@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { getTemplateVariables } from '@/lib/config-loader';
+import { getTemplateVariables } from '@mcoster/astro-local-package/utils/config-loader';
 
 // Get template variables for processing
 const templateVars = getTemplateVariables();

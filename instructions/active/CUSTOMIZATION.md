@@ -356,7 +356,7 @@ props:
 component: ServicesGrid
 props:
   display: "specific"
-  specific: ["residential-services", "commercial-services"]
+  specific: ["tile-roof-cleaning", "metal-roof-cleaning"]
   layout: "fixed"
   columns: 2
 ```
@@ -661,7 +661,7 @@ Service pages use a consolidated YAML file for all services, with optional servi
 ```
 /src/content/serviceSections/
 ├── services-default.yaml      # Default sections for ALL services
-└── residential-services.yaml  # Optional: Custom sections for specific service
+└── tile-roof-cleaning.yaml    # Optional: Custom sections for specific service
 ```
 
 #### Default Service Sections
@@ -720,8 +720,8 @@ sections:
 #### Custom Service Sections
 To customize a specific service, create a YAML file with the service slug:
 
-**Example: Custom sections for residential services**
-Create `/src/content/serviceSections/residential-services.yaml`:
+**Example: Custom sections for tile roof cleaning**
+Create `/src/content/serviceSections/tile-roof-cleaning.yaml`:
 ```yaml
 sections:
   # Override hero section

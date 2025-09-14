@@ -1,9 +1,9 @@
 ---
 import { getEntry } from 'astro:content';
-import { buildLocationPages, generateLocationSlug } from '@/lib/location-builder';
-import { LocationContext } from '@/lib/page-renderer';
-import { renderPageSections } from '@/lib/page-renderer';
-import type { LocationData } from '@/lib/spintax';
+import { buildLocationPages, generateLocationSlug } from '@mcoster/astro-local-package/utils/location-builder';
+import { LocationContext } from '@mcoster/astro-local-package/utils/page-renderer';
+import { renderPageSections } from '@mcoster/astro-local-package/utils/page-renderer';
+import type { LocationData } from '@mcoster/astro-local-package/utils/spintax';
 import Layout from '@/layouts/Layout.astro';
 import Header from '@mcoster/astro-local-package/components/Header.astro';
 import Footer from '@mcoster/astro-local-package/components/Footer.astro';
