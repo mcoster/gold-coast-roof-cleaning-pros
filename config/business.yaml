@@ -88,4 +88,20 @@ google_maps:
 # =====================================================
 footer:
   # Leave empty for auto-selection of featured suburbs
-  featured_suburbs: []
+  featured_suburbs: [
+    "Surfers Paradise",
+    "Broadbeach",
+    "Southport",
+    "Main Beach",
+    "Robina",
+    "Mermaid Beach",
+    "Burleigh Heads",
+    "Paradise Waters",
+    "Benowa",
+    "Hope Island",
+    "Varsity Lakes",
+    "Mudgeeraba",
+    "Nerang",
+    "Ashmore",
+    "Labrador"
+  ]
