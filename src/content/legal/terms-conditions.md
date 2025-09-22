@@ -127,57 +127,64 @@ While we aim to connect you with quality service providers:
 
 ## 5. Pricing and Payment
 
-### 5.1 Pricing
+### 5.1 Service Provider Pricing
 
-All prices:
+**All pricing and payment arrangements are between you and the service provider directly.** Web and Glow Pty Ltd does not:
 
-- Are quoted in Australian Dollars (AUD)
-- Include GST unless otherwise specified
-- Are subject to change without notice (except for accepted quotations)
-- May be subject to additional charges for:
-  - Travel beyond standard service areas
-  - After-hours or emergency services
-  - Difficult access or working conditions
-  - Additional work not included in the original scope
+- Set or control service prices
+- Handle payments for services
+- Provide quotes for actual service work
+- Process refunds for services performed
 
-### 5.2 Payment Terms
+Service providers will:
 
-Unless otherwise agreed in writing:
+- Provide their own quotes directly to you
+- Set their own prices and payment terms
+- Collect payment directly from you
+- Handle all billing and invoicing
 
-- Payment is due upon completion of services
-- We accept cash, bank transfer, and major credit cards
-- A deposit may be required for larger projects
-- Late payments may incur interest at the rate of 10% per annum
+### 5.2 Our Connection Service
 
-### 5.3 Non-Payment
+Web and Glow Pty Ltd operates on a referral fee model:
 
-In the event of non-payment, we reserve the right to:
+- We receive a referral fee from service providers when we successfully connect them with customers
+- This fee is paid by the service provider, not by you
+- There is no charge to you for using our connection service
+- Our referral arrangements do not affect the price you pay for services
 
-- Suspend or terminate services
-- Engage debt collection services
-- Recover all costs associated with debt recovery
-- Report the debt to credit reporting agencies
+### 5.3 Payment Disputes
+
+Any disputes regarding:
+
+- Service pricing
+- Payment terms
+- Refunds or chargebacks
+- Non-payment issues
+
+Must be resolved directly with the service provider. We may assist in facilitating communication but are not responsible for payment matters
 
 ## 6. Cancellations and Rescheduling
 
-### 6.1 Customer Cancellations
+### 6.1 Service Cancellations
 
-- Cancellations must be made at least 24 hours before the scheduled service
-- Cancellations with less than 24 hours notice may incur a cancellation fee
-- Cancellation fees may be up to 50% of the quoted service price
-- Deposits may be forfeited for late cancellations
+**All cancellation and rescheduling policies are set by the individual service provider.**
 
-### 6.2 Our Right to Cancel or Reschedule
+When you book a service through a provider we've connected you with:
 
-We reserve the right to cancel or reschedule services due to:
+- The service provider will inform you of their cancellation policy
+- Any cancellation fees are determined and collected by the service provider
+- Rescheduling requests should be made directly with the service provider
+- Deposit and refund policies are set by the service provider
 
-- Adverse weather conditions
-- Safety concerns
-- Equipment failure
-- Staff illness or unavailability
-- Force majeure events
+### 6.2 Connection Service Changes
 
-In such cases, we will make reasonable efforts to notify you and reschedule at a mutually convenient time.
+If you wish to:
+
+- Be connected with a different service provider
+- Submit a new service enquiry
+- Update your contact information for referrals
+
+Please contact us directly. There is no charge for submitting new enquiries or requesting alternative service provider connections.
 
 ## 7. Consumer Guarantees
 
@@ -189,23 +196,38 @@ Our services come with guarantees that cannot be excluded under the Australian C
 - Services that are fit for the purpose you made known to us
 - Services delivered within a reasonable time
 
-### 7.2 Our Warranty
+### 7.2 Service Provider Warranties
 
-In addition to your rights under consumer law, we provide:
+**All service warranties and guarantees are provided directly by the service provider performing the work.**
 
-- A workmanship warranty for the period specified in your service agreement
-- Remediation of any defects arising from our workmanship
-- Support and advice regarding our completed work
+Service providers may offer:
 
-### 7.3 Warranty Exclusions
+- Workmanship warranties
+- Service guarantees
+- Satisfaction guarantees
+- Product warranties
 
-Our warranty does not cover:
+These warranties are:
 
-- Normal wear and tear
-- Damage caused by misuse, neglect, or accident
-- Work performed by others after our service
-- Pre-existing conditions not related to our work
-- Acts of God or force majeure events
+- Provided and honoured by the service provider directly
+- Subject to the service provider's terms and conditions
+- Separate from any consumer law guarantees
+- Not provided or guaranteed by Web and Glow Pty Ltd
+
+### 7.3 Our Connection Service Guarantee
+
+Web and Glow Pty Ltd guarantees only:
+
+- We will pass your enquiry to relevant service providers
+- We will use reasonable efforts to connect you with qualified providers
+- We will handle your information in accordance with our Privacy Policy
+
+We do not guarantee:
+
+- The quality of services performed by providers
+- The qualifications or licenses of providers
+- That providers will respond to your enquiry
+- Any specific outcomes from services performed
 
 ## 8. Liability and Indemnification
 
