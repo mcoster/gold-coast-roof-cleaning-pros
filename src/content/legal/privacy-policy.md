@@ -1,257 +1,91 @@
 ---
 title: "Privacy Policy"
-description: "Privacy Policy for {{businessName}}. Learn how we protect your personal information in accordance with Australian privacy laws."
+description: "Privacy Policy for {{businessName}}. Learn how we handle your personal information in accordance with Australian privacy laws."
 noindex: true
+lastUpdated: 2025-12-05
 ---
 
-This Privacy Policy explains how **{{businessName}}** ("we", "us", or "our"), operated by Web and Glow Pty Ltd (ABN 53641999626), collects, uses, stores, and discloses your personal information in accordance with the Australian Privacy Principles (APPs) contained in the Privacy Act 1988 (Cth).
+Web and Glow Pty Ltd (ABN 53 641 999 626) owns and manages the {{businessName}} website, and values your privacy. This privacy policy sets out how we handle your personal information and covers our website. We do our best to comply with the Australian privacy legislation.
 
-## IMPORTANT NOTICE - Our Role as a Connection Service
+We may collect, hold, use and disclose personal information for the purpose of improving our reviews or assessing market preferences. We provide home services.
 
-**Web and Glow Pty Ltd operates as a lead generation and connection service. We collect your information to connect you with independent third-party service providers who will perform the requested services. By providing your information, you explicitly consent to us sharing your details with these service providers.**
+As we update this policy periodically, the updates will apply from the date the new version is uploaded to our website. We have included a 'last updated' date at the top of our policy to help you keep track of any changes. You should regularly check here for any recent changes that are relevant to you and displayed on our website each time you use our website.
 
-By using our website or services, you consent to the collection and use of your information as described in this Privacy Policy.
+**Our contact details:**
 
-## 1. Information We Collect
+**Business:** {{businessName}}
 
-### 1.1 Personal Information
+**Contact Us:** {{email}}
 
-**When you submit an enquiry through our website, you are explicitly requesting that we share your information with third-party service providers.** We collect personal information that you voluntarily provide when you:
+When you see the words, 'us', 'ours', 'we', or '{{businessName}}', these refer to the {{businessName}} ABN 53 641 999 626, operated by Web and Glow Pty Ltd of Queensland, Australia. You can contact us on the details provided. When we refer to 'our website', we mean this one as owned and operated by us. Our website can also include all forms of digital media and expression, such as social media pages, platforms, email communications, blogs, images or information published on our website.
 
-- Submit an enquiry through our website contact form
-- Request a quote for services
-- Contact us via phone or email
-- Subscribe to our newsletter (if applicable)
+Any references to 'you,' 'user' or 'your,' mean you, the user of our services or visitor to our website or related websites or platforms. Any reference to 'you' may also include your family members, or any other person included in the delivery of our services.
 
-The types of personal information we collect and share with service providers include:
+'Personal information' is information that directly identifies you, such as your name and email address, or data that could be used, on its own or in combination with other data, to identify you. It has the meaning given to it in the Australian Privacy Act 1988 (Cth) ('the Act'). It does not include information we hold or use about the business you are associated unless that information identifies you personally. Sensitive information is personal information requiring special protection and includes information about your finances (if you supply this to us). For the purposes of this policy, we are including sensitive information within personal information.
 
-- Full name
-- Email address
-- Phone number
-- Residential or business address
-- Service requirements and preferences
-- Property details relevant to the service request
-- Preferred contact times
-- Any other information you choose to provide
+## 1. Staying Anonymous
 
-### 1.2 Automatically Collected Information
+You can browse our website anonymously or choose to identify yourself to us. When you identify yourself to us, such as when you email or call us, we will collect your personal information. We also collect your personal information when you complete our online form to contact us, by emailing us or calling us directly. We may pass your information to our contractors who offer the services that you are seeking.
 
-When you visit our website, we may automatically collect certain information including:
+## 2. Collecting Personal Information
 
-- IP address
-- Browser type and version
-- Operating system
-- Date and time of visit
-- Pages viewed and time spent on pages
-- Referring website addresses
+We collect and use your personal information on the terms and conditions set out in our website. When you communicate with us in any way, you grant us permission to collect and use your personal information. If you have any concerns regarding your consent to our use of personal information, please contact us. We also collect personal information about you is when you give it to us, for example:
 
-### 1.3 Cookies and Tracking Technologies
+- when you contact us by phone or email or through our social media platforms
+- when you submit information to our website by filling in the contact form or emailing information to us about your requirements
+- when you ask for access to information we hold about you
 
-Our website uses cookies and similar tracking technologies to enhance your browsing experience. Cookies are small text files stored on your device that help us:
+You agree that we may keep your personal information for as long as it is required for the purpose it was collected or for an additional amount of time if we are required to do so under applicable laws.
 
-- Remember your preferences
-- Understand how you use our website
-- Improve website functionality
-- Provide relevant content
+## 3. Collecting Sensitive Information
 
-You can control cookies through your browser settings. However, disabling cookies may affect the functionality of our website.
+Sensitive personal information is defined as including information about your health, racial or ethnic origin, political opinions, religious beliefs, sexual orientation, or criminal history.
 
-## 2. How We Use Your Information
+We may inadvertently collect sensitive personal information about you if you provide it to us by phone, or online through our website or our various social media platforms. If we unintentionally receive information about you that is sensitive or personal information, we will only store it or otherwise use it in such a way that is required to deliver our services.
 
-We use the personal information we collect for the following purposes:
+## 4. Social Networking Services and Links to Other Websites
 
-### 2.1 Primary Purpose - Connection Service
+We encourage you to review and agree to the privacy policies of any social media platform before deciding whether they are suitable for your use. Please be aware that when you interact with us through these platforms, we may collect your personal information. This information will be used solely to facilitate communication with you and the public, or to promote our services.
 
-**Our primary purpose for collecting your information is to facilitate connections with service providers:**
+We may provide links to other websites or use social media platforms, such as Facebook, Instagram, YouTube, X/Twitter, TikTok or any others to promote our services.
 
-- **To share your details with qualified third-party service providers** in your area who can fulfill your service request
-- To match your service needs with appropriate contractors in our network
-- To enable service providers to contact you directly about your enquiry
-- To facilitate the service booking and delivery process between you and the service provider
+It is important to note that these social media platforms manage your personal information independently and for their own purposes. If you prefer not to have your personal information processed by a social media platform, we recommend refraining from using these platforms and contacting the platform provider directly. Alternatively, you may reach out to us via phone or email and our details are provided in this privacy policy.
 
-### 2.2 Secondary Purposes
+## 5. How We Use Cookies and Other Identifiers
 
-- To operate and improve our lead generation and connection service
-- To maintain our network of quality service providers
-- To send you updates about your service request status
-- To respond to any queries about our connection service
-- To send marketing communications (with your consent)
-- To comply with legal obligations and regulatory requirements
-- To protect our rights and business interests
+Depending on your settings, your web browser may automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. Some website features may not function properly without cookies. We use a range of tools provided by third parties, including search engine browsers and our website host, to collect or view website traffic information. These sites have their own privacy policies. We also use cookies and session tools to improve your experience when accessing our websites.
 
-## 3. Legal Basis for Processing
+The information collected by these tools may include:
 
-We collect and use your personal information based on:
+- the IP address of a device you are using,
+- information about sites that IP address has come from,
+- the pages accessed on our site, and
+- the next site visited.
 
-- **Consent:** When you voluntarily provide information through our forms, you consent to us sharing it with service providers
-- **Legitimate Interests:** To operate our connection service and facilitate matches between customers and service providers
-- **Contract:** To fulfill our role as an intermediary connecting you with service providers
-- **Legal Obligations:** To comply with Australian laws and regulations
+We use the information to help to track your use of our website. This helps to improve your user experience and the quality of our services. Additionally, we may also use that information to customise advertising about our services to suit you. To find out how to opt out of tailored advertising please check the options available at [Network Advertising Initiative](http://www.networkadvertising.org/choices/).
 
-## 4. How We Store and Protect Your Information
+## 6. Security and Overseas Recipients
 
-### 4.1 Data Security
+We take your privacy and security seriously and may use a combination of trustworthy password protections and two factor authentication, for our online systems.
 
-We implement appropriate technical and organisational security measures to protect your personal information while it is in our possession, including protection against:
+We may rely on other third-party providers such as document management systems, text messaging services, email services and alike that may be located overseas or may have storage or processing facilities located overseas. We aim to use only reliable providers who are able to store the information you have provided to us securely. We aim to use providers who are located in Australia, wherever possible.
 
-- Unauthorised access or disclosure
-- Misuse, loss, or alteration
-- Unlawful destruction
+We may sell or share your personal information for a fee to our clients, located only in Australia.
 
-These measures include:
+Your information may be accessed in a country outside of Australia without any protective laws surrounding privacy and personal information use. When you use our services, you agree to any incidental transfer of your data overseas.
 
-- Secure SSL encryption for data transmission
-- Regular security assessments
-- Access controls and authentication procedures
-- Staff training on privacy and data protection
+## 7. Disclosure
 
-**Important Note:** Once we share your information with independent service providers as part of our connection service, those providers are responsible for the security of your information in their possession. We recommend you review their privacy and security practices directly.
+We will disclose your personal information when legally compelled to do so, in cooperation with the police, or under subpoena, or in compliance with Australian privacy laws.
 
-### 4.2 Data Retention
+We may share your personal information with our advisors for the purpose of obtaining their advice about our business (for example our accountant), with our service providers for the purpose of their delivery of services (for example IT consultants) and with our payment platform if we need to provide details about payment transactions.
 
-We retain your personal information only for as long as necessary to:
+## 8. Accessing and Correcting Your Personal Information
 
-- Complete the connection service (passing your details to service providers)
-- Maintain records of our lead generation activities
-- Comply with legal, accounting, or reporting requirements
-- Resolve disputes and enforce agreements
+You may make a written request to amend or correct any information we hold about you. If we do not agree with your requested change, we will keep a copy of your request along with our information. If you contact us in writing to make a personal information request, we will need to sufficiently identify you before we can provide you with details of any information, we hold about you.
 
-Generally, we retain customer enquiry information for 7 years in accordance with Australian taxation and business record-keeping requirements. Service providers who receive your information will have their own retention policies.
+## 9. Problems?
 
-## 5. Disclosure of Your Information
+If you have any concerns about our use of your personal or sensitive information, please contact us in writing, using the details provided, and let us know your concerns. We will respond to you within 30 days.
 
-### 5.1 Third-Party Service Providers
-
-**As a connection service, sharing your information with service providers is fundamental to our business model.** When you submit an enquiry, we will:
-
-- **Share your contact details and service requirements with one or more independent service providers** in our network who operate in your area
-- Provide service providers with all information necessary to assess and fulfill your service request
-- **These service providers are independent businesses, not our employees or agents**
-
-**By submitting your information, you explicitly consent to this disclosure.** Service providers who receive your information:
-
-- Will contact you directly to discuss your requirements
-- May provide quotes and arrange service delivery
-- Are responsible for their own privacy practices once they receive your information
-- Should provide you with their own privacy policy if requested
-
-### 5.2 Other Service Providers
-
-We may also share your information with third parties who support our connection service operations:
-
-- **Netlify:** For website hosting and form processing
-- **Email service providers:** For sending service-related communications
-- **Analytics providers:** To understand website usage and improve our services
-- **Cloud storage providers:** For secure data storage
-- **Payment processors:** For processing any fees related to our connection service (if applicable)
-
-### 5.3 Legal Requirements
-
-We may disclose your personal information when required by law, including:
-
-- To comply with legal obligations or court orders
-- To respond to lawful requests from government authorities
-- To protect our rights, privacy, safety, or property
-- To prevent fraud or other illegal activity
-
-### 5.4 Business Transfers
-
-In the event of a merger, acquisition, or sale of our business assets, your personal information may be transferred to the acquiring entity, subject to the same privacy protections outlined in this policy.
-
-### 5.5 Your Consent
-
-We will not sell, rent, or trade your personal information to third parties for their marketing purposes without your explicit consent. However, the service providers we connect you with may market their services to you directly based on the information you provided for your service request.
-
-## 6. International Data Transfers
-
-Some of our third-party service providers may be located outside of Australia. When we transfer your information overseas, we take reasonable steps to ensure that the recipient is subject to privacy laws or binding contractual obligations that provide similar protection to the Australian Privacy Principles.
-
-Countries where your data may be processed include:
-
-- United States (for website hosting and analytics)
-- European Union (for certain service providers)
-
-## 7. Your Rights and Choices
-
-Under Australian privacy law, you have the following rights:
-
-### 7.1 Access and Correction
-
-You have the right to:
-
-- Request access to the personal information we hold about you
-- Request correction of any inaccurate or incomplete information in our records
-- Request information about which service providers we have shared your details with
-- Request a copy of your personal information in a structured format
-
-**Note:** We can only provide information about data we hold. For information held by service providers after we've made the connection, you'll need to contact them directly.
-
-### 7.2 Opt-Out Rights
-
-You may opt-out of:
-
-- Having your information shared with additional service providers (though this may prevent us from fulfilling your service request)
-- Marketing communications at any time by clicking the "unsubscribe" link in our emails or contacting us directly
-- Cookies and tracking technologies through your browser settings
-
-**Important:** If you have already been connected with a service provider, you'll need to contact them directly to opt-out of their communications or request deletion of your information from their systems.
-
-### 7.3 Complaints
-
-If you have concerns about how we handle your personal information, you may:
-
-1. Contact us directly using the details below
-2. Lodge a complaint with the Office of the Australian Information Commissioner (OAIC) at www.oaic.gov.au
-
-### 7.4 Exercising Your Rights
-
-To exercise any of these rights, please contact us using the information in Section 11. We may need to verify your identity before processing your request.
-
-## 8. Direct Marketing
-
-With your consent, we may use your personal information to send you marketing communications about our services, special offers, and updates. You can opt-out of marketing communications at any time by:
-
-- Clicking the "unsubscribe" link in our emails
-- Contacting us directly
-- Updating your communication preferences
-
-Even if you opt-out of marketing communications, we may still send you service-related notifications that are necessary for your account.
-
-## 9. Children's Privacy
-
-Our website and services are not directed to individuals under 18 years of age. We do not knowingly collect personal information from children under 18. If we become aware that we have collected personal information from a child under 18, we will take steps to delete such information promptly.
-
-If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.
-
-## 10. Changes to This Privacy Policy
-
-We may update this Privacy Policy from time to time to reflect changes in our practices, technologies, legal requirements, or for other operational reasons. When we make material changes, we will:
-
-- Update the "Last Updated" date at the top of this policy
-- Notify you via email or prominent notice on our website (for significant changes)
-- Obtain your consent where required by law
-
-We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.
-
-## 11. Contact Us
-
-If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:
-
-**{{businessName}}**  
-Operated by Web and Glow Pty Ltd (ABN 53641999626)
-
-**Email:** {{email}}
-
-**Privacy Officer:**  
-If you need to contact our Privacy Officer directly, please email us at {{email}} with "Privacy Officer" in the subject line.
-
-## 12. Additional Information for Australian Residents
-
-This Privacy Policy is designed to comply with the Australian Privacy Principles (APPs) under the Privacy Act 1988 (Cth). For more information about your privacy rights in Australia, visit:
-
-- Office of the Australian Information Commissioner: www.oaic.gov.au
-- Australian Privacy Principles: www.oaic.gov.au/privacy/australian-privacy-principles
-
----
-
-*This privacy policy is effective as of the date stated at the top of this page and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.*
+After you have first contacted us, if you are still not happy with how we manage your concerns, you can contact the [Office of the Australian Information Commissioner](https://www.oaic.gov.au).

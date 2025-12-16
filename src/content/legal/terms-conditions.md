@@ -1,387 +1,111 @@
 ---
-title: "Terms & Conditions"
-description: "Terms & Conditions for {{businessName}}. Read our service agreement, policies, and legal terms."
+title: "Website Terms of Use"
+description: "Website Terms of Use for {{businessName}}. Read our terms and conditions for using our website and services."
 noindex: true
-replacements:
-  governingState: "Queensland"
-  governingCity: "Brisbane"
+lastUpdated: 2025-12-05
 ---
 
-These Terms & Conditions ("Terms", "Agreement") govern your use of the website and services provided by **{{businessName}}** ("we", "us", "our", or the "Service"), operated by Web and Glow Pty Ltd (ABN 53641999626).
+Web and Glow Pty Ltd (ABN 53 641 999 626), trading as {{businessName}}, provides home services in {{mainLocation}} and surrounding area.
 
-By accessing our website, submitting an enquiry, or engaging our services, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use our website or services.
+By accessing and using our website, you acknowledge and agree to be bound by these terms and conditions, including our [privacy policy](/privacy/), and our [disclaimer](/disclaimer/) (collectively referred to as 'terms').
 
-## IMPORTANT NOTICE - Service Provider Arrangement
+These terms form our entire agreement between us. We highly recommend that you carefully review and understand these terms prior to using our website. If you do not agree to these terms, the only remedy is to discontinue using our website.
 
-**This website is owned and operated by Web and Glow Pty Ltd (ABN 53641999626). We operate as a connection service that matches customers with independent third-party service providers in your area. We do not directly provide the advertised services ourselves.**
+Please note that these terms may be updated periodically, and the revised provisions will take effect from the date of publication. It is your responsibility to review the terms regularly for any updates before using our website. If you do not agree to the updated terms, your remedy is to cease using our website at that time.
 
-By submitting your details through our website or contacting us:
-- You consent to us passing your information to qualified service providers in our network
-- You understand that the actual services will be performed by independent contractors
-- You acknowledge that Web and Glow Pty Ltd receives a referral fee for this connection service
-- You agree that any service agreement will be directly between you and the service provider
+When you see the words, 'us', 'ours', 'we', or '{{businessName}}' these refer to the business of {{businessName}}, ABN 53 641 999 626, owned and operated by Web and Glow Pty Ltd of Queensland, Australia.
 
-## 1. Acceptance of Terms
+We provide our contact details below for your convenience. When we refer to 'our website', we mean this one as owned and operated by us. Additionally, our website can also include all forms of digital media and expression, such as social media pages, platforms, email communications, blogs, images or information published on our website.
 
-### 1.1 Agreement to Terms
+We may refer to you as 'you', 'your', 'user', or 'clients' and we mean you, the person or business who is engaging us or using our website and any additional features.
 
-By using our website or services, you acknowledge that you:
+## Feedback, Comments or Complaints
 
-- Have read and understood these Terms
-- Agree to be bound by these Terms
-- Are at least 18 years of age or have parental/guardian consent
-- Have the legal capacity to enter into a binding agreement
+If you have any questions, please contact us using the following details, and we will usually respond to all enquiries within fourteen (14) business days.
 
-### 1.2 Additional Terms
+**Contact us:**
 
-Specific services may be subject to additional terms and conditions which will be provided to you at the time of engagement.
+{{businessName}}
 
-## 2. Website Use
+{{email}}
 
-### 2.1 Permitted Use
+{{phone}}
 
-You may use our website for lawful purposes only. You agree to use the website in a way that:
+## No Unlawful or Prohibited Use
 
-- Complies with all applicable Australian laws and regulations
-- Does not infringe upon the rights of others
-- Does not interfere with or disrupt the website's operation
-- Does not attempt to gain unauthorised access to any part of the website
+You represent and warrant that you will not use our website for any purpose that is unlawful or prohibited by these terms. You must not use our website in any way that could damage, disable, overburden, or impair its functionality, or interfere with another party's ability to access and enjoy our website. Additionally, you agree not to attempt to access areas of our website that are not intentionally made available to you.
 
-### 2.2 Prohibited Activities
+You expressly agree that you will not:
 
-You must not:
+- Use this website as a lead generation tool for the benefit of your own business or to compile "lists" for advancing your personal or business interests.
+- Engage in spamming, whether internal or external, or participate in any similar activities.
+- Engage in any unlawful, unethical, or improper conduct, or any actions that violate these terms.
+- Decompile, reverse engineer, or attempt to replicate or imitate this website or its underlying content.
+- Misappropriate data, impersonate this website, or engage in fraudulent activities to obtain data or financial gain from this website or its users.
 
-- Use the website for any unlawful or fraudulent purpose
-- Transmit any viruses, malware, or harmful code
-- Attempt to probe, scan, or test the vulnerability of our systems
-- Harvest or collect email addresses or other personal information
-- Use automated systems or software to extract data from the website
-- Misrepresent your identity or affiliation with any person or entity
+## Copyright, Trademarks and Other Intellectual Property
 
-## 3. Service Enquiries and Quotations
+Web and Glow Pty Ltd holds the intellectual property rights to the content on our website or has obtained permission to use and display the material across all sections of our website.
 
-### 3.1 Service Enquiries
+You are not permitted to use, copy, display, distribute, modify, translate, reformat, incorporate into advertisements or other works, promote, create derivative works, or otherwise exploit, or allow others to exploit, any content from our website, in whole or in part, unless expressly authorised by us. If you wish to reproduce any content from our website, please contact us in writing to request permission.
 
-When you submit an enquiry through our website:
+The names of businesses, business logos, images, products, and descriptions posted on our website by third parties are the responsibility of those third parties and may be protected by trade mark or copyright laws. You must obtain permission directly from the relevant third party before using any of their content, logos, or images.
 
-- You agree to provide accurate, current, and complete information
-- You consent to us contacting you regarding your enquiry
-- You understand that submitting an enquiry does not guarantee service availability
-- You acknowledge that we may require additional information to provide an accurate quote
+**Permission for Personal Use:** You are permitted to access, download, or print material from our website for personal use only. Sharing content without prior written express authorisation is strictly prohibited. You are not allowed to use our copyrighted material for any commercial purposes, including reselling our services or content, without our express written consent. Additionally, you must not alter or remove any copyright or proprietary notices from materials downloaded from our website or any linked sites.
 
-### 3.2 Quotations
+Unless expressly granted in writing, we do not provide you with any other express or implied rights or licences to use our website content or intellectual property.
 
-All quotations provided are:
+## Copyright Infringement
 
-- Valid for 30 days from the date of issue unless otherwise specified
-- Subject to site inspection and confirmation of requirements
-- Based on the information provided by you
-- Subject to change if actual conditions differ from those described
+If you believe that any material on our website infringes third-party intellectual property rights, please contact us in writing at the email address provided above. Ensure your communication includes sufficient information to identify the original intellectual property owner and to allow us to reasonably assess whether an infringement has occurred. If we form a reasonable belief that an infringement has taken place, we will promptly remove the material from our website.
 
-Quotations do not constitute a binding agreement until formally accepted by both parties.
+Please note that knowingly providing false or misleading information may potentially expose you to liability for misrepresentation.
 
-## 4. Connection Service and Service Provision
+## Testimonials
 
-### 4.1 Our Role
+We may, at our discretion, publish testimonials on our website regarding our services or your experiences with us, to promote our offerings.
 
-Web and Glow Pty Ltd provides a connection service that:
+By submitting a testimonial or star rating, you agree that we may publish it, including your name and the month and year of submission, without remuneration or reward. Testimonials may relate to products or services you have purchased or reviewed yourself.
 
-- Collects service enquiries through this website
-- Matches customers with qualified service providers in their area
-- Passes customer information to appropriate service providers
-- Facilitates initial contact between customers and service providers
+## Security
 
-**We do not:**
-- Directly perform any of the advertised services
-- Employ the service providers (they are independent contractors)
-- Control how services are performed
-- Set final prices (these are determined by the service provider)
+We prioritise online security and data protection and take significant measures to maintain the security of our website.
 
-### 4.2 Service Agreement
+However, we cannot guarantee the absolute security of our website, records, or your content. We disclaim all liability for any computer viruses or technological issues that are beyond our control or not intentionally caused by us.
 
-When you submit an enquiry:
+We strongly encourage you to regularly monitor, install, and maintain up-to-date security software on your device or computer. While we strive to ensure the safety of our website, we do not warrant that it is entirely free from viruses, malware, or other harmful code. Before using our website or visiting any linked sites, you are advised to install and maintain the latest security software on your device. Visiting linked sites is solely your responsibility.
 
-- We pass your information to relevant service providers in our network
-- The service provider will contact you directly
-- Any service agreement is formed directly between you and the service provider
-- Web and Glow Pty Ltd is not a party to this service agreement
-- All service terms, warranties, and guarantees are provided by the service provider
+Please be aware that continuous access to our website is reliant on third-party services. As a result, there may be instances where the website is temporarily inaccessible. It is your responsibility to ensure stable and secure internet access to view our website.
 
-### 4.3 Your Obligations
+## Limitation of Liability
 
-When engaging with service providers, you agree to:
+We are not liable for any loss or damage you may incur as a result of choosing to purchase any products or services. If you experience any loss or damage related to your purchase, you must contact the relevant product or service provider directly.
 
-- Provide accurate and complete information
-- Deal directly with the service provider for all service matters
-- Direct service complaints to the service provider
-- Understand that payment is made to the service provider, not to us
+To the extent permitted by Australian Consumer Law, we will not be liable to you or any other person or entity for any damages arising from your use of our website in any capacity.
 
-### 4.4 Service Provider Standards
+Where warranties are implied by law, you acknowledge and agree that our total aggregate liability is limited to one hundred dollars ($100.00 AUD). This limitation of liability applies to the fullest extent permitted by law and will survive any termination or expiration of this agreement or your use of our website and the services provided through it.
 
-While we aim to connect you with quality service providers:
+## Indemnity
 
-- We do not guarantee the quality of services performed
-- We do not warrant the qualifications or licenses of service providers
-- We recommend verifying credentials directly with the service provider
-- We suggest obtaining written quotes and agreements from the service provider
+Unless the claim was caused by or substantially contributed by us, or the cause of the claim was outside of your control, you agree to indemnify and defend us from any claims, damages, liabilities, costs, or expenses (including court costs, collection costs, and reasonable legal fees to the extent permitted by law) related to:
 
-## 5. Pricing and Payment
+- any content you post via our website or social media
+- your unauthorised use of our website,
+- your use of products or services included or advertised on our website
+- your breach of these terms and conditions.
 
-### 5.1 Service Provider Pricing
+Effectively this means that if you cause a claim, you will be responsible for paying the costs we incur to have to defend that claim.
 
-**All pricing and payment arrangements are between you and the service provider directly.** Web and Glow Pty Ltd does not:
+## Applicable Law
 
-- Set or control service prices
-- Handle payments for services
-- Provide quotes for actual service work
-- Process refunds for services performed
+This agreement is governed by the laws of Queensland, Australia and you consent to the exclusive jurisdiction and venue of courts in that State or the Federal Courts within Australia, in all disputes arising out of or relating to the use of any of our website.
 
-Service providers will:
+## Relationship
 
-- Provide their own quotes directly to you
-- Set their own prices and payment terms
-- Collect payment directly from you
-- Handle all billing and invoicing
+You acknowledge and agree that no joint venture, partnership, employment, or agency relationship is created between you and us, as a result of your use of our website.
 
-### 5.2 Our Connection Service
+Our obligations under this agreement are subject to applicable laws and legal processes. Nothing in this agreement limits our right to comply with governmental, judicial, or law enforcement requests or requirements regarding your use of our website or any information provided to or collected by us in connection with such use.
 
-Web and Glow Pty Ltd operates on a referral fee model:
+## Validity
 
-- We receive a referral fee from service providers when we successfully connect them with customers
-- This fee is paid by the service provider, not by you
-- There is no charge to you for using our connection service
-- Our referral arrangements do not affect the price you pay for services
-
-### 5.3 Payment Disputes
-
-Any disputes regarding:
-
-- Service pricing
-- Payment terms
-- Refunds or chargebacks
-- Non-payment issues
-
-Must be resolved directly with the service provider. We may assist in facilitating communication but are not responsible for payment matters
-
-## 6. Cancellations and Rescheduling
-
-### 6.1 Service Cancellations
-
-**All cancellation and rescheduling policies are set by the individual service provider.**
-
-When you book a service through a provider we've connected you with:
-
-- The service provider will inform you of their cancellation policy
-- Any cancellation fees are determined and collected by the service provider
-- Rescheduling requests should be made directly with the service provider
-- Deposit and refund policies are set by the service provider
-
-### 6.2 Connection Service Changes
-
-If you wish to:
-
-- Be connected with a different service provider
-- Submit a new service enquiry
-- Update your contact information for referrals
-
-Please contact us directly. There is no charge for submitting new enquiries or requesting alternative service provider connections.
-
-## 7. Consumer Guarantees
-
-### 7.1 Australian Consumer Law
-
-Our services come with guarantees that cannot be excluded under the Australian Consumer Law. You are entitled to:
-
-- Services provided with acceptable care and skill
-- Services that are fit for the purpose you made known to us
-- Services delivered within a reasonable time
-
-### 7.2 Service Provider Warranties
-
-**All service warranties and guarantees are provided directly by the service provider performing the work.**
-
-Service providers may offer:
-
-- Workmanship warranties
-- Service guarantees
-- Satisfaction guarantees
-- Product warranties
-
-These warranties are:
-
-- Provided and honoured by the service provider directly
-- Subject to the service provider's terms and conditions
-- Separate from any consumer law guarantees
-- Not provided or guaranteed by Web and Glow Pty Ltd
-
-### 7.3 Our Connection Service Guarantee
-
-Web and Glow Pty Ltd guarantees only:
-
-- We will pass your enquiry to relevant service providers
-- We will use reasonable efforts to connect you with qualified providers
-- We will handle your information in accordance with our Privacy Policy
-
-We do not guarantee:
-
-- The quality of services performed by providers
-- The qualifications or licenses of providers
-- That providers will respond to your enquiry
-- Any specific outcomes from services performed
-
-## 8. Liability and Indemnification
-
-### 8.1 Limitation of Liability
-
-**As Web and Glow Pty Ltd operates solely as a connection service and does not perform the actual services:**
-
-- We are not liable for any issues arising from services performed by independent contractors
-- Our liability is strictly limited to the connection and referral service we provide
-- We are not responsible for the quality, timeliness, or outcome of services performed
-- Any claims regarding service delivery must be directed to the service provider
-
-To the extent permitted by law:
-
-- Our liability for any breach of these Terms is limited to re-providing the connection service
-- We are not liable for any indirect, consequential, or special damages
-- We are not liable for loss of profits, revenue, or business opportunities
-- We exclude all liability for the acts or omissions of independent service providers
-
-### 8.2 Indemnification
-
-You agree to indemnify and hold harmless Web and Glow Pty Ltd, {{businessName}}, and their respective officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from:
-
-- Your breach of these Terms
-- Your use of our services
-- Any false or misleading information you provide
-- Your violation of any laws or third-party rights
-
-## 9. Intellectual Property
-
-### 9.1 Website Content
-
-All content on our website, including but not limited to:
-
-- Text, graphics, logos, and images
-- Software and code
-- Designs and layouts
-- Trademarks and trade names
-
-Is owned by or licensed to Web and Glow Pty Ltd and is protected by Australian and international copyright and intellectual property laws.
-
-### 9.2 Restricted Use
-
-You may not:
-
-- Reproduce, duplicate, or copy any content without written permission
-- Use our intellectual property for commercial purposes
-- Modify or create derivative works
-- Remove any copyright or proprietary notices
-
-### 9.3 User Content
-
-By submitting any content to us (including reviews, photos, or feedback), you:
-
-- Grant us a non-exclusive, royalty-free, perpetual license to use such content
-- Warrant that you own or have the right to use such content
-- Agree that we may use such content for marketing and promotional purposes
-
-## 10. Privacy
-
-Your use of our website and services is subject to our Privacy Policy, which forms part of these Terms. By using our services, you consent to the collection and use of your information as described in our Privacy Policy.
-
-## 11. Third-Party Links and Services
-
-### 11.1 External Links
-
-Our website may contain links to third-party websites. We:
-
-- Do not endorse or control these external sites
-- Are not responsible for their content or practices
-- Recommend reviewing their terms and privacy policies
-- Disclaim all liability for any issues arising from your use of third-party sites
-
-### 11.2 Independent Service Providers
-
-**We operate a lead generation and connection service.** The actual services advertised on this website are performed by independent third-party contractors in our network, not by Web and Glow Pty Ltd directly. By using our website:
-
-- You acknowledge that Web and Glow Pty Ltd acts solely as an intermediary
-- You understand that we match your service request with qualified local service providers
-- You agree that the service contract is formed directly between you and the service provider
-- You acknowledge that Web and Glow Pty Ltd receives a referral fee from service providers
-- You accept that Web and Glow Pty Ltd is not a party to the service agreement
-
-While we maintain quality standards for our network providers, **Web and Glow Pty Ltd is not responsible for the actual service delivery, workmanship, or any issues arising from the services performed by the independent contractors**. Any service complaints should be directed to the service provider first, though we may assist in facilitating resolution where appropriate.
-
-## 12. Dispute Resolution
-
-### 12.1 Initial Resolution
-
-If you have a complaint or dispute:
-
-1. Contact us directly to discuss the issue
-2. We will investigate and respond within 10 business days
-3. We will work with you to find a fair resolution
-
-### 12.2 External Dispute Resolution
-
-If we cannot resolve the dispute directly:
-
-- You may lodge a complaint with the relevant state consumer protection agency
-- For services under $100,000, you may apply to the relevant state tribunal
-- Both parties agree to participate in good faith in any mediation process
-
-### 12.3 Governing Law
-
-These Terms are governed by the laws of Queensland, Australia. You submit to the non-exclusive jurisdiction of the courts of Queensland and the Federal Court of Australia.
-
-## 13. General Provisions
-
-### 13.1 Entire Agreement
-
-These Terms, together with our Privacy Policy and any service agreements, constitute the entire agreement between you and us regarding the use of our website and services.
-
-### 13.2 Severability
-
-If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions will continue in full force and effect.
-
-### 13.3 Waiver
-
-Our failure to enforce any right or provision of these Terms will not constitute a waiver of such right or provision unless acknowledged in writing.
-
-### 13.4 Assignment
-
-You may not assign or transfer your rights under these Terms without our written consent. We may assign our rights and obligations without restriction.
-
-### 13.5 Force Majeure
-
-We will not be liable for any failure or delay in performing our obligations due to circumstances beyond our reasonable control, including but not limited to:
-
-- Natural disasters
-- Pandemic or epidemic
-- Government actions or restrictions
-- War or terrorism
-- Labour disputes
-- Utility failures
-
-## 14. Changes to Terms
-
-We reserve the right to modify these Terms at any time. When we make changes:
-
-- The updated Terms will be posted on our website
-- The "Last Updated" date will be revised
-- Continued use of our services constitutes acceptance of the modified Terms
-- Material changes may be notified via email or website notice
-
-## 15. Contact Information
-
-For any questions about these Terms & Conditions, please contact us:
-
-**{{businessName}}**  
-Operated by Web and Glow Pty Ltd (ABN 53641999626)
- 
-**Email:** {{email}}
-
----
-
-*By using our website or services, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions.*
+If any part of these terms is determined to be invalid or unenforceable pursuant to applicable law including, but not limited to, the warranty disclaimers and liability limitations, then the invalid or unenforceable provision will be deemed superseded by a valid, enforceable provision that most closely matches the intent of the original provision and the remainder of the terms will continue in effect.
